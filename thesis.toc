@@ -1,0 +1,92 @@
+\contentsline {part}{\bf {\onsoznameToC }}{\small {ix}}{Doc-Start}%
+\contentsline {part}{\bf {\contentsnameToC }}{\small {xi}}{chapter*.1}%
+\contentsline {part}{\bf {\kisaltmanameToC }}{\small {xiii}}{chapter*.2}%
+\contentsline {part}{\bf {\symbolnameToC }}{\small {xv}}{chapter*.3}%
+\contentsline {part}{\bf {\listtablenameToC }}{\small {xvii}}{chapter*.4}%
+\contentsline {part}{\bf {\listfigurenameToC }}{\small {xix}}{chapter*.5}%
+\contentsline {part}{\bf {\abstractnameToC }}{\small {xxi}}{chapter*.5}%
+\contentsline {part}{\bf {\ozetnameToC }}{\small {xxiii}}{chapter*.5}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{1. \bf {INTRODUCTION}}{\small {1}}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview}{\small {1}}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives of Research}{\small {1}}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Organization of Thesis}{\small {2}}{section.1.3}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{2. \bf {CONDITION MONITORING OF INDUCTION MOTORS: STATE OF THE ART }}{\small {5}}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction of Induction Motors}{\small {5}}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Principle of operation}{\small {5}}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}VFD-fed induction motors}{\small {5}}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Need for condition monitoring}{\small {5}}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Maintenance strategies}{\small {5}}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Induction Motor Fault Types}{\small {7}}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Bearing related faults}{\small {7}}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Stator related faults}{\small {7}}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Rotor related faults}{\small {7}}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Condition Monitoring Techniques}{\small {12}}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Temperature monitoring}{\small {12}}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Vibration monitoring}{\small {12}}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Motor current monitoring}{\small {12}}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Signal Processing Techniques}{\small {13}}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Time domain based signal analysis}{\small {13}}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Higher order statistics}{\small {13}}{subsubsection.2.4.1.1}%
+\contentsline {subsection}{\numberline {2.4.2}Time-frequency based signal analysis}{\small {13}}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Wavelet Transform}{\small {13}}{subsubsection.2.4.2.1}%
+\contentsline {subsection}{\numberline {2.4.3}Frequency based signal analysis}{\small {13}}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3.1}Shannon-Nyquist sampling theory}{\small {13}}{subsubsection.2.4.3.1}%
+\contentsline {subsubsection}{\numberline {2.4.3.2}Fast Fourier transform}{\small {13}}{subsubsection.2.4.3.2}%
+\contentsline {subsubsection}{\numberline {2.4.3.3}Power spectral density estimation}{\small {13}}{subsubsection.2.4.3.3}%
+\contentsline {section}{\numberline {2.5}Fault Diagnosis Techniques}{\small {17}}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Model based condition monitoring}{\small {17}}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}State estimation}{\small {17}}{subsubsection.2.5.1.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.2}Residual generation}{\small {17}}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.3}Identification}{\small {17}}{subsubsection.2.5.1.3}%
+\contentsline {subsection}{\numberline {2.5.2}Model free condition monitoring}{\small {18}}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}Signal analysis}{\small {18}}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}Classical machine learning methods}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsubsection}{Support Vector Machines}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsubsection}{Naive Bayes}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsubsection}{k-Nearest Neighbour}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsubsection}{Random Forest}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsubsection}{Multi Layer Perceptron}{\small {18}}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}Deep learning methods}{\small {18}}{subsubsection.2.5.2.3}%
+\contentsline {subsubsubsection}{1D Convolutional Neural Networks}{\small {18}}{subsubsection.2.5.2.3}%
+\contentsline {subsubsubsection}{Long-Short Term Memory Networks}{\small {18}}{subsubsection.2.5.2.3}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{3. \bf {EXPERIMENTAL SETUP AND METHODOLOGY}}{\small {19}}{chapter.3}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{4. \bf {FAULT DIAGNOSIS METHODOLOGY}}{\small {25}}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Component Based Fault Diagnosis}{\small {25}}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Bearing fault analysis}{\small {25}}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Motor current signal analysis}{\small {25}}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}PSD analysis}{\small {25}}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}PSD+MCSA analysis}{\small {25}}{subsubsection.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.1.4}Deep learning analysis}{\small {25}}{subsubsection.4.1.1.4}%
+\contentsline {subsection}{\numberline {4.1.2}Stator fault analysis}{\small {26}}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Motor current signal analysis}{\small {26}}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}PSD analysis}{\small {26}}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}PSD+MCSA analysis}{\small {26}}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}Deep learning analysis}{\small {26}}{subsubsection.4.1.2.4}%
+\contentsline {subsection}{\numberline {4.1.3}Rotor fault analysis}{\small {27}}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}Motor current signal analysis}{\small {27}}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}PSD analysis}{\small {27}}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}PSD+MCSA analysis}{\small {27}}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}Deep learning analysis}{\small {27}}{subsubsection.4.1.3.4}%
+\contentsline {section}{\numberline {4.2}Motor Based Fault Diagnosis}{\small {29}}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Motor current signal analysis}{\small {29}}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}PSD analysis}{\small {29}}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}PSD+MCSA analysis}{\small {29}}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Deep learning analysis}{\small {29}}{subsection.4.2.4}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{5. \bf {CONCLUSIONS AND RECOMMENDATIONS}}{\small {31}}{chapter.5}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{\bf {APPENDICES}}{\small {33}}{chapter.6}%
+\addvspace {-10\p@ }
+\addvspace {0\p@ }
+\contentsline {section}{APPENDIX A.1}{\small {35}}{chapter.1}%
+\contentsline {section}{APPENDIX A.2}{\small {35}}{equation.1.0.2}%
+\addvspace {-10\p@ }
+\addvspace {0\p@ }
+\contentsline {section}{APPENDIX B.1}{\small {37}}{chapter.2}%
+\contentsline {section}{APPENDIX B.2}{\small {37}}{table.caption.25}%
+\addvspace {-10\p@ }
+\contentsline {chapter}{\bf {\ozgecmisnameToC }}{\small {39}}{table.caption.26}%
