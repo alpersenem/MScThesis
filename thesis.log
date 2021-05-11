@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  11 MAY 2021 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  11 MAY 2021 17:17
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1313,7 +1313,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--184
  []
 
 \th@oldparskip=\skip91
-(thesis.toc [11])
+(thesis.toc
+Underfull \hbox (badness 1117) in paragraph at lines 15--15
+[][]\T1/ptm/b/n/12 2. CON-DI-TION MON-I-TOR-ING OF IN-DUC-TION MO-TORS: BACK- 
+ []
+
+[11])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -1521,7 +1526,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2 ...ING OF INDUCTION MOTORS: STATE OF THE ART }
+l.2 ...ONITORING OF INDUCTION MOTORS: BACKGROUND }
                                                   \label{Ch2} [4]pdfTeX warning
  (ext4): destination with the same identifier (name{page.5}) has been already u
 sed, duplicate ignored
@@ -1885,7 +1890,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  30947 strings out of 479321
  564840 string characters out of 2866933
- 931851 words of memory out of 3000000
+ 931821 words of memory out of 3000000
  47578 multiletter control sequences out of 15000+600000
  463455 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1898,7 +1903,7 @@ cm/cmsy10.pfb><D:/Work/PST/New folder/fonts/type1/public/amsfonts/symbols/msam1
 folder/fonts/type1/urw/times/utmb8a.pfb><D:/Work/PST/New folder/fonts/type1/urw
 /times/utmbi8a.pfb><D:/Work/PST/New folder/fonts/type1/urw/times/utmr8a.pfb><D:
 /Work/PST/New folder/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (67 pages, 405730 bytes).
+Output written on thesis.pdf (67 pages, 405677 bytes).
 PDF statistics:
  846 PDF objects out of 1000 (max. 8388607)
  159 named destinations out of 1000 (max. 500000)
