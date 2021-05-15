@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  11 MAY 2021 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.10)  16 MAY 2021 01:14
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1417,19 +1417,19 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [24
 
-] (chapter_01.tex
-
-LaTeX Warning: Citation `Cutler2015' on page \small {1} undefined on input line
- 14.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+] (chapter_01.texpdfTeX warning (ext4): destination with the same identifier (n
+ame{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \section{Organization of Thesis}
-                                      [1
+l.14 
+      [1
 
 ]
+Underfull \hbox (badness 2689) in paragraph at lines 17--18
+[]\T1/ptm/m/n/12 Industry 4.0 shap-ing in-dus-trial op-er-a-tions through au-to
+ma-tion and ef-fi-ciency.
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1442,78 +1442,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 L
-      orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum...
-[2]
+l.25 
+      [2]
+Underfull \hbox (badness 7362) in paragraph at lines 44--45
+[]\T1/ptm/m/n/12 Chapter-4 dis-cusses iden-ti-fi-ca-tion of faults via two dif-
+fer-ent ap-proach:
+ []
 
-LaTeX Warning: Citation `HYP:HYP57' on page \small {3} undefined on input line 
-49.
-
-
-LaTeX Warning: Citation `Box:1990:TSA:574978' on page \small {3} undefined on i
-nput line 49.
-
-
-LaTeX Warning: Citation `17590413' on page \small {3} undefined on input line 4
-9.
-
-
-LaTeX Warning: Citation `harper2007' on page \small {3} undefined on input line
- 57.
-
-
-LaTeX Warning: Citation `unesco' on page \small {3} undefined on input line 57.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
+) (chapter_02.texpdfTeX warning (ext4): destination with the same identifier (n
+ame{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 
-      [3]
-
-LaTeX Warning: Citation `mccaffrey88' on page \small {4} undefined on input lin
-e 60.
-
-
-LaTeX Warning: Citation `moore91' on page \small {4} undefined on input line 60
-.
-
-
-LaTeX Warning: Citation `nelson88' on page \small {4} undefined on input line 6
-0.
-
-
-LaTeX Warning: Citation `sisaky' on page \small {4} undefined on input line 60.
-
-
-
-LaTeX Warning: Citation `simpsondvd' on page \small {4} undefined on input line
- 60.
-
-
-LaTeX Warning: Citation `startrek' on page \small {4} undefined on input line 6
-0.
-
-
-LaTeX Warning: Citation `TS-40561' on page \small {4} undefined on input line 6
-0.
-
-
-LaTeX Warning: Citation `url-1' on page \small {4} undefined on input line 60.
-
-
-LaTeX Warning: Citation `url-2' on page \small {4} undefined on input line 60.
-
-
-LaTeX Warning: Citation `vanden2001' on page \small {4} undefined on input line
- 60.
-
-
-LaTeX Warning: Citation `1993JHyd..144..193B' on page \small {4} undefined on i
-nput line 85.
-
-) (chapter_02.tex
+l.2 ...ONITORING OF INDUCTION MOTORS: BACKGROUND }
+                                                  \label{Ch2} [3]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1527,17 +1468,16 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.2 ...ONITORING OF INDUCTION MOTORS: BACKGROUND }
-                                                  \label{Ch2} [4]pdfTeX warning
- (ext4): destination with the same identifier (name{page.5}) has been already u
-sed, duplicate ignored
+                                                  \label{Ch2} [4
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.28 T
       he first paragraph following a table must have 12 pt (before) and 6 pt...
-[5
-
-]
-<./fig/sekil1.png, id=346, 580.3281pt x 466.8642pt>
+[5]
+<./fig/sekil1.png, id=366, 580.3281pt x 466.8642pt>
 File: ./fig/sekil1.png Graphic file (type png)
 <use ./fig/sekil1.png>
 Package pdftex.def Info: ./fig/sekil1.png  used on input line 42.
@@ -1568,20 +1508,12 @@ been already used, duplicate ignored
                    \relax 
 l.105 
        [6 <./fig/sekil1.png>]
-<./fig/sekil2.png, id=352, 807.2559pt x 544.1931pt>
+<./fig/sekil2.png, id=372, 807.2559pt x 544.1931pt>
 File: ./fig/sekil2.png Graphic file (type png)
 <use ./fig/sekil2.png>
 Package pdftex.def Info: ./fig/sekil2.png  used on input line 108.
 (pdftex.def)             Requested size: 284.52756pt x 191.80733pt.
  [7]
-
-LaTeX Warning: Citation `Deci_Ryan_1990' on page \small {8} undefined on input 
-line 123.
-
-
-LaTeX Warning: Citation `lepichon' on page \small {8} undefined on input line 1
-25.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1591,7 +1523,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [8 <./fig/sekil2.png>] [9]
-<./fig/sekil3.png, id=366, 1145.4795pt x 728.4816pt>
+<./fig/sekil3.png, id=390, 1145.4795pt x 728.4816pt>
 File: ./fig/sekil3.png Graphic file (type png)
 <use ./fig/sekil3.png>
 Package pdftex.def Info: ./fig/sekil3.png  used on input line 152.
@@ -1607,10 +1539,6 @@ Package pdftex.def Info: ./fig/sekil3.png  used on input line 178.
 
 
 ]
-
-LaTeX Warning: Citation `Roberts_Jackson_1991' on page \small {12} undefined on
- input line 250.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1683,7 +1611,7 @@ l.82
                                                   
 l.82 
      ]
-<./fig/sekil4.png, id=434, 1138.2525pt x 591.1686pt>
+<./fig/sekil4.png, id=459, 1138.2525pt x 591.1686pt>
 File: ./fig/sekil4.png Graphic file (type png)
 <use ./fig/sekil4.png>
 Package pdftex.def Info: ./fig/sekil4.png  used on input line 85.
@@ -1697,20 +1625,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[22 <./fig/sekil4.png>]
-
-LaTeX Warning: Citation `Wegener2000629' on page \small {23} undefined on input
- line 109.
-
-
-LaTeX Warning: Citation `Wolchik2000843' on page \small {23} undefined on input
- line 115.
-
-
-LaTeX Warning: Citation `Zuckerman199486' on page \small {23} undefined on inpu
-t line 117.
-
-) (chapter_04.tex [23]
+[22 <./fig/sekil4.png>]) (chapter_04.tex [23]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1745,7 +1660,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [28]
-<./fig/sekil6.png, id=465, 542.7477pt x 476.982pt>
+<./fig/sekil6.png, id=496, 542.7477pt x 476.982pt>
 File: ./fig/sekil6.png Graphic file (type png)
 <use ./fig/sekil6.png>
 Package pdftex.def Info: ./fig/sekil6.png  used on input line 126.
@@ -1764,15 +1679,14 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [30]
-<./fig/sekil5.png, id=475, 1183.7826pt x 689.4558pt>
+<./fig/sekil5.png, id=506, 1183.7826pt x 689.4558pt>
 File: ./fig/sekil5.png Graphic file (type png)
 <use ./fig/sekil5.png>
 Package pdftex.def Info: ./fig/sekil5.png  used on input line 31.
 (pdftex.def)             Requested size: 230.0pt x 133.95415pt.
  [31
 
- <./fig/sekil5.png>])
-No file thesis.bbl.
+ <./fig/sekil5.png>]) (thesis.bbl
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1781,14 +1695,72 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[32] (appendices_cover.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
+[32]
+Underfull \hbox (badness 1292) in paragraph at lines 18--21
+\T1/ptm/m/n/12 sys-tems : Tech-nol-ogy , sav-ing po-ten-tials and pol-icy op-ti
+ons for
+ []
 
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 29
+.
+(D:\Work\PST\New folder\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 1242) in paragraph at lines 32--34
+[]\T1/ptm/b/n/12 EN, B. \T1/ptm/m/n/12 (2017). 13306:2017: Main-te-nanceMainte
+nance ter-mi-nol-ogy, \T1/ptm/m/it/12 BSI
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 36--39
+\T1/ptm/m/n/12 In-stal-la-tions, Part I, \T1/ptm/m/it/12 IEEE Trans-ac-tions on
+ In-dus-try Ap-pli-ca-tions\T1/ptm/m/n/12 ,
  []
 
 [33
 
-]) (appendices.tex
+]
+Underfull \hbox (badness 3407) in paragraph at lines 80--85
+[]\T1/ptm/b/n/12 Nelson, M.R. \T1/ptm/m/n/12 (1988). Con-straints on the seis-m
+ic ve-loc-ity struc-ture of
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 80--85
+\T1/ptm/m/n/12 the crust and up-per man-tle be-neath the east-ern Tien Shan, Ce
+n-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 80--85
+\T1/ptm/m/n/12 tral Asia, \T1/ptm/m/it/12 Ph.D. Dis-ser-ta-tion\T1/ptm/m/n/12 ,
+ Mas-sachusetts In-sti-tute of Tech-
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 80--85
+\T1/ptm/m/n/12 nol-ogy (MIT), Cam-bridge, MA, []$\T1/pcr/m/n/12 https : / / dsp
+ace . mit . edu /
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 95--98
+[]\T1/ptm/b/n/12 Star trek planet clas-si-fi-ca-tions\T1/ptm/m/n/12 , []$\T1/pc
+r/m/n/12 http : / / en . wikipedia . org / wiki /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
+\T1/pcr/m/n/12 Star _ Trek _ planet _ classifications$[]\T1/ptm/m/n/12 , alnd
+§ tarih:
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 136--140
+\T1/ptm/m/n/12 Cor-rec-tions of Ju-ror Judg-ments Im-pli-ca-tions for Jury In-s
+truc-tions,
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1797,14 +1769,39 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[34
+[34]) [35]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[36
+
+] (appendices_cover.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+[37]) (appendices.tex
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[38
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter{APPENDIX A.1}
-                           [35pdfTeX warning (ext4): destination with the same 
+                           [39pdfTeX warning (ext4): destination with the same 
 identifier (name{equation.1.0.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1818,14 +1815,14 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[36
+[40
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.61 \chapter{APPENDIX B.1}
-                           ) [37pdfTeX warning (ext4): destination with the sam
+                           ) [41pdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.0.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1839,10 +1836,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[38
+[42
 
 ] (resume.tex
-<./fig/photo.png, id=522, 265.9536pt x 346.1733pt>
+<./fig/photo.png, id=594, 265.9536pt x 346.1733pt>
 File: ./fig/photo.png Graphic file (type png)
 <use ./fig/photo.png>
 Package pdftex.def Info: ./fig/photo.png  used on input line 6.
@@ -1873,7 +1870,7 @@ Underfull \hbox (badness 1028) in paragraph at lines 44--49
 ec-tive On Wa-ter And
  []
 
-[39 <./fig/photo.png>]
+[43 <./fig/photo.png>]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1882,30 +1879,27 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[40]) [41] (thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[44]) [45] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 30947 strings out of 479321
- 564840 string characters out of 2866933
- 931821 words of memory out of 3000000
- 47578 multiletter control sequences out of 15000+600000
- 463455 words of font info for 128 fonts, out of 8000000 for 9000
+ 31024 strings out of 479321
+ 565994 string characters out of 2866933
+ 932744 words of memory out of 3000000
+ 47615 multiletter control sequences out of 15000+600000
+ 464076 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,14n,105p,1144b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
-{D:/Work/PST/New folder/fonts/enc/dvips/base/8r.enc}<D:/Work/PST/New folder/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Work/PST/New folder/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><D:/Work/PST/New folder/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><D:/Work/PST/New folder/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb><D:/Work/PST/New folder/fonts/type1/urw/symbol/usyr.pfb><D:/Work/PST/New 
-folder/fonts/type1/urw/times/utmb8a.pfb><D:/Work/PST/New folder/fonts/type1/urw
-/times/utmbi8a.pfb><D:/Work/PST/New folder/fonts/type1/urw/times/utmr8a.pfb><D:
-/Work/PST/New folder/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (67 pages, 405677 bytes).
+ 107i,14n,105p,1101b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
+{D:/Work/PST/New folder/fonts/enc/dvips/base/8r.enc}<D
+:/Work/PST/New folder/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Work/PST/Ne
+w folder/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Work/PST/New folder/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><D:/Work/PST/New folder/fonts/type1/public
+/amsfonts/symbols/msam10.pfb><D:/Work/PST/New folder/fonts/type1/urw/courier/uc
+rr8a.pfb><D:/Work/PST/New folder/fonts/type1/urw/symbol/usyr.pfb><D:/Work/PST/N
+ew folder/fonts/type1/urw/times/utmb8a.pfb><D:/Work/PST/New folder/fonts/type1/
+urw/times/utmbi8a.pfb><D:/Work/PST/New folder/fonts/type1/urw/times/utmr8a.pfb>
+<D:/Work/PST/New folder/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (71 pages, 441052 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
- 696 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 929 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
+ 704 words of extra memory for PDF output out of 10000 (max. 10000000)
 
