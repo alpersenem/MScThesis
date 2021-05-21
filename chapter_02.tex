@@ -3,38 +3,42 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-12pt} % If no text above section, use this vspace* to lift the whole part to the proper starting point - SBÖ
 \section{Introduction of Induction Motors}
-
 \subsection{Principle of operation}
+
+Electric motors are divided into two classes depending on their power supply type: direct current (DC) or alternating current (AC). The latter can be broken into two classes as synchronous or induction according to their operating speed. Induction motors, which operates slightly lower than synchronous speed, are also sub-divided as wounded and squirrel-cage motors. In this study, squirrel-cage induction motors have been investigated by means of induction motors, since the squirrel-cage type is predominantly used in industrial applications. 
+
+Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal [manual for industrial]. The difference between the actual speed and synchronous speed is known as slip [sourcebook].
+
+synchronous speed equation comes here.
+
+slip equation comes here.
+
+In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power [electric motor, induction motor fault diag].
+
+motor diagram comes here.
+
 \subsection{VFD-fed induction motors}
+
+two figures will be added from iet 108.
+
+A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily [IET energy].
+
+From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors [improving, historical]. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation:
+
+\begin{itemize}
+	\item Voltage per Frequency Control (V/f)
+	\item Field Oriented Control (FOC)
+	\item Direct Torque Control (DTC)
+\end{itemize}
+
+The common idea behind these methods is based on controlling the torque and flux references applied to the motor separately, as in DC motor control [iet energy]. In the scope of this thesis, only the V/f control strategy emphasized due to the widespread adoption of the control method in pump, compressor and fan applications. 
+
+V/f control can be employed in both open-loop and closed-loop modes. Open-loop V/f control, which is by far the most popular control due to its simplicity, as the name implies, creates a constant air-gap flux by keeping the ratio between the voltage and frequency applied to the induction motor constant, and as a result, it provides the opportunity to work at operating frequencies from zero to nominal frequency [bose]. 
+
+VFDs come with benefits such that energy savings, reliability and product quality, yet in concern of fault diagnosis they introduce number of factors,which will be discussed later on, that increase the complexity. 
+
 \subsection{Need for condition monitoring}
 \subsection{Maintenance strategies}
-
-Tables and figures given in appendices must be numbered with the number of the appendix they are in (i.e. Table \ref{TableA.1}, Table A.2, Figure A.1, Figure A.2).
-
-In tables and figures, font size could be reduced to 8 pt, if necessary.
-
-Tables must be prepared using the same font type as the thesis. The font type used in figures must be consistent throughout the thesis.
-
-Tables and figures must be placed after they are first cited in the main text body, but must be as close as possible, in accordance with the rules in this guideline (Figure \ref{Figure2.1}). All tables and figures must be cited before they are used in the main text body (Table \ref{Table2.1}).
-
-All tables and figures must be horizontally centered on the page.
-
-The numbering of the tables and the figures must be such that the first number is the number of the chapter the table/figure is placed under (for appendices, the letter of the appendix), and the second number is the number of order (i.e. Table \ref{Table2.2}, Figure \ref{Figure2.2}, Table \ref{TableA.1}, Figure \ref{Figure2.3}). The words “Table” and “Figure” and numbers must be bold.
-
-For table numbers and captions, 1 line spacing, 12 pt (before) and 6 pt (after) paragraph spacing must be set. Table captions must be ended with a full stop. A table and its caption must be on the same page. 
-
-Multiple tables/figures could be placed on one page, however, table/figures spanning more than 4 consecutive pages must be given in appendices rather than the main text body.
-
-The first paragraph following a table must have 12 pt (before) and 6 pt (after) paragraph spacing. Titles following a table must have the standard formatting as previously specified. 
-
-Footnotes for a table must be written with 1 line spacing and a font size 2 pt smaller than the main text body. 
-For figure numbers and captions, 1 line spacing, 6 pt (before) and 12 pt (after) paragraph spacing must be set. Figure captions must be ended with a full stop. A figure and its caption must be on the same page. 
-
-For figures spanning more than one page, the same number and caption must be written below the continued figure, with the expression ”continued” added in brackets (i.e. \textbf{Table \ref{Table2.1} (continued):} Metal composition of wastes. \textbf{Figure \ref{Figure2.1} (continued):} Water supply network of ISTANBUL.).
-
-Plots, images and musical notes must be numbered and captioned as figures. Musical notes must be written according to the format rules set by the ITU School of Traditional Turkish Music. 
-
-It is recommended that elements that increase the page thickness and disrupt the binding structure of theses such as  folded pages or additional items embedded on pages are given as appendices.
 
 \vspace{6pt}
 \begin{figure}[h]

@@ -13,6 +13,23 @@
                     "inform"
                 ]
             }
+        },
+        {
+            "files": [
+                "**/chapter_02.tex"
+            ],
+            "config": {
+                "audience": "expert",
+                "dialect": "british",
+                "domain": "academic",
+                "emotions": [
+                    "respectful",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform"
+                ]
+            }
         }
     ]
 }
