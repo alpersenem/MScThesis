@@ -7,13 +7,13 @@
 
 Electric motors are divided into two classes depending on their power supply type: direct current (DC) or alternating current (AC). The latter can be broken into two classes as synchronous or induction according to their operating speed. Induction motors, which operates slightly lower than synchronous speed, are also sub-divided as wounded and squirrel-cage motors. In this study, squirrel-cage induction motors have been investigated by means of induction motors, since the squirrel-cage type is predominantly used in industrial applications. 
 
-Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal [manual for industrial]. The difference between the actual speed and synchronous speed is known as slip [sourcebook].
+Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal \cite{gunnar2016}. The difference between the actual speed and synchronous speed is known as slip \cite{doe2008improving}.
 
 synchronous speed equation comes here.
 
 slip equation comes here.
 
-In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power [electric motor, induction motor fault diag].
+In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power \cite{oliver1992electric,karmakar2016induction}.
 
 motor diagram comes here.
 
@@ -21,9 +21,9 @@ motor diagram comes here.
 
 two figures will be added from iet 108.
 
-A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily [IET energy].
+A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
 
-From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors [improving, historical]. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation:
+From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors \cite{doe2008improving,mikami2011historical}. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation:
 
 \begin{itemize}
 	\item Voltage per Frequency Control (V/f)
@@ -31,15 +31,15 @@ From a historical point of view, DC motors have been utilised in speed control a
 	\item Direct Torque Control (DTC)
 \end{itemize}
 
-The common idea behind these methods is based on controlling the torque and flux references applied to the motor separately, as in DC motor control [iet energy]. In the scope of this thesis, only the V/f control strategy emphasized due to the widespread adoption of the control method in pump, compressor and fan applications. 
+The common idea behind these methods is based on controlling the torque and flux references applied to the motor separately, as in DC motor control \cite{faiz2017fault}. In the scope of this thesis, only the V/f control strategy emphasized due to the widespread adoption of the control method in pump, compressor and fan applications. 
 
-V/f control can be employed in both open-loop and closed-loop modes. Open-loop V/f control, which is by far the most popular control due to its simplicity, as the name implies, creates a constant air-gap flux by keeping the ratio between the voltage and frequency applied to the induction motor constant, and as a result, it provides the opportunity to work at operating frequencies from zero to nominal frequency [bose]. 
+V/f control can be employed in both open-loop and closed-loop modes. Open-loop V/f control, which is by far the most popular control due to its simplicity, as the name implies, creates a constant air-gap flux by keeping the ratio between the voltage and frequency applied to the induction motor constant, and as a result, it provides the opportunity to work at operating frequencies from zero to nominal frequency \cite{bose2002modern}. 
 
 VFDs come with benefits such that energy savings, reliability and product quality, yet in concern of fault diagnosis they introduce a number of factors, which will be discussed later on, that increase the complexity. 
 
 \subsection{Need for condition monitoring}
 
-Condition monitoring defined as measuring activities concerning characteristics and parameters of physical equipment at predetermined intervals either manually or automatically [bsi]. Leveraging rapid technological advancements in data storage, data process and network structure, condition monitoring became one of the driving force behind the industry 4.0 paradigm. The key goal behind this paradigm is to acquisition, transmition and analysis of data in order to predict future behaviours of a machinery, or plant on a larger scale, to boost efficiency and reliability [a pred model, pred maint]. 
+Condition monitoring defined as measuring activities concerning characteristics and parameters of physical equipment at predetermined intervals either manually or automatically \cite{en201713306}. Leveraging rapid technological advancements in data storage, data process and network structure, condition monitoring became one of the driving force behind the industry 4.0 paradigm. The key goal behind this paradigm is to acquisition, transmission and analysis of data in order to predict future behaviours of machinery, or plant on a larger scale, to boost efficiency and reliability \cite{lughofer2019prologue,RUIZSARMIENTO}. 
 
 Researchers from both academia and industry have devoted significant attention to condition monitoring of induction motors over decades. Even though induction motors renowned for robustness, environmental, electrical and mechanical effects may lead induction motors to failure. As a result, industrial processes subjected to potential losses in a manner of time and capital, so the desire to minimize or even prevent these losses emerges the need for condition monitoring. 
 
@@ -51,12 +51,15 @@ bsi map comes here as figure.
 
 Corrective maintenance is a type of maintenance performed after the induction motor failure to detect the fault and restore it to operational condition \cite{en201713306}. The main purpose of this type of maintenance is to get the equipment up and running as soon as possible by repairing or replacing the defective equipment. However, corrective maintenance as a failure-driven method contains a high-risk potential as faults may occur at unexpected times, can disrupt the operation. Since this type of maintenance approach does not take into account the damages that may occur, it may be suitable for equipment that is not critical to the business that does not pose a safety risk.
 
-Preventive maintenance on the other hand, aims to detect faults at an early stage and correct them before they introduce risk to operation \cite{en201713306}.
+Preventive maintenance, on the other hand, aims to detect faults at an early stage and correct them before they introduce risk to operation \cite{en201713306}. Preventive maintenance employed to increase efficiency and reliability by taking into account the probability of failure or the ageing of the equipment, at certain intervals or according to pre-planned scheduling. Although this approach is beneficial in cases where the wear-out characteristics are evident, it has disadvantages, especially in terms of not being able to use equipment lifespan efficiently and increasing the maintenance cost compared to the corrective maintenance approach \cite{AHMAD}.
 
-Predictive maintenance
+Predictive maintenance is a condition-based approach to maintenance that is used to evaluate the parameters and characteristics of the equipment or to make predictions based on repeated analysis \cite{en201713306}. Compared to preventive maintenance, predictive maintenance maximizes equipment service-life whilst minimizing unnecessary maintenance. In 99\% of machine failures, it is possible to observe indications that malfunctions will occur, in other words, the necessary measures can be taken before 99\% of the faults occur by continuously monitoring the machine \cite{AHMAD}.
+
+Under the predictive maintenance approach, decision-making can be divided into two: diagnosis, which is the analysis of the current situation, and prognosis, which is the assessment of conditions measured over time \cite{tinga2019physical}. A P-F curve can be used to better understand diagnostic and prognostic monitoring systems.
 
 PF diagram comes here.
 
+The downside of predictive maintenance is that it requires additional equipment and relatively high investment costs. But the advantage of VFDs also comes out here. As they currently monitor motor parameters in control applications, they have a high potential for predictive maintenance applications without the need for additional sensors and investments.
 
 % \vspace{6pt}
 % \begin{figure}[h]
@@ -136,9 +139,60 @@ PF diagram comes here.
 % \vspace{-6pt}
 \section{Induction Motor Fault Types}
 
+From a mechanical perspective, induction machines basically consist of three components: stator, rotor and bearing. Electrical, mechanical, and environmental disturbances constantly affect asynchronous motor components and cause most malfunctions [Bonnet2010]. Table \ref{Table2.1} exhibits various surveys that studied and categorized the most common failures. 
+
+\begin{table*}[h]
+	{\setlength{\tabcolsep}{14pt}
+		\caption{Table with single row and centered columns.}
+		\begin{center}
+			\vspace{-6mm}
+			\begin{tabular}{ccccc}
+				\hline \\[-2.45ex] \hline \\[-2.1ex]
+				Component & IEEE-IAS & EPRI & Thorsen-Dalva & Bonnet-Yung \\
+				\hline \\[-1.8ex]
+				Bering & 44 & 41 & 51 & 69 \\
+				Stator & 26 & 37  & 16 & 21\\
+				Rotor & 8 & 10 & 5 & 7 \\
+				Other & 22 & 12  & 28 & 3\\
+				\hline
+			\end{tabular}
+			\vspace{-6mm}
+		\end{center}
+		\label{Table2.1}}
+\end{table*}
+
+As can be seen in Table \ref{Table2.1}, most of the faults associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan [trigessou]. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
+
 \subsection{Bearing related faults}
+
+In all kinds of electrical machines, the mechanical element positioned between the frame that initiates the movement and the rotating axis shaft is called a bearing. These mechanical elements, which help the rotational movement of the electric motor, are exposed to many internal and external destructive effects during their operation and failures arise as a result. Major sources of bearing failures are given below [references]:
+
+\textbf{Mechanical stresses}: Fatigue, which mostly begins on the surface, turns into small-sized material ruptures at the beginning and later dimensional surface indentations and protrusions. Loose motor connection, misalignment where the motor shaft and load shaft are connected without aligning on the same axis, angular misalignment where the motor shaft and load shaft axes are connected at a certain angle, and unbalanced load connection, which is an unbalance condition where the centre of gravity of the load connected to the motor shaft is not on the rotation axis are other mechanical disturbances on the bearing.
+
+\textbf{Environmental stresses}: Corrosion occurs on the bearing surfaces used in high humidity working environments. Especially the moisture absorbed in the bearing oil initiates this process and the rust that occurs due to corrosion causes deterioration that turns into indentation and protrusion on the surface of the bearing element, and cracks in the later stages.
+
+\textbf{Thermal stresses}: Insufficient lubrication generally causes problems with bearing components. Normally, there is a layer of oil in the bearing that prevents direct contact between the rotating elements so that their surfaces do not wear out quickly. In case of insufficient lubrication, excessive wear and subsequent material deterioration occur as a result of increased friction due to direct contact between metal surfaces.
+
+\textbf{Electrical stresses}: the electrical discharge current effect occurs with a fault current flowing through the bearings from the motor frame to the ground in motors that do not have a suitable ground connection. Asymmetry of stator windings, permanent magnetism effect developing in the motor over time, electrostatic charge accumulation in the motor frame and application of voltage to the motor shaft from the outside, or common end voltages generated due to the high switching frequency of semiconductor power electronics (VFDs using PWM) are the factors that cause this malfunction. The irregular current will cause wear and tear on the bearing metal surface, and as a result, the degree of material rupture and surface deterioration increases.
+
+Vibration in the motor causes the rotor to rotate irregularly or axially unbalanced in the motor air gap. Any axial misalignment that occurs in the motor air gap adversely affects the air gap flux density and causes the formation of harmonic components. Consequently, this can induce harmonic components in the current drawn by the motor with frequencies given by Formula [bs20958,schoen]:
+\begin{equation}
+	f_{e}=f_{1} \pm m f_{\mathrm{r}}
+	\label{bearingfault}
+\end{equation}
+where,\\
+$f_{1} \quad$ is the supply frequency;\\
+$f_{\mathrm{r}} \quad$ is the rotational speed frequency of the rotor;\\
+$\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
+$f_{e} \quad$ is the current component frequency due to air gap changes.
+
 \subsection{Stator related faults}
+
+
 \subsection{Rotor related faults}
+
+
+
 
 
 % % Change margins on the fly to reset the page margins to one inch - SBÖ
@@ -222,45 +276,45 @@ PF diagram comes here.
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-\begin{table*}[h]
-	{\setlength{\tabcolsep}{14pt}
-		\caption{Table with single row and centered columns.}
-		\begin{center}
-			\vspace{-6mm}
-			\begin{tabular}{cccc}
-				\hline \\[-2.45ex] \hline \\[-2.1ex]
-				Column A & Column B & Column C & Column D \\
-				\hline \\[-1.8ex]
-				Row A & Row A & Row A & Row A \\
-				Row B & Row B & Row B & Row B \\
-				Row C & Row C & Row C & Row C \\
-				\hline
-			\end{tabular}
-			\vspace{-6mm}
-		\end{center}
-		\label{Table2.1}}
-\end{table*}
+% \begin{table*}[h]
+% 	{\setlength{\tabcolsep}{14pt}
+% 		\caption{Table with single row and centered columns.}
+% 		\begin{center}
+% 			\vspace{-6mm}
+% 			\begin{tabular}{cccc}
+% 				\hline \\[-2.45ex] \hline \\[-2.1ex]
+% 				Column A & Column B & Column C & Column D \\
+% 				\hline \\[-1.8ex]
+% 				Row A & Row A & Row A & Row A \\
+% 				Row B & Row B & Row B & Row B \\
+% 				Row C & Row C & Row C & Row C \\
+% 				\hline
+% 			\end{tabular}
+% 			\vspace{-6mm}
+% 		\end{center}
+% 		\label{Table2.1}}
+% \end{table*}
 
 As seen in Table \ref{Table2.1}, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-\begin{table*}[h]
-	{\setlength{\tabcolsep}{14pt}
-		\caption{Table captions must be ended with a full stop.}
-		\begin{center}
-			\vspace{-6mm}
-			\begin{tabular}{cccc}
-				\hline \\[-2.45ex] \hline \\[-2.1ex]
-				Column A & Column B & Column C & Column D \\
-				\hline \\[-1.8ex]
-				Row A & Row A & Row A & Row A \\
-				Row B & Row B & Row B & Row B \\
-				Row C & Row C & Row C & Row C \\
-				\hline
-			\end{tabular}
-			\vspace{-6mm}
-		\end{center}
-		\label{Table2.2}}
-\end{table*}
+% \begin{table*}[h]
+% 	{\setlength{\tabcolsep}{14pt}
+% 		\caption{Table captions must be ended with a full stop.}
+% 		\begin{center}
+% 			\vspace{-6mm}
+% 			\begin{tabular}{cccc}
+% 				\hline \\[-2.45ex] \hline \\[-2.1ex]
+% 				Column A & Column B & Column C & Column D \\
+% 				\hline \\[-1.8ex]
+% 				Row A & Row A & Row A & Row A \\
+% 				Row B & Row B & Row B & Row B \\
+% 				Row C & Row C & Row C & Row C \\
+% 				\hline
+% 			\end{tabular}
+% 			\vspace{-6mm}
+% 		\end{center}
+% 		\label{Table2.2}}
+% \end{table*}
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum, as seen in Table \ref{Table2.2}. 
 
