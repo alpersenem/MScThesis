@@ -23,7 +23,7 @@ two figures will be added from iet 108.
 
 A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
 
-From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors \cite{doe2008improving,mikami2011historical}. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation:
+From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors \cite{doe2008improving,mikami2011historical}. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation \cite{weg,danfoss}:
 
 \begin{itemize}
 	\item Voltage per Frequency Control (V/f)
@@ -139,16 +139,16 @@ The downside of predictive maintenance is that it requires additional equipment 
 % \vspace{-6pt}
 \section{Induction Motor Fault Types}
 
-From a mechanical perspective, induction machines basically consist of three components: stator, rotor and bearing. Electrical, mechanical, and environmental disturbances constantly affect asynchronous motor components and cause most malfunctions [Bonnet2010]. Table \ref{Table2.1} exhibits various surveys that studied and categorized the most common failures. 
+From a mechanical perspective, induction machines basically consist of three components: stator, rotor and bearing. Electrical, mechanical, and environmental disturbances constantly affect asynchronous motor components and cause most malfunctions \cite{bonnet2010}. Table \ref{Table2.1} exhibits various surveys that studied and categorized the most common failures \cite{motor1985report,albrecht1986assessment,albrecht1987assessment,thorsen1995survey,bonnett2008increased}. 
 
 \begin{table*}[h]
-	{\setlength{\tabcolsep}{14pt}
+	{\setlength{\tabcolsep}{12pt}
 		\caption{Table with single row and centered columns.}
 		\begin{center}
 			\vspace{-6mm}
 			\begin{tabular}{ccccc}
 				\hline \\[-2.45ex] \hline \\[-2.1ex]
-				Component & IEEE-IAS & EPRI & Thorsen-Dalva & Bonnet-Yung \\
+				Component & IEEE & EPRI & Thorsen-Dalva & Bonnet-Yung \\
 				\hline \\[-1.8ex]
 				Bering & 44 & 41 & 51 & 69 \\
 				Stator & 26 & 37  & 16 & 21\\
@@ -161,11 +161,11 @@ From a mechanical perspective, induction machines basically consist of three com
 		\label{Table2.1}}
 \end{table*}
 
-As can be seen in Table \ref{Table2.1}, most of the faults associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan [trigessou]. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
+As can be seen in Table \ref{Table2.1}, most of the faults associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan \cite{trigeassou2013electrical}. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
 
 \subsection{Bearing related faults}
 
-In all kinds of electrical machines, the mechanical element positioned between the frame that initiates the movement and the rotating axis shaft is called a bearing. These mechanical elements, which help the rotational movement of the electric motor, are exposed to many internal and external destructive effects during their operation and failures arise as a result. Major sources of bearing failures are given below [references]:
+In all kinds of electrical machines, the mechanical element positioned between the frame that initiates the movement and the rotating axis shaft is called a bearing. These mechanical elements, which help the rotational movement of the electric motor, are exposed to many internal and external destructive effects during their operation and failures arise as a result. Major sources of bearing failures are given below \cite{zhang2010survey,easa,skf,schoen1995motor,en201320958,bonnet2010}:
 
 \textbf{Mechanical stresses}: Fatigue, which mostly begins on the surface, turns into small-sized material ruptures at the beginning and later dimensional surface indentations and protrusions. Loose motor connection, misalignment where the motor shaft and load shaft are connected without aligning on the same axis, angular misalignment where the motor shaft and load shaft axes are connected at a certain angle, and unbalanced load connection, which is an unbalance condition where the centre of gravity of the load connected to the motor shaft is not on the rotation axis are other mechanical disturbances on the bearing.
 
@@ -175,19 +175,53 @@ In all kinds of electrical machines, the mechanical element positioned between t
 
 \textbf{Electrical stresses}: the electrical discharge current effect occurs with a fault current flowing through the bearings from the motor frame to the ground in motors that do not have a suitable ground connection. Asymmetry of stator windings, permanent magnetism effect developing in the motor over time, electrostatic charge accumulation in the motor frame and application of voltage to the motor shaft from the outside, or common end voltages generated due to the high switching frequency of semiconductor power electronics (VFDs using PWM) are the factors that cause this malfunction. The irregular current will cause wear and tear on the bearing metal surface, and as a result, the degree of material rupture and surface deterioration increases.
 
-Vibration in the motor causes the rotor to rotate irregularly or axially unbalanced in the motor air gap. Any axial misalignment that occurs in the motor air gap adversely affects the air gap flux density and causes the formation of harmonic components. Consequently, this can induce harmonic components in the current drawn by the motor with frequencies given by Formula [bs20958,schoen]:
+Vibration in the motor causes the rotor to rotate irregularly or axially unbalanced in the motor air gap. Any axial misalignment that occurs in the motor air gap adversely affects the air gap flux density and causes the formation of harmonic components \cite{schoen1995motor,en201320958,faiz2017fault}. Consequently, this can induce harmonic components in the current drawn by the motor with frequencies given by formula \cite{schoen1995motor}:
 \begin{equation}
-	f_{e}=f_{1} \pm m f_{\mathrm{r}}
+	f_{bng}=f_{e} \pm m f_{\mathrm{v}}
 	\label{bearingfault}
 \end{equation}
 where,\\
-$f_{1} \quad$ is the supply frequency;\\
-$f_{\mathrm{r}} \quad$ is the rotational speed frequency of the rotor;\\
+$f_{e} \quad$ is the electrical supply frequency;\\
+$f_{\mathrm{v}} \quad$ is the rotational speed frequency of the rotor;\\
 $\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
-$f_{e} \quad$ is the current component frequency due to air gap changes.
+$f_{bng} \quad$ is the current component frequency due to air gap changes.
 
 \subsection{Stator related faults}
 
+As researches have shown, stator faults occupy an important place among asynchronous motor faults after bearing \cite{motor1985report,albrecht1986assessment,albrecht1987assessment,thorsen1995survey,bonnett2008increased}. Mechanical, electrical, thermal and environmental factors cause malfunctions in the stator windings, as well as their laminations \cite{karmakar2016induction,Siddique}. Winding faults, as the most common stator faults, are winding short-circuit faults that are mostly the result of the aforementioned effects of the winding insulation. Types of winding faults are as follows \cite{karmakar2016induction,Siddique,lipo}:
+
+\begin{itemize}
+	\item Short-circuit between two turns in the same phase, (turn-turn failure)
+	\item Short-circuit between two coils side by side in the same phase (coil-coil failure),
+	\item Short-circuit between the turns of two phases (phase-phase failure),
+	\item Short circuit consisting of all three-phase turns,
+	\item Short-circuit between the conductor of the winding and the stator core (phase-ground short circuit),
+	\item Open-circuit fault when winding gets break.
+\end{itemize}
+
+The factors that cause the motor winding insulation to deteriorate are explained below \cite{karmakar2016induction,Siddique,faiz2017fault}:
+
+\textbf{Mechanical stresses}: While the motor is running, the rotor may rub or hit the inner surface of the stator due to motor shaft deterioration, bearing failures and misalignment. This force creates a turn-to-turn or a phase-to-earth short-circuit, causing the stator coil and the stator winding insulation to break down. On the other hand, winding breakage may occur due to vibration during operation and therefore the motor produces the open-circuit fault.
+
+\textbf{Environmental stresses}: The environment in which the motor is running can be very hot, cold or humid. On the other hand, substances in the external environment can contaminate the windings, causing the heat dissipation to deteriorate and the insulation to be damaged. In addition, the airflow can be blocked and cannot absorb the air required for cooling. Therefore, it causes the motor windings to heat and consequently the insulation to deteriorate.
+
+\textbf{Thermal stresses}: Thermal effects occur as a result of overloading or a motor failure. With motor overload, the motor temperature rises above the limit value of the insulation class and the insulation deteriorates. At this point, every 3.5\% unbalance in the motor supply voltage increases the temperature of the motor by 10°C. In addition, every 10°C temperature increase above the limit temperature value of the insulation halves the life of the insulation.
+
+\textbf{Electrical stresses}: The main reason for this is sudden changes in supply voltage. Transients during commissioning and decommissioning and voltage fluctuations frequently occur, especially in asynchronous motors powered by variable frequency drives. Winding insulations deteriorate due to these voltage variations.
+
+Under the inter-turn short-circuit condition, a significant deviation in rotor slot harmonics components,called as principle slot harmonics (PSH), occurs and can be obtained by given formula \cite{Penman};
+
+\begin{equation}
+	f_{st}=f_{e} \cdot\left[n \cdot \frac{(1-s)}{p} \pm k\right]
+	\label{statorfault}
+\end{equation}
+where,\\
+$f_{e} \quad$ is the electrical supply frequency ;\\
+$\mathrm{p} \quad$ is the number of pole pairs of the motor ;\\
+$\mathrm{n} \quad$ = $1,2,3 \ldots (2p-1)$;\\
+$\mathrm{s} \quad$ is the slip ;\\
+$\mathrm{k} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
+$f_{st} \quad$ is the principle slot harmonic frequencies.
 
 \subsection{Rotor related faults}
 

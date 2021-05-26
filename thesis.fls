@@ -1634,6 +1634,16 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
+INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
+INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
+INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
+INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmr8c.vf
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7v.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
@@ -1691,6 +1701,8 @@ INPUT .\fig\photo.png
 INPUT .\fig\photo.png
 INPUT thesis.aux
 INPUT D:\Work\PST\New folder\fonts\enc\dvips\base\8r.enc
+INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\cm\cmr10.pfb
