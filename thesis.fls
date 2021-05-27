@@ -1624,16 +1624,60 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT .\fig\torque_speed.PNG
+INPUT .\fig\torque_speed.PNG
+INPUT fig\torque_speed.PNG
+INPUT .\fig\torque_speed.PNG
+INPUT .\fig\torque_speed.PNG
+INPUT .\fig\torque_speed.PNG
+INPUT .\fig\torque_speed.PNG
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
+INPUT .\fig\motor.PNG
+INPUT .\fig\motor.PNG
+INPUT fig\motor.PNG
+INPUT .\fig\motor.PNG
+INPUT .\fig\motor.PNG
+INPUT .\fig\motor.PNG
+INPUT .\fig\motor.PNG
+INPUT .\fig\vfd.PNG
+INPUT .\fig\vfd.PNG
+INPUT fig\vfd.PNG
+INPUT .\fig\vfd.PNG
+INPUT .\fig\vfd.PNG
+INPUT .\fig\vfd.PNG
+INPUT .\fig\vfd.PNG
+INPUT .\fig\maintenance.PNG
+INPUT .\fig\maintenance.PNG
+INPUT fig\maintenance.PNG
+INPUT .\fig\maintenance.PNG
+INPUT .\fig\maintenance.PNG
+INPUT .\fig\maintenance.PNG
+INPUT .\fig\maintenance.PNG
+INPUT .\fig\PFdiagram.png
+INPUT .\fig\PFdiagram.png
+INPUT fig\PFdiagram.png
+INPUT .\fig\PFdiagram.png
+INPUT .\fig\PFdiagram.png
+INPUT .\fig\PFdiagram.png
+INPUT .\fig\PFdiagram.png
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
+INPUT .\fig\stator.PNG
+INPUT .\fig\stator.PNG
+INPUT fig\stator.PNG
+INPUT .\fig\stator.PNG
+INPUT .\fig\stator.PNG
+INPUT .\fig\stator.PNG
+INPUT .\fig\stator.PNG
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
@@ -1644,6 +1688,35 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT chapter_03.tex
+INPUT .\fig\sekil3.png
+INPUT fig\sekil3.png
+INPUT .\fig\sekil3.png
+INPUT .\fig\sekil3.png
+INPUT .\fig\sekil3.png
+INPUT .\fig\sekil3.png
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT .\fig\sekil3.png
+INPUT fig\sekil3.png
+INPUT .\fig\sekil3.png
+INPUT .\fig\sekil4.png
+INPUT fig\sekil4.png
+INPUT .\fig\sekil4.png
+INPUT .\fig\sekil4.png
+INPUT .\fig\sekil4.png
+INPUT .\fig\sekil4.png
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
@@ -1679,9 +1752,6 @@ INPUT .\appendices.tex
 INPUT .\appendices.tex
 INPUT .\appendices.tex
 INPUT appendices.tex
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT .\resume.tex
 INPUT .\resume.tex
 INPUT .\resume.tex
@@ -1713,6 +1783,8 @@ INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT D:\Work\PST\New folder\fonts\type1\urw\symbol\usyr.pfb
+INPUT D:\Work\PST\New folder\fonts\type1\urw\symbol\usyr.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\urw\symbol\usyr.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\urw\symbol\usyr.pfb
 INPUT D:\Work\PST\New folder\fonts\type1\urw\times\utmb8a.pfb

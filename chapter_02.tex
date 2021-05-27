@@ -9,19 +9,45 @@ Electric motors are divided into two classes depending on their power supply typ
 
 Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal \cite{gunnar2016}. The difference between the actual speed and synchronous speed is known as slip \cite{doe2008improving}.
 
-synchronous speed equation comes here.
+\begin{equation}
+	\text{Synchronous Speed} = \displaystyle \frac{120 \cdot \text{Frequency (Hz)}}{\text{number of poles}}
+	\label{speed}
+\end{equation}
 
-slip equation comes here.
+\begin{equation}
+	\text{Slip} = \displaystyle \frac{\text{Synchronous Speed - Rotor's Mechanical Speed}}{\text{Synchronous Speed}}
+	\label{slip}
+\end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/torque_speed.PNG}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{Steady-state torque-speed curve of an induction motor, adapted from \cite{faiz2017fault}.}	
+	\label{ts}
+\end{figure}
 
 In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power \cite{oliver1992electric,karmakar2016induction}.
 
-motor diagram comes here.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/motor.PNG}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{Squirrel cage induction motor structure, adapted from \cite{oliver1992electric}.}	
+	\label{motor}
+\end{figure}
 
 \subsection{VFD-fed induction motors}
 
-two figures will be added from iet 108.
-
 A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/vfd.PNG}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{(a) Torque–speed curve for different voltages in line-start operation and (b) torque–speed curve for different voltages and frequencies in VFD-fed operation, adapted from \cite{faiz2017fault}.}	
+	\label{vfd}
+\end{figure}
 
 From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors \cite{doe2008improving,mikami2011historical}. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation \cite{weg,danfoss}:
 
@@ -47,7 +73,13 @@ Researchers from both academia and industry have devoted significant attention t
 
 Maintenance can be defined as the combination of all technical and administrative actions taken to maintain or restore an item throughout its life cycle in a condition where it can fulfil its designed function \cite{en201713306}. A motor maintenance program should effectively address reliability, cost, and scheduling issues, as well as the causes of the most common motor failures. Essentially, there are two types of maintenance strategies: corrective and preventive. 
 
-bsi map comes here as figure.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=400pt,keepaspectratio=true]{./fig/maintenance.PNG}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{Maintenance types, adapted from \cite{en201713306}.}	
+	\label{maintenance}
+\end{figure}
 
 Corrective maintenance is a type of maintenance performed after the induction motor failure to detect the fault and restore it to operational condition \cite{en201713306}. The main purpose of this type of maintenance is to get the equipment up and running as soon as possible by repairing or replacing the defective equipment. However, corrective maintenance as a failure-driven method contains a high-risk potential as faults may occur at unexpected times, can disrupt the operation. Since this type of maintenance approach does not take into account the damages that may occur, it may be suitable for equipment that is not critical to the business that does not pose a safety risk.
 
@@ -57,7 +89,13 @@ Predictive maintenance is a condition-based approach to maintenance that is used
 
 Under the predictive maintenance approach, decision-making can be divided into two: diagnosis, which is the analysis of the current situation, and prognosis, which is the assessment of conditions measured over time \cite{tinga2019physical}. A P-F curve can be used to better understand diagnostic and prognostic monitoring systems.
 
-PF diagram comes here.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=300pt,keepaspectratio=true]{./fig/PFdiagram.png}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{The P-F curve shows the point where the fault started, became observable and the fault occurred, adapted from \cite{tinga2019physical}.}	
+	\label{PF_diagram}
+\end{figure}
 
 The downside of predictive maintenance is that it requires additional equipment and relatively high investment costs. But the advantage of VFDs also comes out here. As they currently monitor motor parameters in control applications, they have a high potential for predictive maintenance applications without the need for additional sensors and investments.
 
@@ -148,7 +186,7 @@ From a mechanical perspective, induction machines basically consist of three com
 			\vspace{-6mm}
 			\begin{tabular}{ccccc}
 				\hline \\[-2.45ex] \hline \\[-2.1ex]
-				Component & IEEE & EPRI & Thorsen-Dalva & Bonnet-Yung \\
+				Component & IEEE & EPRI & Thorsen-Dalva & Bonnett-Yung \\
 				\hline \\[-1.8ex]
 				Bering & 44 & 41 & 51 & 69 \\
 				Stator & 26 & 37  & 16 & 21\\
@@ -177,7 +215,7 @@ In all kinds of electrical machines, the mechanical element positioned between t
 
 Vibration in the motor causes the rotor to rotate irregularly or axially unbalanced in the motor air gap. Any axial misalignment that occurs in the motor air gap adversely affects the air gap flux density and causes the formation of harmonic components \cite{schoen1995motor,en201320958,faiz2017fault}. Consequently, this can induce harmonic components in the current drawn by the motor with frequencies given by formula \cite{schoen1995motor}:
 \begin{equation}
-	f_{bng}=f_{e} \pm m f_{\mathrm{v}}
+	f_{bng}=f_{e} \pm m \cdot f_{\mathrm{v}}
 	\label{bearingfault}
 \end{equation}
 where,\\
@@ -199,7 +237,15 @@ As researches have shown, stator faults occupy an important place among asynchro
 	\item Open-circuit fault when winding gets break.
 \end{itemize}
 
-The factors that cause the motor winding insulation to deteriorate are explained below \cite{karmakar2016induction,Siddique,faiz2017fault}:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=200pt,keepaspectratio=true]{./fig/stator.PNG}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{Star-connected stator winding faults, adapted from \cite{karmakar2016induction}.}	
+	\label{statorwinding}
+\end{figure}
+
+The factors that cause the motor winding insulation to deteriorate are explained below \cite{bonnett1999root,karmakar2016induction,Siddique,faiz2017fault}:
 
 \textbf{Mechanical stresses}: While the motor is running, the rotor may rub or hit the inner surface of the stator due to motor shaft deterioration, bearing failures and misalignment. This force creates a turn-to-turn or a phase-to-earth short-circuit, causing the stator coil and the stator winding insulation to break down. On the other hand, winding breakage may occur due to vibration during operation and therefore the motor produces the open-circuit fault.
 
@@ -209,8 +255,7 @@ The factors that cause the motor winding insulation to deteriorate are explained
 
 \textbf{Electrical stresses}: The main reason for this is sudden changes in supply voltage. Transients during commissioning and decommissioning and voltage fluctuations frequently occur, especially in asynchronous motors powered by variable frequency drives. Winding insulations deteriorate due to these voltage variations.
 
-Under the inter-turn short-circuit condition, a significant deviation in rotor slot harmonics components,called as principle slot harmonics (PSH), occurs and can be obtained by given formula \cite{Penman};
-
+Under the inter-turn short-circuit condition, a significant deviation in rotor slot harmonics components, called as principle slot harmonics (PSH), occurs and can be obtained by given formula \cite{Penman};
 \begin{equation}
 	f_{st}=f_{e} \cdot\left[n \cdot \frac{(1-s)}{p} \pm k\right]
 	\label{statorfault}
@@ -225,9 +270,28 @@ $f_{st} \quad$ is the principle slot harmonic frequencies.
 
 \subsection{Rotor related faults}
 
+There are several reasons why rotor bar faults can occur in an induction motor. In caged motors, breaking one cage bar does not significantly change the operating behaviour of the machine. However, due to the fracture that occurs, the current distribution, air gap flux, force balance and temperature distribution in the rotor deteriorate, and heating and strains increase \cite{imeryuz2009asenkron}. If the rotor continues to run in this state, damage can also spread to the sidebars, causing multiple bars of the rotor to break. In this respect, it is very important to diagnose the condition when a rotor bar broken.
 
+The main reasons of rotor broken bar of an induction motor can be mentioned as follows \cite{imeryuz2009asenkron,filippetti2013condition,bonnett1999root,Siddique};
 
+\textbf{Mechanical stresses}: In cases that cause structural asymmetry such as rotor misalignment or bearing failure, the resultant of the normal direction forces in the air gap is not equal to zero and the force acting on the bars increases. In addition, dynamic effects such as impact forces due to sudden load change, centrifugal forces due to excessive acceleration also cause failure.
 
+\textbf{Environmental stresses}: Dusty, wet and/or oily environment in which the electric motor operates negatively affects the engine and increases the possibility of malfunction.
+
+\textbf{Thermal stresses}: Thermal stresses may occur during take-off and/or operation. The temperature limit values of the motor and rotor are different. In terms of the safe operation of the motor, the rotor temperature at start-up and the stator temperature during operation are decisive. Thermal stresses are generally caused by frequent starting, locking of the motor shaft, bearing failure, insufficient cooling, skin effect and current accumulation. It takes the form of partial warming in machines fed by power electronics.
+
+\textbf{Electrical stresses}: The flux created by the current flowing through the rotor bars creates an electrodynamic force $(F \propto I^2)$ acting from the rotor surface towards the shaft in quadratic proportion to the current. The bar vibrates at $2\cdot s\cdot f_{e}$ and $4\cdot s\cdot f_{e}$  frequencies and can therefore cause breakage in the rotor bars. In addition, since the rotor current at motor start-up is very high, the rotor bar is again exposed to high stresses.
+
+Cracked or broken bar in the rotor cage produces a series of sideband frequencies in the stator current given by \cite{karmakar2016induction};
+\begin{equation}
+	f_{brb}=f_{e} \cdot\left[1 \pm 2\cdot k\cdot s \right]
+	\label{rotorfault}
+\end{equation}
+where,\\
+$f_{e} \quad$ is the electrical supply frequency ;\\
+$\mathrm{s} \quad$ is the slip ;\\
+$\mathrm{k} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
+$f_{brb} \quad$ is the broken rotor bar sideband frequencies.
 
 % % Change margins on the fly to reset the page margins to one inch - SBÖ
 % \newenvironment{changemargin}[4]{
@@ -303,297 +367,304 @@ $f_{st} \quad$ is the principle slot harmonic frequencies.
 %\newpage
 \section{Condition Monitoring Techniques}
 
+Condition monitoring is applied to the motor continuously or periodically, as a diagnostic tool for fault detection and as one of the fundamentals of maintenance planning. Sudden or unexpected changes in monitored parameters provide important information about the condition of the motor. Although the parameters to be monitored vary depending on the end-user, temperature, vibration and current magnitudes are widely used in the industry \cite{mistry2016rotating}.
+
 \subsection{Temperature monitoring}
+
+One of the parameters that can be followed in order for electric motors to work safely and without failure for a long time is the motor temperature. By installing sensors such as Resistance Temperature Detectors, thermistors, thermocouples and thermostats, electrical or mechanical faults can be detected \cite{mistry2016rotating}. These sensors are usually placed in the stator windings, bearings and frame \cite{ieee2017}. But also, temperature monitoring can be accomplished via parameter estimation without using any sensors \cite{kumar2019comprehensive}.
+
+As mentioned before, thermal stresses resulting from effects such as overloading and bearing lubrication problems may damage various components of the motor. While bearing temperatures provide useful information about possible friction problems, the coolant bulk outlet temperature is frequently monitored, especially when the machine is forced beyond its nominal values, and winding temperature monitoring is also useful in the event of overheating due to overload \cite{thorsen1998methods}. Continuously monitoring of temperature will give an indication of potential failures to avoid catastrophic incidents.
+
 \subsection{Vibration monitoring}
+
 \subsection{Motor current monitoring}
 
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-% \begin{table*}[h]
-% 	{\setlength{\tabcolsep}{14pt}
-% 		\caption{Table with single row and centered columns.}
-% 		\begin{center}
-% 			\vspace{-6mm}
-% 			\begin{tabular}{cccc}
-% 				\hline \\[-2.45ex] \hline \\[-2.1ex]
-% 				Column A & Column B & Column C & Column D \\
-% 				\hline \\[-1.8ex]
-% 				Row A & Row A & Row A & Row A \\
-% 				Row B & Row B & Row B & Row B \\
-% 				Row C & Row C & Row C & Row C \\
-% 				\hline
-% 			\end{tabular}
-% 			\vspace{-6mm}
-% 		\end{center}
-% 		\label{Table2.1}}
-% \end{table*}
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-As seen in Table \ref{Table2.1}, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+% % \begin{table*}[h]
+% % 	{\setlength{\tabcolsep}{14pt}
+% % 		\caption{Table with single row and centered columns.}
+% % 		\begin{center}
+% % 			\vspace{-6mm}
+% % 			\begin{tabular}{cccc}
+% % 				\hline \\[-2.45ex] \hline \\[-2.1ex]
+% % 				Column A & Column B & Column C & Column D \\
+% % 				\hline \\[-1.8ex]
+% % 				Row A & Row A & Row A & Row A \\
+% % 				Row B & Row B & Row B & Row B \\
+% % 				Row C & Row C & Row C & Row C \\
+% % 				\hline
+% % 			\end{tabular}
+% % 			\vspace{-6mm}
+% % 		\end{center}
+% % 		\label{Table2.1}}
+% % \end{table*}
 
-% \begin{table*}[h]
-% 	{\setlength{\tabcolsep}{14pt}
-% 		\caption{Table captions must be ended with a full stop.}
-% 		\begin{center}
-% 			\vspace{-6mm}
-% 			\begin{tabular}{cccc}
-% 				\hline \\[-2.45ex] \hline \\[-2.1ex]
-% 				Column A & Column B & Column C & Column D \\
-% 				\hline \\[-1.8ex]
-% 				Row A & Row A & Row A & Row A \\
-% 				Row B & Row B & Row B & Row B \\
-% 				Row C & Row C & Row C & Row C \\
-% 				\hline
-% 			\end{tabular}
-% 			\vspace{-6mm}
-% 		\end{center}
-% 		\label{Table2.2}}
-% \end{table*}
+% As seen in Table \ref{Table2.1}, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum, as seen in Table \ref{Table2.2}. 
+% % \begin{table*}[h]
+% % 	{\setlength{\tabcolsep}{14pt}
+% % 		\caption{Table captions must be ended with a full stop.}
+% % 		\begin{center}
+% % 			\vspace{-6mm}
+% % 			\begin{tabular}{cccc}
+% % 				\hline \\[-2.45ex] \hline \\[-2.1ex]
+% % 				Column A & Column B & Column C & Column D \\
+% % 				\hline \\[-1.8ex]
+% % 				Row A & Row A & Row A & Row A \\
+% % 				Row B & Row B & Row B & Row B \\
+% % 				Row C & Row C & Row C & Row C \\
+% % 				\hline
+% % 			\end{tabular}
+% % 			\vspace{-6mm}
+% % 		\end{center}
+% % 		\label{Table2.2}}
+% % \end{table*}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum \cite{Roberts_Jackson_1991}. 
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum, as seen in Table \ref{Table2.2}. 
+
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum \cite{Roberts_Jackson_1991}. 
 
 \section{Signal Processing Techniques}
 \subsection{Time domain based signal analysis}
 \subsubsection{Higher order statistics}
-\subsection{Time-frequency based signal analysis}
-\subsubsection{Wavelet Transform}
 \subsection{Frequency based signal analysis}
 \subsubsection{Shannon-Nyquist sampling theory}
 \subsubsection{Fast Fourier transform}
 \subsubsection{Power spectral density estimation}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
-% ---------------------------------------------------------------- %
-% Page numbers must be on the bottom-middle of short side (when    %
-% portrait-oriented), or bottom-middle of long side (when	       %
-% landscape-oriented)						                       %
-% ---------------------------------------------------------------- %
-% Odd page landscape table and page numbering - SBÖ		
-\begin{landscape}
-	\thispagestyle{empty}
-%	\vspace*{-6mm}
-%	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
-	\begin{table*}[htb!]
-		{\setlength{\tabcolsep}{14pt}
-			%\hspace*{5mm}
-			%\vspace*{-6mm}
-			\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
-				the most important aspect is to align the lines horizontally.}
-			\begin{center}
-				\vspace{-6mm}
-				\begin{tabular}{lccrrrrr}
-					\hline\hline
-					\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
-					& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
-					\hline
-					Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
-					Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 9 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 10 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 11 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 12 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 13 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					Row 14 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					Row 15 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-					\hline
-				\end{tabular}
-			\end{center}
-			\begin{center}
-				\label{Table2.3}
-			\end{center}
-		}
-	\end{table*}
-% Set the page number on the right side for odd numbered pages
-		\begin{tikzpicture}[remember picture,overlay]
-		\node[xshift=-10mm+148.5mm, yshift=2mm-210mm+30mm] (number) at (current page text area.east) {\thepage};
-		\end{tikzpicture}
-%   \end{changemargin}
-\end{landscape}
+% % ---------------------------------------------------------------- %
+% % Page numbers must be on the bottom-middle of short side (when    %
+% % portrait-oriented), or bottom-middle of long side (when	       %
+% % landscape-oriented)						                       %
+% % ---------------------------------------------------------------- %
+% % Odd page landscape table and page numbering - SBÖ		
+% \begin{landscape}
+% 	\thispagestyle{empty}
+% %	\vspace*{-6mm}
+% %	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
+% 	\begin{table*}[htb!]
+% 		{\setlength{\tabcolsep}{14pt}
+% 			%\hspace*{5mm}
+% 			%\vspace*{-6mm}
+% 			\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
+% 				the most important aspect is to align the lines horizontally.}
+% 			\begin{center}
+% 				\vspace{-6mm}
+% 				\begin{tabular}{lccrrrrr}
+% 					\hline\hline
+% 					\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
+% 					& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
+% 					\hline
+% 					Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
+% 					Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 9 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 10 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 11 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 12 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 13 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					Row 14 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					Row 15 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 					\hline
+% 				\end{tabular}
+% 			\end{center}
+% 			\begin{center}
+% 				\label{Table2.3}
+% 			\end{center}
+% 		}
+% 	\end{table*}
+% % Set the page number on the right side for odd numbered pages
+% 		\begin{tikzpicture}[remember picture,overlay]
+% 		\node[xshift=-10mm+148.5mm, yshift=2mm-210mm+30mm] (number) at (current page text area.east) {\thepage};
+% 		\end{tikzpicture}
+% %   \end{changemargin}
+% \end{landscape}
 
-% ---------------------------------------------------------------- %
-% Page numbers must be on the bottom-middle of short side (when    %
-% portrait-oriented), or bottom-middle of long side (when	       %
-% landscape-oriented)						                       %
-% ---------------------------------------------------------------- %
-% Even page landscape table and page numbering - SBÖ		
-\begin{landscape}
-	\thispagestyle{empty}
-	%\vspace*{-6mm}
-%	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
-		\begin{table*}[htb!]
-			{\setlength{\tabcolsep}{14pt}
-				%\hspace*{5mm}
-				%\vspace*{-6mm}
-				\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
-					the most important aspect is to align the lines horizontally.}
-				\begin{center}
-					\vspace{-6mm}
-					\begin{tabular}{lccrrrrr}
-						\hline\hline
-						\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
-						& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
-						\hline
-						Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
-						Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-						Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-						Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-						Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-						Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-						Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-						Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-					\end{tabular}
-				\end{center}
-				\begin{center}
-					\label{Table2.4}
-				\end{center}
-			}
-		\end{table*}
-% Set the page number on the right side for even numbered pages
-		\begin{tikzpicture}[remember picture,overlay]
-		\node[xshift=-25mm+148.5mm, yshift=2mm-210mm+15mm] (number) at (current page text area.east) {\thepage};
-		\end{tikzpicture}
-%	\end{changemargin}
-\end{landscape}
+% % ---------------------------------------------------------------- %
+% % Page numbers must be on the bottom-middle of short side (when    %
+% % portrait-oriented), or bottom-middle of long side (when	       %
+% % landscape-oriented)						                       %
+% % ---------------------------------------------------------------- %
+% % Even page landscape table and page numbering - SBÖ		
+% \begin{landscape}
+% 	\thispagestyle{empty}
+% 	%\vspace*{-6mm}
+% %	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
+% 		\begin{table*}[htb!]
+% 			{\setlength{\tabcolsep}{14pt}
+% 				%\hspace*{5mm}
+% 				%\vspace*{-6mm}
+% 				\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
+% 					the most important aspect is to align the lines horizontally.}
+% 				\begin{center}
+% 					\vspace{-6mm}
+% 					\begin{tabular}{lccrrrrr}
+% 						\hline\hline
+% 						\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
+% 						& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
+% 						\hline
+% 						Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
+% 						Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 						Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 						Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 						Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 						Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 						Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
+% 						Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
+% 					\end{tabular}
+% 				\end{center}
+% 				\begin{center}
+% 					\label{Table2.4}
+% 				\end{center}
+% 			}
+% 		\end{table*}
+% % Set the page number on the right side for even numbered pages
+% 		\begin{tikzpicture}[remember picture,overlay]
+% 		\node[xshift=-25mm+148.5mm, yshift=2mm-210mm+15mm] (number) at (current page text area.east) {\thepage};
+% 		\end{tikzpicture}
+% %	\end{changemargin}
+% \end{landscape}
 
-\begin{table}[!htbp] \centering
-	\caption{ Neighborhoods Visited }
-	\vspace{-3mm}
-	\label{}
-	\begin{tabular}{@{\extracolsep{5pt}} llrrr} 
-	\\[-1.8ex]\hline 
-		\hline \\[-1.8ex] 
-		\multicolumn{1}{c}{Variable} & \multicolumn{1}{c}{Values} & \multicolumn{1}{c}{Count} & \multicolumn{1}{c}{\%} & \multicolumn{1}{c}{Cum. \%} \\
-		\hline \\[-1.8ex] 
-		\multirow{ 4 }{*}{ visit }  &  FALSE  &  2  &  33.33  &  33.33  \\
-		\hhline{}  &  TRUE  &  3  &  50.00  &  83.33  \\
-		\hhline{}  &  NA  &  1  &  16.67  &  100.00  \\
-	    \hhline{}  &  Total  &  6  &  100.00  &    \\
-		\hline \\[-1.8ex] 
-	\end{tabular}
-\end{table}
+% \begin{table}[!htbp] \centering
+% 	\caption{ Neighborhoods Visited }
+% 	\vspace{-3mm}
+% 	\label{}
+% 	\begin{tabular}{@{\extracolsep{5pt}} llrrr} 
+% 	\\[-1.8ex]\hline 
+% 		\hline \\[-1.8ex] 
+% 		\multicolumn{1}{c}{Variable} & \multicolumn{1}{c}{Values} & \multicolumn{1}{c}{Count} & \multicolumn{1}{c}{\%} & \multicolumn{1}{c}{Cum. \%} \\
+% 		\hline \\[-1.8ex] 
+% 		\multirow{ 4 }{*}{ visit }  &  FALSE  &  2  &  33.33  &  33.33  \\
+% 		\hhline{}  &  TRUE  &  3  &  50.00  &  83.33  \\
+% 		\hhline{}  &  NA  &  1  &  16.67  &  100.00  \\
+% 	    \hhline{}  &  Total  &  6  &  100.00  &    \\
+% 		\hline \\[-1.8ex] 
+% 	\end{tabular}
+% \end{table}
 
-% Multi-page longtable example spreading couple of pages - SBÖ
-\begin{center}
-	\begin{longtable}{ccc}
-		%Here is the caption, the stuff in [] is the table of contents entry,
-		%the stuff in {} is the title that will appear on the first page of the
-		%table.
-		\caption[Feasible triples for a highly variable Grid]{Feasible triples
-			for highly variable Grid, MLMMH.} \label{Table2.6} \vspace{-1.75mm}\\
-		%This is the header for the first page of the table...
-		\hline\\[-2.45ex] \hline \\[-1.8ex] % Distancing of the hlines adjausted from the text 
-		\multicolumn{1}{c}{{Time (s)}} &
-		\multicolumn{1}{c}{{Triple chosen}} &
-		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
-		\\[-1.8ex]
-		\endfirsthead
+% % Multi-page longtable example spreading couple of pages - SBÖ
+% \begin{center}
+% 	\begin{longtable}{ccc}
+% 		%Here is the caption, the stuff in [] is the table of contents entry,
+% 		%the stuff in {} is the title that will appear on the first page of the
+% 		%table.
+% 		\caption[Feasible triples for a highly variable Grid]{Feasible triples
+% 			for highly variable Grid, MLMMH.} \label{Table2.6} \vspace{-1.75mm}\\
+% 		%This is the header for the first page of the table...
+% 		\hline\\[-2.45ex] \hline \\[-1.8ex] % Distancing of the hlines adjausted from the text 
+% 		\multicolumn{1}{c}{{Time (s)}} &
+% 		\multicolumn{1}{c}{{Triple chosen}} &
+% 		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
+% 		\\[-1.8ex]
+% 		\endfirsthead
 		
-		%This is the header for the remaining page(s) of the table...
-		\multicolumn{3}{c}{{\tablename} \textbf{\thetable{}} \textbf{(continued) :} Feasible triples
-			for highly variable Grid, MLMMH.} \\[0.5ex]
-		\hline\\[-2.45ex] \hline \\[-1.8ex]
-		\multicolumn{1}{c}{{Time (s)}} &
-		\multicolumn{1}{c}{{Triple chosen}} &
-		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
-		\\[-1.8ex]
-		\endhead
+% 		%This is the header for the remaining page(s) of the table...
+% 		\multicolumn{3}{c}{{\tablename} \textbf{\thetable{}} \textbf{(continued) :} Feasible triples
+% 			for highly variable Grid, MLMMH.} \\[0.5ex]
+% 		\hline\\[-2.45ex] \hline \\[-1.8ex]
+% 		\multicolumn{1}{c}{{Time (s)}} &
+% 		\multicolumn{1}{c}{{Triple chosen}} &
+% 		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
+% 		\\[-1.8ex]
+% 		\endhead
 		
-		%This is the footer for all pages except the last page of the table...
-		%\multicolumn{3}{l}{{Continued on Next Page\ldots}} \\
-		\\[-1.8ex] \hline
-		\endfoot
+% 		%This is the footer for all pages except the last page of the table...
+% 		%\multicolumn{3}{l}{{Continued on Next Page\ldots}} \\
+% 		\\[-1.8ex] \hline
+% 		\endfoot
 		
-		%This is the footer for the last page of the table...
-		\\[-1.8ex] \hline
-		\endlastfoot
+% 		%This is the footer for the last page of the table...
+% 		\\[-1.8ex] \hline
+% 		\endlastfoot
 		
-		%Now the data...
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\ \noalign{\penalty-5000}
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		% <data removed>
-		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-	\end{longtable}
+% 		%Now the data...
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\ \noalign{\penalty-5000}
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		% <data removed>
+% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+% 	\end{longtable}
 
 \section{Fault Diagnosis Techniques}
 
@@ -614,4 +685,4 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 \subsubsubsection{1D Convolutional Neural Networks}
 \subsubsubsection{Long-Short Term Memory Networks}
 	
-\end{center}
+%\end{center}
