@@ -1536,9 +1536,9 @@ INPUT .\thesis.toc
 INPUT thesis.toc
 INPUT thesis.toc
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8t.tfm
+OUTPUT thesis.toc
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8r.tfm
-OUTPUT thesis.toc
 INPUT .\abbreviations.tex
 INPUT .\abbreviations.tex
 INPUT .\abbreviations.tex
@@ -1688,35 +1688,6 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT .\chapter_03.tex
-INPUT chapter_03.tex
-INPUT .\fig\sekil3.png
-INPUT fig\sekil3.png
-INPUT .\fig\sekil3.png
-INPUT .\fig\sekil3.png
-INPUT .\fig\sekil3.png
-INPUT .\fig\sekil3.png
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT .\fig\sekil3.png
-INPUT fig\sekil3.png
-INPUT .\fig\sekil3.png
-INPUT .\fig\sekil4.png
-INPUT fig\sekil4.png
-INPUT .\fig\sekil4.png
-INPUT .\fig\sekil4.png
-INPUT .\fig\sekil4.png
-INPUT .\fig\sekil4.png
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
@@ -1730,28 +1701,6 @@ INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8r.tfm
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT .\appendices_cover.tex
-INPUT appendices_cover.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT .\appendices.tex
-INPUT appendices.tex
 INPUT .\resume.tex
 INPUT .\resume.tex
 INPUT .\resume.tex
