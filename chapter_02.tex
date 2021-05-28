@@ -45,7 +45,7 @@ A variable frequency drive, also called as adjustable-frequency drive (AFD), var
 	\centering
 	\includegraphics[width=250pt,keepaspectratio=true]{./fig/vfd.PNG}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{(a) Torque–speed curve for different voltages in line-start operation and (b) torque–speed curve for different voltages and frequencies in VFD-fed operation, adapted from \cite{faiz2017fault}.}	
+	\caption{(a) Torque–speed curves for different voltages in line-start operation and (b) Torque–speed curves for different voltages and frequencies in VFD-fed operation, adapted from \cite{faiz2017fault}.}	
 	\label{vfd}
 \end{figure}
 
@@ -371,15 +371,26 @@ Condition monitoring is applied to the motor continuously or periodically, as a 
 
 \subsection{Temperature monitoring}
 
-One of the parameters that can be followed in order for electric motors to work safely and without failure for a long time is the motor temperature. By installing sensors such as Resistance Temperature Detectors, thermistors, thermocouples and thermostats, electrical or mechanical faults can be detected \cite{mistry2016rotating}. These sensors are usually placed in the stator windings, bearings and frame \cite{ieee2017}. But also, temperature monitoring can be accomplished via parameter estimation without using any sensors \cite{kumar2019comprehensive}.
+One of the parameters that can be followed in order for electric motors to work safely and without failure for a long time is the motor temperature. By installing sensors such as Resistance Temperature Detectors, thermistors, thermocouples and thermostats, electrical or mechanical faults can be detected \cite{mistry2016rotating}. These sensors are usually placed in the stator windings, bearings and frame \cite{ieee2017}. In addition, temperature monitoring can be performed by parameter estimation over the stator supply current without using any temperature sensor \cite{kumar2019comprehensive}.
 
 As mentioned before, thermal stresses resulting from effects such as overloading and bearing lubrication problems may damage various components of the motor. While bearing temperatures provide useful information about possible friction problems, the coolant bulk outlet temperature is frequently monitored, especially when the machine is forced beyond its nominal values, and winding temperature monitoring is also useful in the event of overheating due to overload \cite{thorsen1998methods}. Continuously monitoring of temperature will give an indication of potential failures to avoid catastrophic incidents.
 
 \subsection{Vibration monitoring}
 
+Due to their working principles, rotating gears, electric fields and shafts periodically generate vibrations \cite{randall2021vibration}. Since the produced vibration signals contain information about the condition of the machine and can be followed without interfering with the operation of the motor, it is mostly preferred in condition monitoring studies. Vibration monitoring has the ability to track sudden changes in the machine condition that enables monitor the condition of the equipment continuously or intermittently.
+
+Vibration can be measured in units of displacement, velocity, and acceleration. The displacement type is generally used in the measurement of rotor vibration, while the velocity type is used in motor housing vibration measurements associated with machine fatigue \cite{mistry2016rotating}. With the most commonly used acceleration type, the vibration condition is monitored by positioning it close to a bearing on the motor frame at high frequencies \cite{mistry2016rotating,iso}.
+
+Vibration analysis is used in many studies on mechanical failures also occurring in induction motors. Imbalance, misalignment, looseness, and bearing failures are specific signs in the vibration spectrum \cite{thorsen1998methods}. A condition monitoring strategy can be established by correlating certain fault types with specific frequencies, or by trend analysis with acceleration data. Depending on the application and user requirements, with vibration condition monitoring, a cost-effective maintenance plan can diagnose and take action before the machine and its components fail or cause performance loss.
+
 \subsection{Motor current monitoring}
 
+Condition monitoring via supply current signals provide useful information on not only for motor itself but also the mechanical system that motor drive \cite{thomson2001current}. An important aspect of the maintenance strategy is the inclusion of a mechanical system that motor drive. Especially with VFD-fed systems, where current is already sensed to control motor operation, both electrical and mechanical faults can be diagnosed without additional sensor need \cite{thomson2001current,gritli2017condition,corne2017misalignment,en201320958}. 
 
+In industrial applications where ambient conditions are not suitable for vibration signal measurement, current monitoring may be preferred due to its robustness to ambient conditions, especially when disturbances are high.
+Therefore, current-based condition monitoring, which proven in industrial applications, has benefits such as economical, versatile and reliable over other monitoring techniques.
+
+Although many studies have been done to diagnose fault using current signals, studies on VFD-fed motors are limited. It should be noted that the PWM signals used in VFDs can mask the characteristics of a fault in the motor current signal, making diagnosis difficult \cite{shaeboub2018monitoring}. In this study, electrical and mechanical fault detection is emphasized in different load and frequency scenarios over the single-phase stator supply current of the VFD-fed three-phased induction motor.
 
 % Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
 
