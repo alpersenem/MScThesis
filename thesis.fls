@@ -1635,13 +1635,13 @@ INPUT .\fig\torque_speed.PNG
 INPUT .\fig\torque_speed.PNG
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
-INPUT .\fig\motor.PNG
-INPUT .\fig\motor.PNG
-INPUT fig\motor.PNG
-INPUT .\fig\motor.PNG
-INPUT .\fig\motor.PNG
-INPUT .\fig\motor.PNG
-INPUT .\fig\motor.PNG
+INPUT .\fig\watmotor.PNG
+INPUT .\fig\watmotor.PNG
+INPUT fig\watmotor.PNG
+INPUT .\fig\watmotor.PNG
+INPUT .\fig\watmotor.PNG
+INPUT .\fig\watmotor.PNG
+INPUT .\fig\watmotor.PNG
 INPUT .\fig\vfd.PNG
 INPUT .\fig\vfd.PNG
 INPUT fig\vfd.PNG
@@ -1688,6 +1688,38 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT .\chapter_03.tex
+INPUT chapter_03.tex
+INPUT .\fig\expsystem.PNG
+INPUT .\fig\expsystem.PNG
+INPUT fig\expsystem.PNG
+INPUT .\fig\expsystem.PNG
+INPUT .\fig\expsystem.PNG
+INPUT .\fig\expsystem.PNG
+INPUT .\fig\expsystem.PNG
+INPUT .\fig\plate.PNG
+INPUT .\fig\plate.PNG
+INPUT fig\plate.PNG
+INPUT .\fig\plate.PNG
+INPUT .\fig\plate.PNG
+INPUT .\fig\plate.PNG
+INPUT .\fig\plate.PNG
+INPUT .\fig\testsystem.PNG
+INPUT .\fig\testsystem.PNG
+INPUT fig\testsystem.PNG
+INPUT .\fig\testsystem.PNG
+INPUT .\fig\testsystem.PNG
+INPUT .\fig\testsystem.PNG
+INPUT .\fig\testsystem.PNG
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
