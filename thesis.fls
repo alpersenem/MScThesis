@@ -1576,6 +1576,9 @@ INPUT .\thesis.lof
 INPUT thesis.lof
 INPUT thesis.lof
 OUTPUT thesis.lof
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\summary.tex
 INPUT .\summary.tex
 INPUT .\summary.tex
@@ -1622,7 +1625,6 @@ INPUT .\chapter_02.tex
 INPUT chapter_02.tex
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
@@ -1633,8 +1635,6 @@ INPUT .\fig\torque_speed.PNG
 INPUT .\fig\torque_speed.PNG
 INPUT .\fig\torque_speed.PNG
 INPUT .\fig\torque_speed.PNG
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\fig\watmotor.PNG
 INPUT .\fig\watmotor.PNG
 INPUT fig\watmotor.PNG
@@ -1720,6 +1720,90 @@ INPUT .\fig\testsystem.PNG
 INPUT .\fig\testsystem.PNG
 INPUT .\fig\testsystem.PNG
 INPUT .\fig\testsystem.PNG
+INPUT .\fig\bearing_100.png
+INPUT .\fig\bearing_100.png
+INPUT fig\bearing_100.png
+INPUT .\fig\bearing_100.png
+INPUT .\fig\bearing_100.png
+INPUT .\fig\bearing_100.png
+INPUT .\fig\bearing_100.png
+INPUT .\fig\bearing_75.png
+INPUT .\fig\bearing_75.png
+INPUT fig\bearing_75.png
+INPUT .\fig\bearing_75.png
+INPUT .\fig\bearing_75.png
+INPUT .\fig\bearing_75.png
+INPUT .\fig\bearing_75.png
+INPUT .\fig\stator_100.png
+INPUT .\fig\stator_100.png
+INPUT fig\stator_100.png
+INPUT .\fig\stator_100.png
+INPUT .\fig\stator_100.png
+INPUT .\fig\stator_100.png
+INPUT .\fig\stator_100.png
+INPUT .\fig\stator_75.png
+INPUT .\fig\stator_75.png
+INPUT fig\stator_75.png
+INPUT .\fig\stator_75.png
+INPUT .\fig\stator_75.png
+INPUT .\fig\stator_75.png
+INPUT .\fig\stator_75.png
+INPUT .\fig\rotor_100.png
+INPUT .\fig\rotor_100.png
+INPUT fig\rotor_100.png
+INPUT .\fig\rotor_100.png
+INPUT .\fig\rotor_100.png
+INPUT .\fig\rotor_100.png
+INPUT .\fig\rotor_100.png
+INPUT .\fig\rotor_75.png
+INPUT .\fig\rotor_75.png
+INPUT fig\rotor_75.png
+INPUT .\fig\rotor_75.png
+INPUT .\fig\rotor_75.png
+INPUT .\fig\rotor_75.png
+INPUT .\fig\rotor_75.png
+INPUT .\fig\psdbearing_100.png
+INPUT .\fig\psdbearing_100.png
+INPUT fig\psdbearing_100.png
+INPUT .\fig\psdbearing_100.png
+INPUT .\fig\psdbearing_100.png
+INPUT .\fig\psdbearing_100.png
+INPUT .\fig\psdbearing_100.png
+INPUT .\fig\psdbearing_75.png
+INPUT .\fig\psdbearing_75.png
+INPUT fig\psdbearing_75.png
+INPUT .\fig\psdbearing_75.png
+INPUT .\fig\psdbearing_75.png
+INPUT .\fig\psdbearing_75.png
+INPUT .\fig\psdbearing_75.png
+INPUT .\fig\psdstator_100.png
+INPUT .\fig\psdstator_100.png
+INPUT fig\psdstator_100.png
+INPUT .\fig\psdstator_100.png
+INPUT .\fig\psdstator_100.png
+INPUT .\fig\psdstator_100.png
+INPUT .\fig\psdstator_100.png
+INPUT .\fig\psdstator_75.png
+INPUT .\fig\psdstator_75.png
+INPUT fig\psdstator_75.png
+INPUT .\fig\psdstator_75.png
+INPUT .\fig\psdstator_75.png
+INPUT .\fig\psdstator_75.png
+INPUT .\fig\psdstator_75.png
+INPUT .\fig\psdrotor_100.png
+INPUT .\fig\psdrotor_100.png
+INPUT fig\psdrotor_100.png
+INPUT .\fig\psdrotor_100.png
+INPUT .\fig\psdrotor_100.png
+INPUT .\fig\psdrotor_100.png
+INPUT .\fig\psdrotor_100.png
+INPUT .\fig\psdrotor_75.png
+INPUT .\fig\psdrotor_75.png
+INPUT fig\psdrotor_75.png
+INPUT .\fig\psdrotor_75.png
+INPUT .\fig\psdrotor_75.png
+INPUT .\fig\psdrotor_75.png
+INPUT .\fig\psdrotor_75.png
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
