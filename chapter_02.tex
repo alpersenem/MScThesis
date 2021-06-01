@@ -438,247 +438,152 @@ Although many studies have been done to diagnose fault using current signals, st
 
 % Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum \cite{Roberts_Jackson_1991}. 
 
-% \section{Signal Processing Techniques}
-% \subsection{Time domain based signal analysis}
-% \subsubsection{Higher order statistics}
-% \subsection{Frequency based signal analysis}
-% \subsubsection{Shannon-Nyquist sampling theory}
-% \subsubsection{Fast Fourier transform}
-% \subsubsection{Power spectral density estimation}
+\section{Signal Processing Techniques}
 
-% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+Signal processing, also named feature generation, can be defined as the extraction and interpretation of the characteristics of the sensor data received from the machine whose status is to be monitored \cite{cernuda2019relevance}. In a sense, it is the transfer of expert knowledge to the system and its use in monitoring the motor condition. Signals such as vibration, temperature and current are carried out to reach the information that is not always easily visible in the data, which is often required to be revealed \cite{bonaldi2012predictive}. Signals are generally studied in two different domains: time and frequency. 
 
-% % ---------------------------------------------------------------- %
-% % Page numbers must be on the bottom-middle of short side (when    %
-% % portrait-oriented), or bottom-middle of long side (when	       %
-% % landscape-oriented)						                       %
-% % ---------------------------------------------------------------- %
-% % Odd page landscape table and page numbering - SBÖ		
-% \begin{landscape}
-% 	\thispagestyle{empty}
-% %	\vspace*{-6mm}
-% %	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
-% 	\begin{table*}[htb!]
-% 		{\setlength{\tabcolsep}{14pt}
-% 			%\hspace*{5mm}
-% 			%\vspace*{-6mm}
-% 			\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
-% 				the most important aspect is to align the lines horizontally.}
-% 			\begin{center}
-% 				\vspace{-6mm}
-% 				\begin{tabular}{lccrrrrr}
-% 					\hline\hline
-% 					\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
-% 					& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
-% 					\hline
-% 					Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
-% 					Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 9 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 10 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 11 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 12 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 13 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					Row 14 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					Row 15 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 					\hline
-% 				\end{tabular}
-% 			\end{center}
-% 			\begin{center}
-% 				\label{Table2.3}
-% 			\end{center}
-% 		}
-% 	\end{table*}
-% % Set the page number on the right side for odd numbered pages
-% 		\begin{tikzpicture}[remember picture,overlay]
-% 		\node[xshift=-10mm+148.5mm, yshift=2mm-210mm+30mm] (number) at (current page text area.east) {\thepage};
-% 		\end{tikzpicture}
-% %   \end{changemargin}
-% \end{landscape}
+\subsection{Time domain based signal analysis}
 
-% % ---------------------------------------------------------------- %
-% % Page numbers must be on the bottom-middle of short side (when    %
-% % portrait-oriented), or bottom-middle of long side (when	       %
-% % landscape-oriented)						                       %
-% % ---------------------------------------------------------------- %
-% % Even page landscape table and page numbering - SBÖ		
-% \begin{landscape}
-% 	\thispagestyle{empty}
-% 	%\vspace*{-6mm}
-% %	\begin{changemargin}{0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
-% 		\begin{table*}[htb!]
-% 			{\setlength{\tabcolsep}{14pt}
-% 				%\hspace*{5mm}
-% 				%\vspace*{-6mm}
-% 				\caption{Prof. Dr. Galip TEPEHAN \,\, Captioning in landscape-oriented pages:
-% 					the most important aspect is to align the lines horizontally.}
-% 				\begin{center}
-% 					\vspace{-6mm}
-% 					\begin{tabular}{lccrrrrr}
-% 						\hline\hline
-% 						\multirow{2}{*}{Parametre} & \multirow{2}{*}{Column 2} & \multirow{2}{*}{Column 3} & \multicolumn{3}{c|}{Column 4} & \multicolumn{2}{c}{Column 5}\\ \cline{4-8}
-% 						& & & Subcolumn & Subcolumn & Subcolumn & Subcolumn & Subcolumn\\
-% 						\hline
-% 						Row 1 & -7.680442 & 7.6986348 & 0.00 & 0.00 & 0.00 & 12 & 12 \\
-% 						Row 2 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 						Row 3 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 						Row 4 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 						Row 5 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 						Row 6 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 						Row 7 & 37.174357 & 37.16192697 & 0.00 & 0.00 & 0.00 & 0 & 24 \\
-% 						Row 8 & 140 & - & 0.50 & 0.00 & 0.00 & 0 & 0 \\
-% 					\end{tabular}
-% 				\end{center}
-% 				\begin{center}
-% 					\label{Table2.4}
-% 				\end{center}
-% 			}
-% 		\end{table*}
-% % Set the page number on the right side for even numbered pages
-% 		\begin{tikzpicture}[remember picture,overlay]
-% 		\node[xshift=-25mm+148.5mm, yshift=2mm-210mm+15mm] (number) at (current page text area.east) {\thepage};
-% 		\end{tikzpicture}
-% %	\end{changemargin}
-% \end{landscape}
+Time-domain features may be beneficial to monitor the state of continuous dynamical systems \cite{medjaher2012feature}. The performance of the diagnosis is strictly dependent on the selection of features that represent the characteristics of the system. The selection of appropriate features, on the other hand, is based on expert knowledge to obtain a reliable and accurate diagnosis \cite{soualhi2019health}. In practice, there exists a large range of indicators to reveal the system's state, but in this study statistical features such as Root Mean Square (RMS), Mean, Median, Standard Deviation, Kurtosis and Skewness are employed \cite{shukla2015analysis}.
 
+\subsection{Statistical analysis}
 
+The main idea behind statistical analysis is to understand the location, which is the typical or central value of a data set, and variability, which is the spread of a data set according to centre and tails \cite{croarkin2012handbook}. The mean and median values are used to find the location, while standard deviation indicates the spread. Skewness and kurtosis criteria can also be examined to better understand the data. 
 
-% % Multi-page longtable example spreading couple of pages - SBÖ
-% \begin{center}
-% 	\begin{longtable}{ccc}
-% 		%Here is the caption, the stuff in [] is the table of contents entry,
-% 		%the stuff in {} is the title that will appear on the first page of the
-% 		%table.
-% 		\caption[Feasible triples for a highly variable Grid]{Feasible triples
-% 			for highly variable Grid, MLMMH.} \label{Table2.6} \vspace{-1.75mm}\\
-% 		%This is the header for the first page of the table...
-% 		\hline\\[-2.45ex] \hline \\[-1.8ex] % Distancing of the hlines adjausted from the text 
-% 		\multicolumn{1}{c}{{Time (s)}} &
-% 		\multicolumn{1}{c}{{Triple chosen}} &
-% 		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
-% 		\\[-1.8ex]
-% 		\endfirsthead
-		
-% 		%This is the header for the remaining page(s) of the table...
-% 		\multicolumn{3}{c}{{\tablename} \textbf{\thetable{}} \textbf{(continued) :} Feasible triples
-% 			for highly variable Grid, MLMMH.} \\[0.5ex]
-% 		\hline\\[-2.45ex] \hline \\[-1.8ex]
-% 		\multicolumn{1}{c}{{Time (s)}} &
-% 		\multicolumn{1}{c}{{Triple chosen}} &
-% 		\multicolumn{1}{c}{{Other feasible triples}} \\[0.5ex] \hline
-% 		\\[-1.8ex]
-% 		\endhead
-		
-% 		%This is the footer for all pages except the last page of the table...
-% 		%\multicolumn{3}{l}{{Continued on Next Page\ldots}} \\
-% 		\\[-1.8ex] \hline
-% 		\endfoot
-		
-% 		%This is the footer for the last page of the table...
-% 		\\[-1.8ex] \hline
-% 		\endlastfoot
-		
-% 		%Now the data...
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\ \noalign{\penalty-5000}
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		% <data removed>
-% 		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		0      & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
-% 		2745   & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
-% 		5490   & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 		8235   & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
-% 	\end{longtable}
+\subsubsection{Mean}
 
-% \section{Fault Diagnosis Techniques}
+Commonly called as average, is the sum of the samples in the dataset divided by the total number of samples \cite{shukla2015analysis}. The mean is one of the best indicators if the underlying distribution is normal, but lacks the robustness of validity \cite{croarkin2012handbook}. That is, if the underlying distribution is not normal, mean-based confidence intervals tend to be imprecise.
+\begin{equation}
+\bar{Y}=\sum_{i=1}^{N} Y_{i} / N
+\label{mean}
+\end{equation}
+where,\\
+$\bar{Y} \quad$ is the mean;\\
+$N \quad$ is the number of data points;
+\subsubsection{Median}
 
-% \subsection{Model based condition monitoring}
-% \subsubsection{State estimation}
-% \subsubsection{Residual generation}
-% \subsubsection{Identification}
+The median, which is the point in a dataset that is greater than half the numbers and less than the other half, tends to have a robustness of validity but not a robustness of efficiency \cite{croarkin2012handbook,shukla2015analysis}.
+\begin{eqnarray}
+\tilde{Y} &=& Y_{(N+1) / 2} \quad \text { if } N \text { is odd }\\
+\tilde{Y} &=& \left(Y_{N / 2}+Y_{(N / 2)+1}\right) / 2 \quad \text { if } N \text { is even }
+\label{median}
+\end{eqnarray}
+where,\\
+$\tilde{Y} \quad$ is the mean;
+\subsubsection{Root Mean Square (RMS)}
 
-% \subsection{Model free condition monitoring}
-% \subsubsection{Signal analysis}
-% \subsubsection{Classical machine learning methods}
-% \subsubsubsection{Support Vector Machines}
-% \subsubsubsection{Naive Bayes}
-% \subsubsubsection{k-Nearest Neighbour}
-% \subsubsubsection{Random Forest}
-% \subsubsubsection{Multi Layer Perceptron}
-% \subsubsection{Deep learning methods}	
-% \subsubsubsection{1D Convolutional Neural Networks}
-% \subsubsubsection{Long-Short Term Memory Networks}
+RMS is also known as quadratic mean and represents tha magnitude of a varying signal \cite{sait2011review,shukla2015analysis}. As one of the most applied feature for rotating machinery, especially in AC electric motors, it is used for roughly estimating motor load and detecting general noise level.
+\begin{equation}
+\text{RMS}=\sqrt{\frac{1}{{~N}}\left[\sum_{{i}=1}^{{N}}\left({Y}_{{i}}\right)^{2}\right]}	
+\label{RMS}
+\end{equation}
+\subsubsection{Standard Deviation}
+
+Standard deviation is the square-root of the variance which is aritmetic average of the squared distance from the mean \cite{shukla2015analysis}. Similar to mean, standard deviation is also one of the best estimator, but also suffers the same lack of precision in case of distribution is not normal \cite{croarkin2012handbook}.
+\begin{equation}
+s=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
+\label{std}
+\end{equation}
+where,\\
+$s \quad$ is the standard deviation;\\
+\subsubsection{Kurtosis} 
+
+Kurtosis a measure that is to be used to understand if the data peaked or flat relative to a normal distribution \cite{shukla2015analysis}. High kurtosis indicates that the dataset tends to have a prominent peak close to the mean, while the dataset with low kurtosis tends to have a flat peak close to the mean rather than a sharp peak \cite{croarkin2012handbook}.
+\begin{equation}
+\text { kurtosis }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) s^{4}}
+\label{kurtosis}
+\end{equation}
+\subsubsection{Skewness} 
+
+Skewness represents a lack of symmetry in a data set. The dataset is symmetrical if it looks the same to the left and right of the centre point \cite{shukla2015analysis}. The left skew represents a negative value while showing that it is taller on the left than on the right \cite{croarkin2012handbook}. The right skew indicates the opposite situation. The skewness of a symmetric dataset converges to zero, and it is zero for a normal distribution \cite{croarkin2012handbook}.
+\begin{equation}
+\text { skewness }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) s^{3}}
+\label{skewness}
+\end{equation}
+\subsection{Frequency based signal analysis}
+
+The frequency domain is needed to reveal properties of a signal that are not easy to see in the time domain. This need actually has different motivations. One of them, considering the operating conditions, industrial machines are quite susceptible to noise and disturbances \cite{cernuda2019relevance,allen2004signal}. To suppress or eliminate these effects, frequency domain transformations are less expensive in terms of computational requirements than time-domain methods \cite{ahmed2019condition,cernuda2019relevance}. Another motivation is that the fault characteristics can be seen better in the frequency spectrum, as it is widely applied in the literature \cite{ahmed2019condition}.
+
+Frequency domain analysis has different techniques including the Fourier transform of time-domain waveforms, but Fast Fourier Transform and Power Spectral Density methods will be examined in the thesis.
+
+\subsubsection{Shannon-Nyquist sampling theory}
+
+Hardware-wise, it is not possible to transfer an analogue signal to the digital environment as it is in the physical world. For this reason, sampling of the analogue signal is necessary in order to represent a signal digitally. The Shannon-Nyquist Sampling Theorem specifies conditions that must be satisfied in order for an analogue signal to be converted to a digital signal \cite{orfanidis1995introduction}. 
+
+When an analog signal $x(t)$ is sampled with the period $T_s$, the resulting signal is the discrete signal $x_s(n\cdot T_s)$ with $n=0,1,2,\ldots$. 
+
+Two condition must be satisfied for accurate representation of $x(t)$ \cite{orfanidis1995introduction}:
+\begin{enumerate}
+	\item The frequency spectrum of $x(t)$ must be limited by some maximum frequency, such that $f_{max}$ 
+	\item The sampling rate $f_{s}$, must be at least twice the maximum frequency $f_{\max }$
+	$$
+	f_{s} \geq 2\cdot f_{\max }
+	$$
+\end{enumerate}
+where, $f_s = \displaystyle\frac{1}{T_s}$
+\subsubsection{Fast Fourier transform}
+
+After an analogue signal is sampled and the shape of the signal is obtained, this signal is now in a form that can be processed and analyzed in the digital environment. As an example, in order to find the output expression of a linear and time-invariant system, the input function of this system in the time domain is multiplied by the pulse input response of this system and the resulting signal is integrated. This computationally cumbersome convolution operation becomes an algebraic multiplication in the frequency space \cite{cernuda2019relevance}. Therefore, in signal processing studies, some transformation methods have been developed to find the equivalent of the signal in the frequency space. One of these methods is the Fourier Transform.
+
+In practice, to calculate the frequency spectrum (frequency-amplitude expression of the Fourier Transform) of a signal, the Discrete Fourier Transform of the signal is calculated. The mathematical expression of DFT is as follows \cite{allen2004signal}:
+\begin{equation}
+X(k)= \displaystyle\sum_{n=0}^{N-1}x(n)\cdot exp\left({\frac{-j2\pi nk}{N}}\right)
+\label{dft}
+\end{equation}
+where, $0 \leq k \leq N-1$ and N is the number of samples in discrete signal.
+
+Since the form of the Discrete Fourier Transform given by the equation $\ref{dft}$ requires $N^2$ complex multiplication and $N\cdot (N-1)$ addition in the computer environment, the computational load is quite high especially for large N \cite{hayes2009statistical,orfanidis1995introduction,allen2004signal,randall2021vibration}. For this reason, some Fast Fourier Transform (FFT) algorithms have been developed for faster computation of DFT. Some practical aspects of FFT to be used in condition monitoring \cite{bonaldi2012predictive};
+
+\begin{itemize}
+	\item Motor supply current sampling is usually done at 5 kHz. Therefore, the bandwidth of the sensor should be at least 10 kHz.  
+	\item Shannon-Nyquist theorem indicates that sampling frequency must be twice the maximum frequency, but in practice 10 times increases accuracy.
+	\item Spectral resolution, $\Delta f = \displaystyle\frac{f_s}{N}$
+\end{itemize}
+
+\subsubsection{Power spectral density estimation}
+
+The harmonics seen in the current spectrum as a result of the faults depend on the motor load and hence the slip. When the signal is processed with the FFT, it introduces errors as it averages the spectrum amplitudes over the sampling period \cite{cusidocusido2008fault,irvine2002introduction}. PSD, on the other hand, is more resistant to slip variations due to its ability to monitor different frequency bands. PSD estimation can be categorized into two technique: parametric and non-parametric \cite{zerdani2020inter,heydarzadeh2016gearbox}. In scope of the thesis, a non-parametric metho Welch's approach is investigated.
+
+In Welch's method, the time domain signal is divided into segments of a certain length with overlaps between its segments, and a time-domain window is applied to the individual data segments, then estimate PSD by computing DFT for each segment and finally, the calculated PSDs are averaged \cite{jwo2021windowing,stoica2005spectral,schmid2012use}.
+
+\begin{figure}[!h]
+	\centering
+	\frame{\includegraphics[width=400pt,keepaspectratio=true]{./fig/welch.png}}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\vspace{1cm}
+	\caption{Algorithm of Power Spectral Density estimation via Welch's method \cite{solomon1991psd}.}	
+	\label{welch}
+\end{figure}
+
+By segmenting the data and adding window overlaps to the data, the Welch method can increase the resolution and also effectively reduce both the variance and bias of the spectral estimation \cite{stoica2005spectral,al2010advanced,zerdani2020inter}. The mechanism of adding window overlaps on the signal, which is similar to noise removal with the recursion algorithms, results a better SNR ratio in high noise data \cite{jwo2021windowing,jin2020intelligent,irvine2002introduction}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=400pt,keepaspectratio=true]{./fig/welchdiagram.png}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\caption{Flowchart of Power Spectral Density estimation via Welch's method \cite{jwo2021windowing}.}	
+	\label{welchdiagram}
+\end{figure}
+
+\section{Data-driven fault diagnosis techniques}
+
+\subsection{Signal analysis}
+
+\subsection{Classical machine learning methods}
+
+\subsubsection{Support Vector Machines}
+
+\subsubsection{Naive Bayes}
+
+\subsubsection{k-Nearest Neighbour}
+
+\subsubsection{Random Forest}
+
+\subsubsection{Multi Layer Perceptron}
+
+\subsection{Deep learning methods}	
+
+\subsubsection{1D Convolutional Neural Networks}
+
+\subsubsection{Long-Short Term Memory Networks}
 	
-%\end{center}
