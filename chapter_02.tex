@@ -181,7 +181,7 @@ From a mechanical perspective, induction machines basically consist of three com
 
 \begin{table*}[h]
 	{\setlength{\tabcolsep}{12pt}
-		\caption{Table with single row and centered columns.}
+		\caption{Distribution of induction motor faults by component (\%).}
 		\begin{center}
 			\vspace{-6mm}
 			\begin{tabular}{ccccc}
@@ -197,6 +197,30 @@ From a mechanical perspective, induction machines basically consist of three com
 			\vspace{-6mm}
 		\end{center}
 		\label{Table2.1}}
+\end{table*}
+
+Considering the actual distribution of the faults, in total 80\% of the faulty motors have only one fault, while this rate reaches 90\% especially in low voltage supply motors \cite{albrecht1987assessment}.
+
+\begin{table*}[h]
+	{\setlength{\tabcolsep}{12pt}
+		\caption{Actual distribution of multiple failures (\%)) \cite{albrecht1987assessment}.}
+		\begin{center}
+			\vspace{-6mm}
+			\begin{tabular}{ccccc}
+				\hline \\[-2.45ex] \hline \\[-2.1ex]
+				\multirow{2}{*}{Exact Failure} & \multicolumn{3}{c}{Motor Supply Voltage} & \multirow{2}{*}{Total} \\
+				& Low  & Middle & High &      \\
+				\hline \\[-1.8ex]
+				1 Fault   & 91.1 & 79.6   & 77.1 & 79.9 \\
+				2 Faults  & 8.0  & 11.8   & 13.1 & 11.9 \\
+				3 Faults  & 0.9  & 3.3    & 5.5  & 4.0  \\
+				4 Faults  & 0.0  & 2.2    & 0.8  & 1.3  \\
+				>4 Faults & 0.0  & 3.0    & 3.5  & 2.9  \\
+				\hline
+			\end{tabular}
+			\vspace{-6mm}
+		\end{center}
+		\label{Table2.2}}
 \end{table*}
 
 As can be seen in Table \ref{Table2.1}, most of the faults associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan \cite{trigeassou2013electrical}. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
@@ -223,7 +247,7 @@ $f_{e} \quad$ is the electrical supply frequency;\\
 $f_{\mathrm{v}} \quad$ is the rotational speed frequency of the rotor;\\
 $\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
 $f_{bng} \quad$ is the current component frequency due to air gap changes.
-
+\pagebreak
 \subsection{Stator related faults}
 
 As researches have shown, stator faults occupy an important place among asynchronous motor faults after bearing \cite{motor1985report,albrecht1986assessment,albrecht1987assessment,thorsen1995survey,bonnett2008increased}. Mechanical, electrical, thermal and environmental factors cause malfunctions in the stator windings, as well as their laminations \cite{karmakar2016induction,Siddique}. Winding faults, as the most common stator faults, are winding short-circuit faults that are mostly the result of the aforementioned effects of the winding insulation. Types of winding faults are as follows \cite{karmakar2016induction,Siddique,lipo}:
@@ -521,6 +545,7 @@ Two condition must be satisfied for accurate representation of $x(t)$ \cite{orfa
 	$$
 \end{enumerate}
 where, $f_s = \displaystyle\frac{1}{T_s}$
+\pagebreak
 \subsubsection{Fast Fourier transform}
 
 After an analogue signal is sampled and the shape of the signal is obtained, this signal is now in a form that can be processed and analyzed in the digital environment. As an example, in order to find the output expression of a linear and time-invariant system, the input function of this system in the time domain is multiplied by the pulse input response of this system and the resulting signal is integrated. This computationally cumbersome convolution operation becomes an algebraic multiplication in the frequency space \cite{cernuda2019relevance}. Therefore, in signal processing studies, some transformation methods have been developed to find the equivalent of the signal in the frequency space. One of these methods is the Fourier Transform.
@@ -539,23 +564,13 @@ Since the form of the Discrete Fourier Transform given by the equation $\ref{dft
 	\item Shannon-Nyquist theorem indicates that sampling frequency must be twice the maximum frequency, but in practice 10 times increases accuracy.
 	\item Spectral resolution, $\Delta f = \displaystyle\frac{f_s}{N}$
 \end{itemize}
+\pagebreak
 
 \subsubsection{Power spectral density estimation}
 
-The harmonics seen in the current spectrum as a result of the faults depend on the motor load and hence the slip. When the signal is processed with the FFT, it introduces errors as it averages the spectrum amplitudes over the sampling period \cite{cusidocusido2008fault,irvine2002introduction}. PSD, on the other hand, is more resistant to slip variations due to its ability to monitor different frequency bands. PSD estimation can be categorized into two technique: parametric and non-parametric \cite{zerdani2020inter,heydarzadeh2016gearbox}. In scope of the thesis, a non-parametric metho Welch's approach is investigated.
+The harmonics seen in the current spectrum as a result of the faults depend on the motor load and hence the slip. When the signal is processed with the FFT, it introduces errors as it averages the spectrum amplitudes over the sampling period \cite{cusidocusido2008fault,irvine2002introduction}. PSD, on the other hand, is more resistant to slip variations due to its ability to monitor different frequency bands. PSD estimation can be categorized into two technique: parametric and non-parametric \cite{zerdani2020inter,heydarzadeh2016gearbox}. In the scope of the thesis, a non-parametric method, Welch's approach is investigated.
 
 In Welch's method, the time domain signal is divided into segments of a certain length with overlaps between its segments, and a time-domain window is applied to the individual data segments, then estimate PSD by computing DFT for each segment and finally, the calculated PSDs are averaged \cite{jwo2021windowing,stoica2005spectral,schmid2012use}.
-
-\begin{figure}[!h]
-	\centering
-	\frame{\includegraphics[width=400pt,keepaspectratio=true]{./fig/welch.png}}
-	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\vspace{1cm}
-	\caption{Algorithm of Power Spectral Density estimation via Welch's method \cite{solomon1991psd}.}	
-	\label{welch}
-\end{figure}
-
-By segmenting the data and adding window overlaps to the data, the Welch method can increase the resolution and also effectively reduce both the variance and bias of the spectral estimation \cite{stoica2005spectral,al2010advanced,zerdani2020inter}. The mechanism of adding window overlaps on the signal, which is similar to noise removal with the recursion algorithms, results a better SNR ratio in high noise data \cite{jwo2021windowing,jin2020intelligent,irvine2002introduction}.
 
 \begin{figure}[h]
 	\centering
@@ -565,9 +580,24 @@ By segmenting the data and adding window overlaps to the data, the Welch method 
 	\label{welchdiagram}
 \end{figure}
 
-\section{Data-driven fault diagnosis techniques}
+By segmenting the data and adding window overlaps to the data, the Welch method can increase the resolution and also effectively reduce both the variance and bias of the spectral estimation \cite{stoica2005spectral,al2010advanced,zerdani2020inter}. The mechanism of adding window overlaps on the signal, which is similar to noise removal with the recursion algorithms, results a better Signal-to-Noise Ratio (SNR) in high noise data \cite{jwo2021windowing,jin2020intelligent,irvine2002introduction}. Welch's PSD estimation with Hamming window for fault diagnosis in induction motors outperforms FFT and periodogram methods in terms of robustness and accuracy due to reduced bias and variance \cite{ayhan2003case}.
 
-\subsection{Signal analysis}
+\begin{figure}[!h]
+	\centering
+	\frame{\includegraphics[width=400pt,keepaspectratio=true]{./fig/welch.png}}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\vspace{1cm}
+	\caption{Algorithm of Power Spectral Density estimation via Welch's method \cite{solomon1991psd}.}	
+	\label{welch}
+\end{figure}
+\pagebreak
+
+\section{Data-driven fault diagnosis techniques}
+Model and signal-based approaches have been applied successfully for many years in condition monitoring and fault diagnosis studies in induction motors. Although these approaches have their own advantages, they require a certain level of field expertise. With the establishment of the Industry 4.0 phenomenon, the increasing data size in industrial applications in recent years and the developments in the technologies of the hardware that will store and process this data form the infrastructure for data-oriented approaches. The fact that there has been vast academic interest in machine learning techniques, which are also defined as artificial intelligence, especially in the last ten years, causes an increase in industrial applications.
+
+Increasing data-driven studies in the induction motors will be examined under classical machine learning and deep learning methods in this study. The state information of the motor contained in the current signal usually requires processing of the signal. Fault diagnosis can be made with classical machine learning methods by processing the signal with statistical approaches in the time and frequency domains and approaches to extract characteristics at certain frequencies in the frequency domain. On the other hand, in deep learning methods, since there is no need for signal processing in a manner of feature extraction, fault diagnosis can be performed over raw current data.
+
+
 
 \subsection{Classical machine learning methods}
 
@@ -575,15 +605,84 @@ By segmenting the data and adding window overlaps to the data, the Welch method 
 
 \subsubsection{Naive Bayes}
 
-\subsubsection{k-Nearest Neighbour}
-
 \subsubsection{Random Forest}
 
 \subsubsection{Multi Layer Perceptron}
 
+\subsubsection{Ensemble Learning}
+
 \subsection{Deep learning methods}	
 
-\subsubsection{1D Convolutional Neural Networks}
+\subsubsection{1D-Convolutional Neural Networks}
 
 \subsubsection{Long-Short Term Memory Networks}
-	
+
+\section{Performance evaluation}
+
+Various metrics, which can be aggregated under binary or multi-class classification, are used to compare the performance of algorithms to be used in fault diagnosis \cite{canbek2017binary,seliya2009study}. In the diagnosis of asynchronous machine or their components, binary classification can be made as healthy or faulty condition, while multiple classification metrics should be used when separating two or more fault types.  Although there is no definite consensus for the metrics used in the comparison between the classification methods, the most frequently used metrics for multi-class classification will be examined in this section.
+
+In order to create metrics, certain measures must be introduced. The confusion matrix shows the actual and predicted classification using certain measures. In the motor diagnostics specific, these four metrics can be defined as follows:
+\begin{figure}[h]
+	\centering
+	\frame{\includegraphics[width=100pt,keepaspectratio=true]{./fig/Confmat.png}}
+	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+	\vspace{1cm}
+	\caption{An example of Confusion Matrix.}	
+	\label{confusion}
+\end{figure}
+
+True Positive (TP), the state where both the actual and predicted values are healthy,\\
+False Positive (FP), the classification of the actually faulty condition as faulty, \\
+False Negative (FN), the classification of the actually healthy motor as faulty,\\
+True Negative (TN), the state where both the actual and predicted values are faulty.
+\subsection{Precision \& Recall}
+
+Precision refers to the ratio of samples that the classification method predicts as healthy to actually healthy samples, and shows how reliable the healthy motor prediction can be. Recall, on the other hand, expresses how many of the healthy motor samples were labelled correctly as a result of the classification and shows the model's ability to find the healthy motor. 
+\begin{eqnarray}
+\text{Precision} &=& \displaystyle\frac{TP}{TP+FP}\\
+\text{Recall} &=& \displaystyle\frac{TP}{TP+FN} 
+\label{precision}
+\end{eqnarray}
+\subsection{Accuracy}
+
+Accuracy, one of the most common model performance metrics, is an indicator of how well it can distinguish between healthy and faulty motors in the entire data set \cite{grandini2020metrics}. Generally, the number of healthy state data is naturally higher in diagnostic applications that result unbalanced data set. In such a case, evaluating only with the accuracy metric may lead to catastrophic situations. 
+\begin{equation}
+\text{Accuracy} = \displaystyle\frac{TP + TN}{TP + FP + FN + TN} 
+\label{accuracy}	
+\end{equation}
+\subsection{F-measure}
+As a metric based on Recall and Precision, F-Measure allows better inference than accuracy on classification performance, especially on unbalanced datasets \cite{he2009learning}.
+\begin{equation}
+\text{F-measure} = 2\cdot\displaystyle\frac{Recall\cdot Precision}{Recall + Precision} 
+\label{fmeas}	
+\end{equation}
+
+Especially in condition monitoring applications, fault alarms even though there is no fault increase the maintenance cost and at the same time, it can disrupt the operation. On the other hand, missing a fault condition can also damage equipment and disrupt the operation. The performance of the classification method is important in terms of optimizing both cases. F-measure can respond to this optimization as it contains components for these two states \cite{janssens2016convolutional,seliya2009study}.
+\subsection{Cohen's Kappa}
+Another metric that works well with unbalanced data, Cohen's Kappa correlates the estimated and actual values, taking into account the imbalance in the class distribution \cite{maaritwidmannalfredoroccato2021}. By removing the random dependency between the predicted and actual classification, enables to compare different classifiers \cite{grandini2020metrics}. 
+\begin{equation}
+\text{Cohen's Kappa} = \displaystyle\frac{c \cdot s-\displaystyle\sum_{k}^{K} p_{k} \cdot t_{k}}{s^{2}-\displaystyle\sum_{k}^{K} p_{k} \cdot t_{k}}
+\label{kappa}	
+\end{equation}
+where:\\
+$K\quad$ is the total number classes\\
+$c=\displaystyle\sum_{k}^{K} C_{k k} \quad$ the total number of samples that correctly predicted\\
+$s=\displaystyle\sum_{i}^{K} \displaystyle\sum_{j}^{K} C_{i j}\quad$ the total number of samples\\
+$p_{k}=\displaystyle\sum_{i}^{K} C_{k i}\quad$ the number of times that class $k$ was predicted (column total)\\
+$t_{k}=\displaystyle\sum_{i}^{K} C_{i k}\quad$ the number of times that class $k$ actually presents (row total)
+
+\subsection{Area Under the Curve}
+Receiver operating characteristic (ROC) curve, which is another method widely used in binary classification performance measurement, shows the performance of classification methods in two dimensions \cite{fawcett2004roc}. To reduce this metric to one dimension, the area under the ROC curve (AUC) is calculated.
+
+In multiclass classification problems, AUC values now transform into multiple binary classification values. The specified formula is used to reduce to a single numerical value \cite{fawcett2004roc}:
+\begin{equation}
+AUC_{total} = \displaystyle\sum_{c_{i} \in C} AUC(c_{i}) \cdot p(c_{i})
+\label{auc}
+\end{equation}
+where:\\
+$c_{i} \quad$ is the reference class \\
+$C \quad$ is the total number of classes\\
+$p(c_i) \quad$ is the prevalence of the reference class in the dataset\\
+$AUC(c_{i}) \quad$ is the area under the class reference $ROC$ curve for $c_{i}$
+
+According to this formula, AUC values are calculated by creating a ROC curve for each reference class, and the $AUC_{total}$ value is obtained by weighting it with the prevalence of the reference class \cite{fawcett2004roc,he2009learning}. The advantage of this method is that it is easily computable and is derived directly from reference class ROCs \cite{fawcett2004roc}.

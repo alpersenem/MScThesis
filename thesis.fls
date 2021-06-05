@@ -1688,13 +1688,6 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7v.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\fig\welch.png
-INPUT .\fig\welch.png
-INPUT fig\welch.png
-INPUT .\fig\welch.png
-INPUT .\fig\welch.png
-INPUT .\fig\welch.png
-INPUT .\fig\welch.png
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
@@ -1705,10 +1698,28 @@ INPUT .\fig\welchdiagram.png
 INPUT .\fig\welchdiagram.png
 INPUT .\fig\welchdiagram.png
 INPUT .\fig\welchdiagram.png
+INPUT .\fig\welch.png
+INPUT .\fig\welch.png
+INPUT fig\welch.png
+INPUT .\fig\welch.png
+INPUT .\fig\welch.png
+INPUT .\fig\welch.png
+INPUT .\fig\welch.png
+INPUT .\fig\Confmat.png
+INPUT .\fig\Confmat.png
+INPUT fig\Confmat.png
+INPUT .\fig\Confmat.png
+INPUT .\fig\Confmat.png
+INPUT .\fig\Confmat.png
+INPUT .\fig\Confmat.png
 INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
 INPUT thesis.bbl
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
