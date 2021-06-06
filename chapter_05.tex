@@ -2,60 +2,18 @@
 \chapter{CONCLUSIONS AND RECOMMENDATIONS}\label{Ch5}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
+The fact that induction motors have been in industrial applications for more than a century adds importance to condition monitoring studies. As the most common type of electric motor, it finds its place in a wide range from HVAC to the manufacturing and automotive industry.
 
-%\section{Practical Application of This Study}
+In this study, first of all, the place and importance of asynchronous motors in the industrial field and the general operating principle are mentioned. Then, within the literature review, the failures that occurred due to the stresses they were exposed to during their operating life-cycle were explained. To avoid the negative consequences of failures with the least damage, effective maintenance methods are mentioned, and condition monitoring and fault recognition methods are explained as the backbone of efficient maintenance.
 
-In this thesis, the necessary steps for constructing an end-to-end streamflow forecasting system were discussed. These steps include the use.
+Within the scope of the study, bearing, stator winding short-circuit and broken rotor bar failures, which are the most common types of asynchronous motor failures, were created in laboratory conditions at WAT Motor facilities and their effects were examined. Studies on asynchronous motors fed directly and operating at nominal speed are common in the literature. In this study, tests were carried out at two different loadings, at different speeds from 30 Hz to 50 Hz, at 75\% of the nominal and nominal load of the motor fed with the variable frequency drive.
 
-%\section{Second Level Title: First Letters Capital}
+With the obtained data, different methods and approaches have been examined for engine condition monitoring and fault detection. In the first of these, the statistical properties of the current signal were extracted in the analysis made in the time domain. In the study conducted in the frequency domain, the statistical properties of the amplitudes obtained by estimating the Power Spectral Density with the Welch method were obtained in the same way. Finally, the amplitudes corresponding to the characteristic frequencies of the fault types in the frequency spectrum were calculated and the statistical properties of these amplitudes were extracted. With the features obtained by these three methods, classical machine learning classifiers were trained and motor fault diagnosis was carried out.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea.
+According to the findings, it is possible to get good results on fault diagnosis with statistical approaches. Considering the industrial application conditions,  electric motors are heavily exposed to disruptive effects. PSD estimation with the Welch method gives very robust results against disruptive effects due to its structure. The amplitude-based statistical approach obtained from the PSD frequency spectrum with the fault characteristic formulas outperformed the other two methods in all metrics and with high accuracy and precision.
 
-%\subsection{Third level title: Only first letter capital}
+Deep learning studies and applications, which have been increasing in recent years, also find a place for themselves in the diagnostics of motor faults. As an alternative to feature extraction and signal processing problems that require time and expert knowledge in classical machine learning methods, deep learning methods can offer an end-to-end solution. As an alternative to data engineering and classical machine learning methods mentioned within the scope of the thesis, fault diagnosis was made with two deep learning methods, convolutional and recurrent neural networks. Deep learning methods show high performance without the need for any preprocessing, but as a downside, they need high processing power and a large dataset for training the model.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gub rgren, no sea.
+Although deep learning methods need large datasets during their training, they can work with less dimensional data than classical machine learning methods, as shown in the thesis. In this respect, a trained deep learning algorithm to be integrated into the VFD can work with less resource need via its feedforward structure.
 
-%\subsubsection{Fourth level title: Only first letter capital}
-
-Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
-
-%\newpage
-%{\bf Fifth level title: No numbering after fourth level titles}
-%\subsubsubsection{Fifth level title: No numbering after fourth level titles}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=230pt,keepaspectratio=true]{./fig/sekil5}
-	% sekil5.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1193 701
-	\vspace{3mm}
-	\caption{Example figure in chapter 5.}
-	\label{Figure5.1}
-\end{figure}
-
-This indicates that the ANN is accurate at base flow and flow height values lower then 3 m. 
-
-\begin{table*}[h]
-	{\setlength{\tabcolsep}{14pt}
-		\caption{Example table in chapter 5.}
-		\begin{center}
-			\vspace{-6mm}
-			\begin{tabular}{cccc}
-			    \hline \\[-2.45ex] \hline \\[-2.1ex]
-				Column A & Column B & Column C & Column D \\
-				\hline \\[-1.8ex]
-				Row A & Row A & Row A & Row A \\
-				Row B & Row B & Row B & Row B \\
-				Row C & Row C & Row C & Row C \\
-				[-0ex] \hline
-			\end{tabular}
-			\vspace{-6mm}
-		\end{center}
-		\label{Table5.1}}
-\end{table*}
-
-Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna.
- 
-Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. Stet clita kasd gub rgren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore sit et dolore magna. 
+As a conclusion within Industry 4.0, some concepts become even more important. While the first two of them are facilitating access to data and increasing power on data processing, the third one can be said as efficiency. In the case of asynchronous motors, these three concepts can be met with VFDs. While the efficiency of the system increases in motors fed with VFD, the current signal required for motor control can be used for condition monitoring studies without any additional expense. It has the potential to facilitate data access by transferring the collected data to data centers with the Internet of Things infrastructures.

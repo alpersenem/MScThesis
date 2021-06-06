@@ -215,7 +215,7 @@ Considering the actual distribution of the faults, in total 80\% of the faulty m
 				2 Faults  & 8.0  & 11.8   & 13.1 & 11.9 \\
 				3 Faults  & 0.9  & 3.3    & 5.5  & 4.0  \\
 				4 Faults  & 0.0  & 2.2    & 0.8  & 1.3  \\
-				>4 Faults & 0.0  & 3.0    & 3.5  & 2.9  \\
+				> 4 Faults & 0.0  & 3.0    & 3.5  & 2.9  \\
 				\hline
 			\end{tabular}
 			\vspace{-6mm}
@@ -263,7 +263,7 @@ As researches have shown, stator faults occupy an important place among asynchro
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=200pt,keepaspectratio=true]{./fig/stator.PNG}
+	\includegraphics[width=150pt,keepaspectratio=true]{./fig/stator.PNG}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
 	\caption{Star-connected stator winding faults, adapted from \cite{karmakar2016induction}.}	
 	\label{statorwinding}
@@ -494,7 +494,7 @@ The median, which is the point in a dataset that is greater than half the number
 \end{eqnarray}
 where,\\
 $\tilde{Y} \quad$ is the mean;
-\subsubsection{Root Mean Square (RMS)}
+\subsubsection{Root Mean Square}
 
 RMS is also known as quadratic mean and represents tha magnitude of a varying signal \cite{sait2011review,shukla2015analysis}. As one of the most applied feature for rotating machinery, especially in AC electric motors, it is used for roughly estimating motor load and detecting general noise level.
 \begin{equation}
@@ -613,6 +613,12 @@ Increasing data-driven studies in the induction motors will be examined under cl
 
 \subsection{Deep learning methods}	
 
+Deep learning, which is a sub-branch of machine learning, as its name implies, is artificial neural networks that deepen using many hidden layers. In classical machine learning, the artificial intelligence model requires feature engineering as a kind of preprocessing. Feature engineering requires specialized knowledge of statistical computing and signal processing, as well as knowledge of the general characteristics of the system. Deep learning methods, which provide a direct link between data collection and decision output by eliminating the manual feature extraction process, have attracted great attention in recent years.
+
+As the importance of data spreading with Industry 4.0, manufacturers are starting to offer add-ons and services that will make it easier to access data for their products. For example, Wat Motor now offers special designs for vibration and temperature sensors that will be mounted into the motor, allowing monitoring of status of its induction motors \cite{wat2021}. In the coming years, with the increase in the available data, deep learning methods will attract even more attention. While the performance of deep learning techniques increases in paralel to available data amount compared to classical machine learning methods, the trained model can be transferred to other applications with its transferability feature \cite{zhang2020deep}.
+
+The increase in accessible data day by day, the interest of researchers from industry and academia that lead the development of new methods and approaches, and hardware developments such as Graphics Processing Unit (GPU), Tensor Processing Unit (TPU) and Field Programmable Gate Array (FPGA) that can process excessive calculations are the driving force of deep learning \cite{zhao2019deep,zhang2020deep}.
+
 \subsubsection{1D-Convolutional Neural Networks}
 
 \subsubsection{Long-Short Term Memory Networks}
@@ -645,27 +651,30 @@ Precision refers to the ratio of samples that the classification method predicts
 \end{eqnarray}
 \subsection{Accuracy}
 
-Accuracy, one of the most common model performance metrics, is an indicator of how well it can distinguish between healthy and faulty motors in the entire data set \cite{grandini2020metrics}. Generally, the number of healthy state data is naturally higher in diagnostic applications that result unbalanced data set. In such a case, evaluating only with the accuracy metric may lead to catastrophic situations. 
+Accuracy, one of the most common model performance metrics, is an indicator of how well it can distinguish between healthy and faulty motors in the entire data set \cite{grandini2020metrics}. In general, the number of healthy state data is naturally higher in diagnostic applications that result in an unbalanced data set \cite{han2021deep}. In such a case, evaluating only with the accuracy metric may lead to catastrophic situations. 
 \begin{equation}
 \text{Accuracy} = \displaystyle\frac{TP + TN}{TP + FP + FN + TN} 
 \label{accuracy}	
 \end{equation}
 \subsection{F-measure}
-As a metric based on Recall and Precision, F-Measure allows better inference than accuracy on classification performance, especially on unbalanced datasets \cite{he2009learning}.
-\begin{equation}
-\text{F-measure} = 2\cdot\displaystyle\frac{Recall\cdot Precision}{Recall + Precision} 
+As a metric based on Recall and Precision, F-Measure allows better inference than accuracy on classification performance, especially on unbalanced datasets \cite{he2009learning}. In multi-class classification case F-measure needs to be modified as Macro F-measure by averaging each and every class' F-measure.
+\begin{eqnarray}
+\text{F-measure} &=& 2\cdot\displaystyle\frac{Recall\cdot Precision}{Recall + Precision}\\
+\text{Macro F-measure} &=& \displaystyle\frac{1}{C}\cdot \displaystyle\sum_{c_{i} \in C}\text{F-measure}({c_i})
 \label{fmeas}	
-\end{equation}
-
+\end{eqnarray}
+where:\\
+$c_{i} \quad$ is the reference class \\
+$C \quad$ is the total number of classes\\
 Especially in condition monitoring applications, fault alarms even though there is no fault increase the maintenance cost and at the same time, it can disrupt the operation. On the other hand, missing a fault condition can also damage equipment and disrupt the operation. The performance of the classification method is important in terms of optimizing both cases. F-measure can respond to this optimization as it contains components for these two states \cite{janssens2016convolutional,seliya2009study}.
 \subsection{Cohen's Kappa}
 Another metric that works well with unbalanced data, Cohen's Kappa correlates the estimated and actual values, taking into account the imbalance in the class distribution \cite{maaritwidmannalfredoroccato2021}. By removing the random dependency between the predicted and actual classification, enables to compare different classifiers \cite{grandini2020metrics}. 
 \begin{equation}
-\text{Cohen's Kappa} = \displaystyle\frac{c \cdot s-\displaystyle\sum_{k}^{K} p_{k} \cdot t_{k}}{s^{2}-\displaystyle\sum_{k}^{K} p_{k} \cdot t_{k}}
+\text{Cohen's Kappa} = \displaystyle\frac{c \cdot s-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}{s^{2}-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}
 \label{kappa}	
 \end{equation}
 where:\\
-$K\quad$ is the total number classes\\
+$C\quad$ is the total number classes\\
 $c=\displaystyle\sum_{k}^{K} C_{k k} \quad$ the total number of samples that correctly predicted\\
 $s=\displaystyle\sum_{i}^{K} \displaystyle\sum_{j}^{K} C_{i j}\quad$ the total number of samples\\
 $p_{k}=\displaystyle\sum_{i}^{K} C_{k i}\quad$ the number of times that class $k$ was predicted (column total)\\
