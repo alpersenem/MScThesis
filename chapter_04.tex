@@ -14,7 +14,7 @@ Classical machine learning methods need preprocessing for feature extraction, al
 	\caption{Diagram of time-domain statistical analysis method.}	
 	\label{method1}
 \end{figure}
-The first method is to extract the statistical properties of the current data in the time domain and to diagnose faults with machine learning techniques over them. Statistical features such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime tool for cases where the motor is healthy or faulty. 
+The first method is to extract the statistical properties of the current data in the time domain and to diagnose faults with machine learning techniques over them. Statistical features such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime to be used as features to predict whether the motor is healthy or faulty. 
 
 \begin{figure}[h]
 	\centering
@@ -34,7 +34,7 @@ In order to examine the distributions of these features in different classes, t-
 	\caption{Diagram of frequency domain statistical analysis method.}	
 	\label{method2}
 \end{figure}
-As a second method,  by applying Welch's PSD estimation to the current signal, analysis became possible in the frequency domain. After the statistical properties of the amplitudes in the frequency domain were extracted, classification algorithms were applied. As in the first method, statistical properties such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime tool for cases where the motor is healthy or faulty.
+As a second method,  by applying Welch's PSD estimation to the current signal, analysis became possible in the frequency domain. After the statistical properties of the amplitudes in the frequency domain were extracted, classification algorithms were applied. As in the first method, statistical properties such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime for cases where the motor is healthy or faulty.
 
 \begin{figure}
 	\centering
@@ -54,7 +54,7 @@ As can be seen from the t-SNE plot, a short-circuit fault between the stator win
 	\caption{Diagram of statistical analysis of characteristic frequencies method.}	
 	\label{method3}
 \end{figure}
-As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction in Matlab, followed by classification in Knime.
+As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in Matlab, followed by classification in Knime.
 
 Condition monitoring and fault diagnosis researches for induction motors have been going on for many years and accordingly, there is a wide knowledge accumulation. Studies in the frequency domain have shown that fault conditions will have certain signs in the frequency spectrum. In this study, using the characteristic frequency equations for bearing, stator and rotor faults given in the literature review section (equations \ref{bearingfault}, \ref{statorfault} and \ref{rotorfault}), it has been calculated up to certain harmonics, and then the mean and standard deviation of the amplitudes corresponding to the frequencies obtained for each fault type are calculated and statistical features are formed.
 
@@ -156,5 +156,25 @@ The characteristic effects of faults on motor current have been known to academi
 \end{landscape}
 
 \section{Deep learning analysis}
+
+\begin{table*}[h]
+	{\setlength{\tabcolsep}{12pt}
+		\caption{LSTM network structure.}
+		\begin{center}
+			\vspace{-6mm}
+			\begin{tabular}{cc}
+				\hline \\[-2.45ex] \hline \\[-2.1ex]
+				Parameter & Value  \\
+				\hline \\[-1.8ex]
+				Window Type & Hamming    \\
+				Overlap (\%) & 50 \\
+				Number of DFT Points & 50000  \\
+				Sample Rate & 5000    \\
+				\hline
+			\end{tabular}
+			\vspace{-6mm}
+		\end{center}
+		\label{lstm}}
+\end{table*}
 
 \section{Discussion}

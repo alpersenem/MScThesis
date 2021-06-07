@@ -19,13 +19,13 @@ Induction motors run at a speed slightly lower than synchronous speed at the poi
 	\label{slip}
 \end{equation}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=250pt,keepaspectratio=true]{./fig/torque_speed.PNG}
-	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Steady-state torque-speed curve of an induction motor, adapted from \cite{faiz2017fault}.}	
-	\label{ts}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=250pt,keepaspectratio=true]{./fig/torque_speed.PNG}
+%	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+%	\caption{Steady-state torque-speed curve of an induction motor, adapted from \cite{faiz2017fault}.}	
+%	\label{ts}
+%\end{figure}
 
 In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power \cite{oliver1992electric,karmakar2016induction}.
 
@@ -41,13 +41,13 @@ In Principle, induction motors transfer electrical energy into mechanical energy
 
 A variable frequency drive, also called as adjustable-frequency drive (AFD), variable-speed drive (VSD) or inverter, fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=250pt,keepaspectratio=true]{./fig/vfd.PNG}
-	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{(a) Torque–speed curves for different voltages in line-start operation and (b) Torque–speed curves for different voltages and frequencies in VFD-fed operation, adapted from \cite{faiz2017fault}.}	
-	\label{vfd}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=250pt,keepaspectratio=true]{./fig/vfd.PNG}
+% 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
+% 	\caption{(a) Torque–speed curves for different voltages in line-start operation and (b) Torque–speed curves for different voltages and frequencies in VFD-fed operation, adapted from \cite{faiz2017fault}.}	
+% 	\label{vfd}
+% \end{figure}
 
 From a historical point of view, DC motors have been utilised in speed control applications. However, as a result of advances in power semiconductor technology used in inverters, the performance of AC motors in terms of precision, response, and speed range began to exceed that of DC motors \cite{doe2008improving,mikami2011historical}. As a driving force behind the induction motor control dominance today, VFDs generally have the following control strategies regarding speed and torque regulation \cite{weg,danfoss}:
 
@@ -247,7 +247,7 @@ $f_{e} \quad$ is the electrical supply frequency;\\
 $f_{\mathrm{v}} \quad$ is the rotational speed frequency of the rotor;\\
 $\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
 $f_{bng} \quad$ is the current component frequency due to air gap changes.
-\pagebreak
+
 \subsection{Stator related faults}
 
 As researches have shown, stator faults occupy an important place among asynchronous motor faults after bearing \cite{motor1985report,albrecht1986assessment,albrecht1987assessment,thorsen1995survey,bonnett2008increased}. Mechanical, electrical, thermal and environmental factors cause malfunctions in the stator windings, as well as their laminations \cite{karmakar2016induction,Siddique}. Winding faults, as the most common stator faults, are winding short-circuit faults that are mostly the result of the aforementioned effects of the winding insulation. Types of winding faults are as follows \cite{karmakar2016induction,Siddique,lipo}:
