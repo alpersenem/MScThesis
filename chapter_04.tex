@@ -54,7 +54,7 @@ As can be seen from the t-SNE plot, a short-circuit fault between the stator win
 	\caption{Diagram of statistical analysis of characteristic frequencies method.}	
 	\label{method3}
 \end{figure}
-As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in Matlab, followed by classification in Knime.
+As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in MATLAB, followed by classification in Knime.
 
 Condition monitoring and fault diagnosis researches for induction motors have been going on for many years and accordingly, there is a wide knowledge accumulation. Studies in the frequency domain have shown that fault conditions will have certain signs in the frequency spectrum. In this study, using the characteristic frequency equations for bearing, stator and rotor faults given in the literature review section (equations \ref{bearingfault}, \ref{statorfault} and \ref{rotorfault}), it has been calculated up to certain harmonics, and then the mean and standard deviation of the amplitudes corresponding to the frequencies obtained for each fault type are calculated and statistical features are formed.
 
@@ -110,7 +110,7 @@ The characteristic effects of faults on motor current have been known to academi
 		{\setlength{\tabcolsep}{14pt}
 			%\hspace*{5mm}
 			%\vspace*{-6mm}
-			\caption{Performance metrics for methods and classifiers.}
+			\caption{Performance metrics for methods and classifiers with 5-fold cross validation.}
 			\begin{center}
 				\vspace{-6mm}
 				\begin{tabular}{l|lll|lll}
@@ -157,6 +157,8 @@ The characteristic effects of faults on motor current have been known to academi
 
 \section{Deep learning analysis}
 
+In the study, the Tensorflow library was used to develop deep learning models and the Keras interface, which is a software library working on Tensorflow for artificial neural networks, was used in the Knime Data Analytics tool.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=300pt,keepaspectratio=true]{./fig/method4.PNG}
@@ -165,7 +167,7 @@ The characteristic effects of faults on motor current have been known to academi
 	\label{method4}
 \end{figure}
 
-Since classical machine learning methods require a complex signal processing process to extract the characteristics of the data, the interest in the structures that will work end-to-end between the data collected and the output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. Howevet, as a downside large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
+Since classical machine learning methods require a complex signal processing process to extract the characteristics of the data, the interest in the structures that will work end-to-end between the collected data and the decision output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. However, as a downside, large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
 
 \begin{figure}[h]
 	\centering
@@ -175,7 +177,7 @@ Since classical machine learning methods require a complex signal processing pro
 	\label{dataslide}
 \end{figure}
 
-Augmented dataset used in training of two different deep learning methods: Convolutional Neural Networks and LSTM Networks. Although CNN originated and mostly applied on 2-dimensional problems mainly in computer vision studies, 1-D CNN successfully applied on time series signals such as vibration, sound and current fault diagnosis of induction motors \cite{eren2017bearing,eren2019generic,qiao2020deep,skowron2020convolutional}.
+The augmented dataset used in the training of two different deep learning methods: Convolutional Neural Networks and LSTM Networks. Although CNN originated and mostly applied on 2-dimensional problems mainly in computer vision studies, 1-D CNN successfully applied on time series signals such as vibration, sound and current fault diagnosis of induction motors \cite{eren2017bearing,eren2019generic,qiao2020deep,skowron2020convolutional}.
 
 An improved 1D-CNN structure for bearing fault diagnosis presented in \cite{chen2021improved}, in this thesis study, structure improved further to the extended diagnosis of the stator winding short-circuit and broken rotor bar faults also.
 
@@ -218,7 +220,7 @@ An improved 1D-CNN structure for bearing fault diagnosis presented in \cite{chen
 		\label{cnn}
 \end{table*}
 
-RNN is preferred in condition monitoring diagnostic applications because of its ability to work with sequential data. Since RNNs learn by backpropagation in time during a supervised learning process, problems with gradients during training can result in increased error in time steps or distortion of prior knowledge \cite{enshaei2019application}. In order to overcome this disadvantage, LSTMs have been developed to capture existing dependencies in time series data. Many studies have been carried out with LSTM networks for fault detection and the effectiveness of the structure has been demonstrated \cite{bai2021long,he2021fpga,khan2018review,sabir2019lstm}.
+RNN is preferred in condition monitoring diagnostic applications because of its ability to work with sequential data. Since RNNs learn by backpropagation in time during a supervised learning process, problems with gradients during training can result in the increased error in time steps or distortion of prior knowledge \cite{enshaei2019application}. In order to overcome this disadvantage, LSTMs have been developed to capture existing dependencies in time series data. Many studies have been carried out with LSTM networks for fault detection and the effectiveness of the structure has been demonstrated \cite{bai2021long,he2021fpga,khan2018review,sabir2019lstm}.
 
 \begin{table*}[h]
 	{\setlength{\tabcolsep}{12pt}
