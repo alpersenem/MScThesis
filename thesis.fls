@@ -1550,24 +1550,6 @@ INPUT .\abbreviations.tex
 INPUT .\abbreviations.tex
 INPUT .\abbreviations.tex
 INPUT abbreviations.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT .\symbols.tex
-INPUT symbols.tex
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmb8t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\thesis.lot
 INPUT thesis.lot
 INPUT thesis.lot
@@ -1649,6 +1631,10 @@ INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
@@ -1878,6 +1864,34 @@ INPUT .\fig\methods.png
 INPUT .\fig\methods.png
 INPUT .\fig\methods.png
 INPUT .\fig\methods.png
+INPUT .\fig\method4.PNG
+INPUT .\fig\method4.PNG
+INPUT fig\method4.PNG
+INPUT .\fig\method4.PNG
+INPUT .\fig\method4.PNG
+INPUT .\fig\method4.PNG
+INPUT .\fig\method4.PNG
+INPUT .\fig\data.png
+INPUT .\fig\data.png
+INPUT fig\data.png
+INPUT .\fig\data.png
+INPUT .\fig\data.png
+INPUT .\fig\data.png
+INPUT .\fig\data.png
+INPUT .\fig\cnn_accloss.png
+INPUT .\fig\cnn_accloss.png
+INPUT fig\cnn_accloss.png
+INPUT .\fig\cnn_accloss.png
+INPUT .\fig\cnn_accloss.png
+INPUT .\fig\cnn_accloss.png
+INPUT .\fig\cnn_accloss.png
+INPUT .\fig\lstmaccloss.png
+INPUT .\fig\lstmaccloss.png
+INPUT fig\lstmaccloss.png
+INPUT .\fig\lstmaccloss.png
+INPUT .\fig\lstmaccloss.png
+INPUT .\fig\lstmaccloss.png
+INPUT .\fig\lstmaccloss.png
 INPUT .\chapter_05.tex
 INPUT .\chapter_05.tex
 INPUT .\chapter_05.tex
@@ -1902,6 +1916,35 @@ INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT .\appendices_cover.tex
+INPUT appendices_cover.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT .\appendices.tex
+INPUT appendices.tex
+INPUT .\fig\motorparams.PNG
+INPUT .\fig\motorparams.PNG
+INPUT fig\motorparams.PNG
+INPUT .\fig\motorparams.PNG
+INPUT .\fig\motorparams.PNG
+INPUT .\fig\motorparams.PNG
+INPUT .\fig\motorparams.PNG
 INPUT .\resume.tex
 INPUT .\resume.tex
 INPUT .\resume.tex
