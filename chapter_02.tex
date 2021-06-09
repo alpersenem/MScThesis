@@ -281,7 +281,7 @@ The factors that cause the motor winding insulation to deteriorate are explained
 
 Under the inter-turn short-circuit condition, a significant deviation in rotor slot harmonics components, called as principle slot harmonics (PSH), occurs and can be obtained by given formula \cite{Penman};
 \begin{equation}
-	f_{st}=f_{e} \cdot\left[n \cdot \frac{(1-s)}{p} \pm k\right]
+	f_{st}=f_{e} \cdot\left[n \cdot \frac{(1-s)}{p} \pm m\right]
 	\label{statorfault}
 \end{equation}
 where,\\
@@ -289,7 +289,7 @@ $f_{e} \quad$ is the electrical supply frequency ;\\
 $\mathrm{p} \quad$ is the number of pole pairs of the motor ;\\
 $\mathrm{n} \quad$ = $1,2,3 \ldots (2p-1)$;\\
 $\mathrm{s} \quad$ is the slip ;\\
-$\mathrm{k} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
+$\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
 $f_{st} \quad$ is the principle slot harmonic frequencies.
 
 \subsection{Rotor related faults}
@@ -308,13 +308,13 @@ The main reasons of rotor broken bar of an induction motor can be listed as foll
 
 Cracked or broken bar in the rotor cage results a series of sideband frequencies in the stator current given by \cite{karmakar2016induction};
 \begin{equation}
-	f_{brb}=f_{e} \cdot\left[1 \pm 2\cdot k\cdot s \right]
+	f_{brb}=f_{e} \cdot\left[1 \pm 2\cdot m\cdot s \right]
 	\label{rotorfault}
 \end{equation}
 where,\\
 $f_{e} \quad$ is the electrical supply frequency ;\\
 $\mathrm{s} \quad$ is the slip ;\\
-$\mathrm{k} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
+$\mathrm{m} \quad$ is the harmonic number $1,2,3 \ldots$..;\\
 $f_{brb} \quad$ is the broken rotor bar sideband frequencies.
 
 % % Change margins on the fly to reset the page margins to one inch - SBÖ
@@ -493,7 +493,7 @@ The median, which is the point in a dataset that is greater than half the number
 \label{median}
 \end{eqnarray}
 where,\\
-$\tilde{Y} \quad$ is the mean;
+$\tilde{Y} \quad$ is the median;
 \subsubsection{Root Mean Square}
 
 RMS is also known as quadratic mean and represents tha magnitude of a varying signal \cite{sait2011review,shukla2015analysis}. As one of the most applied feature for rotating machinery, especially in AC electric motors, it is used for roughly estimating motor load and detecting general noise level.
@@ -505,23 +505,23 @@ RMS is also known as quadratic mean and represents tha magnitude of a varying si
 
 Standard deviation is the square-root of the variance which is aritmetic average of the squared distance from the mean \cite{shukla2015analysis}. Similar to mean, standard deviation is also one of the best estimator, but also suffers the same lack of precision in case of distribution is not normal \cite{croarkin2012handbook}.
 \begin{equation}
-s=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
+STD=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
 \label{std}
 \end{equation}
 where,\\
-$s \quad$ is the standard deviation;\\
+$STD \quad$ is the standard deviation;\\
 \subsubsection{Kurtosis} 
 
 Kurtosis a measure that is to be used to understand if the data peaked or flat relative to a normal distribution \cite{shukla2015analysis}. High kurtosis indicates that the dataset tends to have a prominent peak close to the mean, while the dataset with low kurtosis tends to have a flat peak close to the mean rather than a sharp peak \cite{croarkin2012handbook}.
 \begin{equation}
-\text { kurtosis }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) s^{4}}
+\text { kurtosis }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) STD^{4}}
 \label{kurtosis}
 \end{equation}
 \subsubsection{Skewness} 
 
 Skewness represents a lack of symmetry in a data set. The dataset is symmetrical if it looks the same to the left and right of the centre point \cite{shukla2015analysis}. The left skew represents a negative value while showing that it is taller on the left than on the right \cite{croarkin2012handbook}. The right skew indicates the opposite situation. The skewness of a symmetric dataset converges to zero, and it is zero for a normal distribution \cite{croarkin2012handbook}.
 \begin{equation}
-\text { skewness }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) s^{3}}
+\text { skewness }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) STD^{3}}
 \label{skewness}
 \end{equation}
 \subsection{Frequency based signal analysis}
@@ -696,13 +696,13 @@ Especially in condition monitoring applications, fault alarms even though there 
 \subsection{Cohen's Kappa}
 Another metric that works well with unbalanced data, Cohen's Kappa correlates the estimated and actual values, taking into account the imbalance in the class distribution \cite{maaritwidmannalfredoroccato2021}. By removing the random dependency between the predicted and actual classification, enables to compare different classifiers \cite{grandini2020metrics}. 
 \begin{equation}
-\text{Cohen's Kappa} = \displaystyle\frac{c \cdot s-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}{s^{2}-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}
+\text{Cohen's Kappa} = \displaystyle\frac{d \cdot n-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}{n^{2}-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}
 \label{kappa}	
 \end{equation}
 where:\\
 $C\quad$ is the total number classes\\
-$c=\displaystyle\sum_{k}^{K} C_{k k} \quad$ the total number of correctly predicted samples\\
-$s=\displaystyle\sum_{i}^{K} \displaystyle\sum_{j}^{K} C_{i j}\quad$ the total number of samples\\
+$d=\displaystyle\sum_{k}^{K} C_{k k} \quad$ the total number of correctly predicted samples\\
+$n=\displaystyle\sum_{i}^{K} \displaystyle\sum_{j}^{K} C_{i j}\quad$ the total number of samples\\
 $p_{k}=\displaystyle\sum_{i}^{K} C_{k i}\quad$ the number of instances that class $k$ was predicted (column total)\\
 $t_{k}=\displaystyle\sum_{i}^{K} C_{i k}\quad$ the number of instances that class $k$ actually presents (row total)
 
