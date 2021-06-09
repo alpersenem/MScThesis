@@ -36,7 +36,7 @@ In Principle, induction motors transfer electrical energy into mechanical energy
 	\caption{Squirrel cage induction motor structure, courtesy of WAT Motor Co.}	
 	\label{motor}
 \end{figure}
-
+\pagebreak
 \subsection{VFD-fed induction motors}
 
 A variable frequency drive, also called as inverter, adjustable-frequency drive (AFD) or variable-speed drive (VSD), fed motor system controls the rotation speed of the induction motor by controlling the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
@@ -68,7 +68,7 @@ VFDs come with benefits such that energy savings, reliability and product qualit
 Condition monitoring defined as measuring activities concerning characteristics and parameters of physical equipment at predetermined intervals either manually or automatically \cite{en201713306}. Leveraging rapid technological advancements in data storage, data process and network structure, condition monitoring became one of the driving force behind the industry 4.0 paradigm. The key goal behind this paradigm is to acquisition, transmission and analysis of data in order to predict future behaviours of machinery, or plant on a larger scale, to boost efficiency and reliability \cite{lughofer2019prologue,RUIZSARMIENTO}. 
 
 Researchers from both academia and industry have devoted significant attention to condition monitoring of induction motors over decades. Even though induction motors renowned for robustness, environmental, electrical and mechanical effects may lead induction motors to failure. As a result, industrial processes subjected to potential losses in a manner of time and capital, so the desire to minimize or even prevent these losses emerges the need for condition monitoring. 
-
+\pagebreak
 \subsection{Maintenance strategies}
 
 Maintenance can be defined as the combination of all technical and managerial actions taken to maintain or restore an item throughout its life cycle in a condition where it can fulfil its designed function \cite{en201713306}. A motor maintenance program should effectively address reliability, cost, and scheduling issues, as well as the causes of the most common motor failures. Essentially, there are two types of maintenance strategies: corrective and preventive. 
@@ -175,6 +175,7 @@ The downside of predictive maintenance is that it requires additional equipment 
 % 	\label{Figure2.3}
 % \end{figure}
 % \vspace{-6pt}
+\pagebreak
 \section{Induction Motor Fault Types}
 
 From a mechanical perspective, induction machines basically consist of three components: stator, rotor and bearing. Electrical, mechanical, and environmental disturbances constantly affect asynchronous motor components and cause most malfunctions \cite{bonnet2010}. Table \ref{Table2.1} exhibits various surveys that studied and categorized the most common failures \cite{motor1985report,albrecht1986assessment,albrecht1987assessment,thorsen1995survey,bonnett2008increased}. 
@@ -484,6 +485,7 @@ Commonly called as average, is the sum of the samples in the dataset divided by 
 where,\\
 $\bar{Y} \quad$ is the mean;\\
 $N \quad$ is the number of data samples;
+\pagebreak
 \subsubsection{Median}
 
 The median, which is the point in a dataset that is greater than half the numbers and less than the other half, tends to have a robustness of validity but not a robustness of efficiency \cite{croarkin2012handbook,shukla2015analysis}.
@@ -508,8 +510,7 @@ Standard deviation is the square-root of the variance which is aritmetic average
 STD=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
 \label{std}
 \end{equation}
-where,\\
-$STD \quad$ is the standard deviation;\\
+
 \subsubsection{Kurtosis} 
 
 Kurtosis a measure that is to be used to understand if the data peaked or flat relative to a normal distribution \cite{shukla2015analysis}. High kurtosis indicates that the dataset tends to have a prominent peak close to the mean, while the dataset with low kurtosis tends to have a flat peak close to the mean rather than a sharp peak \cite{croarkin2012handbook}.
@@ -545,7 +546,7 @@ Two condition must be satisfied for accurate representation of $x(t)$ \cite{orfa
 	$$
 \end{enumerate}
 where, $f_s = \displaystyle\frac{1}{T_s}$
-\pagebreak
+
 \subsubsection{Fast Fourier transform}
 
 After an analogue signal is sampled and the shape of the signal is obtained, this signal is now in a form that can be processed and analyzed in the digital environment. As an example, in order to find the output expression of a linear and time-invariant system, the input function of this system in the time domain is multiplied by the pulse input response of this system and the resulting signal is integrated. This computationally cumbersome convolution operation becomes an algebraic multiplication in the frequency space \cite{cernuda2019relevance}. Therefore, in signal processing studies, some transformation methods have been developed to find the equivalent of the signal in the frequency space. One of these methods is the Fourier Transform.
@@ -564,7 +565,6 @@ Since the form of the Discrete Fourier Transform given by the equation $\ref{dft
 	\item Shannon-Nyquist theorem indicates that sampling frequency must be twice the maximum frequency, but in practice 10 times increases accuracy.
 	\item Spectral resolution, $\Delta f = \displaystyle\frac{f_s}{N}$
 \end{itemize}
-\pagebreak
 
 \subsubsection{Power spectral density estimation}
 
@@ -584,7 +584,7 @@ By segmenting and window overlapping the data, the Welch method can increase the
 
 \begin{figure}[!h]
 	\centering
-	\frame{\includegraphics[width=400pt,keepaspectratio=true]{./fig/welch.png}}
+	\frame{\includegraphics[width=420pt,keepaspectratio=true]{./fig/welch.png}}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
 	\vspace{1cm}
 	\caption{Algorithm of Power Spectral Density estimation via Welch's method \cite{solomon1991psd}.}	

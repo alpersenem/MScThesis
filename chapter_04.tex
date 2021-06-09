@@ -2,11 +2,65 @@
 \chapter{FAULT DIAGNOSIS METHODOLOGY}\label{Ch4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 This chapter discusses four different methods for performing fault diagnosis. First of all, different signal processing methods are applied to the 1-phase current signal and compared with classical machine learning and deep learning methods. In the context of the thesis, two different comparisons are made. The first is to examine the advantages and disadvantages of different feature extraction scenarios and compare them with various metrics, while the second is to examine deep learning methods as an end-to-end solution.
-\section{Classical Machine Learning Analysis}
-
+\section{Classical machine learning analysis}
 Classical machine learning methods need preprocessing for feature extraction, albeit in different ways. These features, which will be used for fault detection, directly affect the performance of the classifier. Within the scope of this thesis, three different signal processing for classical machine learning methods and the calculated features based on this process will be examined. In addition, the responses of the VFD powered motor to different speed and load scenarios are also covered.
-
 \subsection{Time domain statistical analysis}
+The first method is to extract the statistical properties of the current data in the time domain and to diagnose faults with machine learning techniques over them. Statistical features such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime to be used as features to predict whether the motor is healthy or faulty. 
+
+\begin{landscape}
+	\thispagestyle{empty} % Remove the bottom page numbering
+%	\begin{changemargin}{-0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
+		%\thispagestyle{lscape}
+
+		\vspace*{20mm}
+		\begin{figure*}[ht]
+			\centering
+			%\begin{tabular}{@{}cc@{}}
+				\includegraphics[scale=.45,keepaspectratio=true]{./fig/methods.png} %&
+				%\includegraphics[width=50mm]{./fig/sekil3}
+			%\end{tabular}                                       
+			\caption{Flowcharts of the methods presented in this thesis.}
+			\label{methods}
+		\end{figure*}
+	   
+% % Set the page number on the left side for even numbered pages
+% 		\begin{tikzpicture}[remember picture, overlay]
+% 		\node[xshift=-25mm+148.5mm, yshift=-1mm-15mm, rotate=180] (number) at (current page text area.east) {\thepage};
+% 		\end{tikzpicture}
+		
+% Set the page number on the right side for even numbered pages as well
+		\begin{tikzpicture}[remember picture, overlay]
+		 \node[xshift=-25mm+148.5mm, yshift=17mm-210mm] (number) at (current page text area.east) {\thepage};
+		\end{tikzpicture}
+		
+%	\end{changemargin}
+\end{landscape}
+
+% All the figures and also odd page figures normally face inside the thesis, however the rule requires figures always face to the right. - SBÖ
+% Figures on landscape pages has to be centered and facing to the right (ITU) - SBÖ
+% \begin{landscape}
+% 	\thispagestyle{empty} %Remove the bottom page numbering
+% %	\begin{changemargin}{-0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
+% 	%\thispagestyle{lscape}
+% 	\vspace*{5mm}
+% 	\begin{figure*}
+% 		\centering
+% 		%\begin{tabular}{@{}cc@{}}
+% 		\includegraphics[scale=.45,keepaspectratio=true]{./fig/methods.png} %&
+% 		%\includegraphics[width=50mm]{./fig/sekil3}
+% 		%\end{tabular}                                       
+% 		\caption{Flowcharts of the methods presented in this thesis.}
+% 		\label{methods}
+% 	\end{figure*}
+	
+% % Set the page number on the right side for odd numbered pages
+%       \begin{tikzpicture}[remember picture, overlay]
+% 		\node[xshift=-25mm+148.5mm, yshift=17mm-210mm+15mm] (number) at (current page text area.east) {\thepage};
+% 	  \end{tikzpicture}
+	  
+% %\end{changemargin}
+% \end{landscape}
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=400pt,keepaspectratio=true]{./fig/method1.PNG}
@@ -14,19 +68,21 @@ Classical machine learning methods need preprocessing for feature extraction, al
 	\caption{Diagram of time-domain statistical analysis method.}	
 	\label{method1}
 \end{figure}
-The first method is to extract the statistical properties of the current data in the time domain and to diagnose faults with machine learning techniques over them. Statistical features such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime to be used as features to predict whether the motor is healthy or faulty. 
+
+In order to examine the distributions of these features in different classes, t-SNE, a manifold learning technique that reduces high-dimensional data to two or three dimensions, was used \cite{van2008visualizing}. It is widely preferred because it can capture nonlinear structures by exploiting local relationships between data points. It is employed to reduce the 6-dimensional feature space to 3 dimensions. It seems that a short-circuit fault between the stator windings and bearing fault can be differentiated from the healthy condition, while a 1-bar broken rotor fault is relatively more difficult to differentiate. This situation can be understood as it does not change the motor behaviour for 1-bar broken rotor failure, but when classification is made with machine learning methods, it is seen that there are algorithms with high performance.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=300pt,keepaspectratio=true]{./fig/sne_current.PNG}
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/sne_current.PNG}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
 	\caption{t-SNE plot of time-domain statistical features.}	
 	\label{snec}
 \end{figure}
-
-In order to examine the distributions of these features in different classes, t-SNE, a manifold learning technique that reduces high-dimensional data to two or three dimensions, was used \cite{van2008visualizing}. It is widely preferred because it can capture nonlinear structures by exploiting local relationships between data points. It is employed to reduce the 6-dimensional feature space to 3 dimensions. It seems that a short-circuit fault between the stator windings and bearing fault can be differentiated from the healthy condition, while a 1-bar broken rotor fault is relatively more difficult to differentiate. This situation can be understood as it does not change the motor behaviour for 1-bar broken rotor failure, but when classification is made with machine learning methods, it is seen that there are algorithms with high performance.
-
+\pagebreak
 \subsection{Frequency domain statistical analysis}
+
+As a second method, by applying Welch's PSD estimation to the current signal, analysis became possible in the frequency domain. After the statistical properties of the amplitudes in the frequency domain were extracted, classification algorithms were applied. As in the first method, statistical properties such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime for cases where the motor is healthy or faulty.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=400pt,keepaspectratio=true]{./fig/method2.PNG}
@@ -34,19 +90,21 @@ In order to examine the distributions of these features in different classes, t-
 	\caption{Diagram of frequency domain statistical analysis method.}	
 	\label{method2}
 \end{figure}
-As a second method,  by applying Welch's PSD estimation to the current signal, analysis became possible in the frequency domain. After the statistical properties of the amplitudes in the frequency domain were extracted, classification algorithms were applied. As in the first method, statistical properties such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime for cases where the motor is healthy or faulty.
 
-\begin{figure}
+As can be seen from the t-SNE plot, a short-circuit fault between the stator windings and a bearing fault can be better differentiated from the healthy condition than the first method, while 1 bar-broken rotor fault is still relatively more difficult to distinguish. According to the classification performance results, it is seen that a high rate of success can still be achieved.
+
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=300pt,keepaspectratio=true]{./fig/sne_psd.PNG}
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/sne_psd.PNG}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
 	\caption{t-SNE plot of frequency domain statistical features.}	
 	\label{snep}
 \end{figure}
-
-As can be seen from the t-SNE plot, a short-circuit fault between the stator windings and a bearing fault can be better differentiated from the healthy condition than the first method, while 1 bar-broken rotor fault is still relatively more difficult to distinguish. According to the classification performance results, it is seen that a high rate of success can still be achieved.
-
+\pagebreak
 \subsection{Statistical analysis on characteristic frequencies}
+
+As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in MATLAB, followed by classification in Knime.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=400pt,keepaspectratio=true]{./fig/method3.PNG}
@@ -54,44 +112,24 @@ As can be seen from the t-SNE plot, a short-circuit fault between the stator win
 	\caption{Diagram of statistical analysis of characteristic frequencies method.}	
 	\label{method3}
 \end{figure}
-As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in MATLAB, followed by classification in Knime.
 
 Condition monitoring and fault diagnosis researches for induction motors have been going on for many years and accordingly, there is a wide knowledge accumulation. Studies in the frequency domain have shown that fault conditions will have certain signs in the frequency spectrum. In this study, using the characteristic frequency equations for bearing, stator and rotor faults given in the literature review section (equations \ref{bearingfault}, \ref{statorfault} and \ref{rotorfault}), it has been calculated up to certain harmonics, and then the mean and standard deviation of the amplitudes corresponding to the frequencies obtained for each fault type are calculated and statistical features are formed.
 
+As can be seen from the t-SNE plot, all faults can be better distinguished from the healthy state than the first and second method. According to the classification performance results, the third method outperforms the other two methods in almost every metric and every classifier.
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=300pt,keepaspectratio=true]{./fig/sne_mcsa.PNG}
+	\includegraphics[width=250pt,keepaspectratio=true]{./fig/sne_mcsa.PNG}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
 	\caption{t-SNE plot of characteristic frequencies statistics.}	
 	\label{snem}
 \end{figure}
 
-As can be seen from the t-SNE plot, all faults can be better distinguished from the healthy state than the first and second method. According to the classification performance results, the third method outperforms the other two methods in almost every metric and every classifier.
 
-% All the figures and also odd page figures normally face inside the thesis, however the rule requires figures always face to the right. - SBÖ
-% Figures on landscape pages has to be centered and facing to the right (ITU) - SBÖ
-\begin{landscape}
-	\thispagestyle{empty} %Remove the bottom page numbering
-%	\begin{changemargin}{-0.4mm}{0mm}{0mm} %Set all the margins to zero - SBÖ
-	%\thispagestyle{lscape}
-	\vspace*{5mm}
-	\begin{figure*}
-		\centering
-		%\begin{tabular}{@{}cc@{}}
-		\includegraphics[scale=.45,keepaspectratio=true]{./fig/methods.png} %&
-		%\includegraphics[width=50mm]{./fig/sekil3}
-		%\end{tabular}                                       
-		\caption{Flowcharts of the methods presented in this thesis.}
-		\label{methods}
-	\end{figure*}
-	
-% Set the page number on the right side for odd numbered pages
-      \begin{tikzpicture}[remember picture, overlay]
-		\node[xshift=-25mm+148.5mm, yshift=17mm-210mm+15mm] (number) at (current page text area.east) {\thepage};
-	  \end{tikzpicture}
-	  
-%\end{changemargin}
-\end{landscape}
+
+
+
+
 \subsection{Discussion}
 
 Due to their operating principles, classical machine learning methods are dependent on data engineering. Features revealed as a result of data engineering can better capture the fault characteristic. As can be seen from the table \ref{compare}, statistical approaches generally yield good results. Another advantage of statistical features is that they can be used in prognostic studies by observing their changes over time. 
@@ -275,17 +313,17 @@ As given in table \ref{deepl}, both deep learning methods provide impressive res
 		\label{deepl}}
 \end{table*}
 
-\begin{figure}[!h]
-	\begin{minipage}[b]{.5\linewidth}
+\begin{figure}[h]
+	\begin{subfigure}[b]{.5\linewidth}
 		\centering
 		\includegraphics[scale=.5]{./fig/cnn_accloss.png}
-		\subcaption{Training performance of \newline 1D-CNN model.}\label{tracnn}
-	\end{minipage}
-	\begin{minipage}[b]{.5\linewidth}
+		\firstsubcaption{Training performance of 1D-CNN model.}\label{tracnn}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
 		\centering
 		\includegraphics[scale=.5]{./fig/lstmaccloss.png}
-		\subcaption{Training performance of \newline LSTM model.}\label{tralstm}
-	\end{minipage}
+		\nextsubcaption{Training performance of LSTM model.}\label{tralstm}
+	\end{subfigure}
 	%\caption{A figure}\label{Figure2.2} % If no need a caption for main figure comment it out 
 \end{figure}
 %Figure letter: \subref{Figure2.2a}

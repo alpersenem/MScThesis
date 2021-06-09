@@ -1561,9 +1561,10 @@ INPUT .\symbols.tex
 INPUT .\symbols.tex
 INPUT .\symbols.tex
 INPUT symbols.tex
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmb8t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
@@ -1649,14 +1650,6 @@ INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
 INPUT .\fig\PFdiagram.png
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\fig\stator.PNG
 INPUT .\fig\stator.PNG
 INPUT fig\stator.PNG
@@ -1664,6 +1657,10 @@ INPUT .\fig\stator.PNG
 INPUT .\fig\stator.PNG
 INPUT .\fig\stator.PNG
 INPUT .\fig\stator.PNG
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\ts1ptm.fd
@@ -1829,6 +1826,13 @@ INPUT .\chapter_04.tex
 INPUT .\chapter_04.tex
 INPUT .\chapter_04.tex
 INPUT chapter_04.tex
+INPUT .\fig\methods.png
+INPUT .\fig\methods.png
+INPUT fig\methods.png
+INPUT .\fig\methods.png
+INPUT .\fig\methods.png
+INPUT .\fig\methods.png
+INPUT .\fig\methods.png
 INPUT .\fig\method1.PNG
 INPUT .\fig\method1.PNG
 INPUT fig\method1.PNG
@@ -1871,13 +1875,6 @@ INPUT .\fig\sne_mcsa.PNG
 INPUT .\fig\sne_mcsa.PNG
 INPUT .\fig\sne_mcsa.PNG
 INPUT .\fig\sne_mcsa.PNG
-INPUT .\fig\methods.png
-INPUT .\fig\methods.png
-INPUT fig\methods.png
-INPUT .\fig\methods.png
-INPUT .\fig\methods.png
-INPUT .\fig\methods.png
-INPUT .\fig\methods.png
 INPUT .\fig\method4.PNG
 INPUT .\fig\method4.PNG
 INPUT fig\method4.PNG
