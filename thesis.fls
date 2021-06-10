@@ -1569,6 +1569,9 @@ INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\psyro.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmmi10.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\thesis.lot
 INPUT thesis.lot
 INPUT thesis.lot
@@ -1576,9 +1579,6 @@ OUTPUT thesis.lot
 INPUT .\thesis.lof
 INPUT thesis.lof
 INPUT thesis.lof
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmr10.tfm
 OUTPUT thesis.lof
 INPUT .\summary.tex
 INPUT .\summary.tex

@@ -30,6 +30,24 @@
                     "inform"
                 ]
             }
+        },
+        {
+            "files": [
+                "**/foreword.tex"
+            ],
+            "config": {
+                "audience": "general",
+                "dialect": "british",
+                "domain": "general",
+                "emotions": [
+                    "joyful",
+                    "respectful",
+                    "friendly"
+                ],
+                "goals": [
+                    "tellStory"
+                ]
+            }
         }
     ]
 }
