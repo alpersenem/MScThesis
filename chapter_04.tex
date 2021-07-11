@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{FAULT DIAGNOSIS METHODOLOGY}\label{Ch4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-This chapter discusses four different methods for performing fault diagnosis. First of all, different signal processing methods are applied to the 1-phase current signal and compared with classical machine learning and deep learning methods. In the context of the thesis, two different comparisons are made. The first is to examine the advantages and disadvantages of different feature extraction scenarios and compare them with various metrics, while the second is to examine deep learning methods as an end-to-end solution.
-\section{Classical machine learning analysis}
-Classical machine learning methods need preprocessing for feature extraction, albeit in different ways. These features, which will be utilised for fault detection, directly affect the performance of the classifier. Within the scope of this thesis, three different signal processing for classical machine learning methods and the calculated features based on this process will be examined. In addition, the responses of the VFD powered motor to different speed and load scenarios are also covered.
+This chapter discusses four different methods for performing fault diagnosis. First of all, different signal processing methods are applied to the 1-phase current signal and compared with machine learning and deep learning methods. In the context of the thesis, two different comparisons are made. The first is to examine the advantages and disadvantages of different feature extraction scenarios and compare them with various metrics, while the second is to examine deep learning methods as an end-to-end solution.
+\section{Machine learning analysis}
+Machine learning methods need preprocessing for feature extraction, albeit in different ways. These features, which will be utilised for fault detection, directly affect the performance of the classifier. Within the scope of this thesis, three different signal processing for machine learning methods and the calculated features based on this process will be examined. In addition, the responses of the VFD powered motor to different speed and load scenarios are also covered.
 \subsection{Time domain statistical analysis}
 The first method is to extract the statistical properties of the current data in the time domain and to diagnose faults with machine learning techniques over them. Statistical features such as kurtosis, skewness, mean, RMS, standard deviation and median are extracted in the Knime to be used as features to predict whether the motor is healthy or faulty. 
 
@@ -132,13 +132,13 @@ As can be seen from the t-SNE plot, all faults can be better distinguished from 
 
 \subsection{Discussion}
 
-Due to their operating principles, classical machine learning methods are dependent on data engineering. Features revealed as a result of data engineering can better capture the fault characteristic. As can be seen from the table \ref{compare}, statistical approaches generally yield good results. Another advantage of statistical features is that they can be used in prognostic studies by observing their changes over time. 
+Due to their operating principles, machine learning methods are dependent on data engineering. Features revealed as a result of data engineering can better capture the fault characteristic. As can be seen from the Table \ref{compare}, statistical approaches generally yield good results. Another advantage of statistical features is that they can be used in prognostic studies by observing their changes over time. 
 
 Although the statistical study (M1) in the time domain gives good results compared to its simplicity and computational load, it is more vulnerable to external influences. It is useful to approach it carefully, as it is prone to give false results under distorting influences.
 
 PSD estimation with Welch's method is more resistant to disruptive effects due to its properties. While the higher computational load is a disadvantage, it has the potential to show effects that cannot be seen in the time domain. For this reason, it is also used especially in industrial standards. Considering the performance metrics, although the second method (M2) gives close results with the study in the time domain, it can be preferred because it is resistant to external effects.
 
-The characteristic effects of faults on motor current have been known to academic and industrial researchers for a long time. The disadvantage of this method is that it gives good results only under nominal load and speed conditions. However, as revealed in this study, it can be said that it is both a high-performance and robust method by statistically examining the amplitudes at characteristic frequencies (M3) under different speed and load conditions. As the table \ref{compare} exhibits, it outperforms for each performance metric and each classifier compared to other methods.
+The characteristic effects of faults on motor current have been known to academic and industrial researchers for a long time. The disadvantage of this method is that it gives good results only under nominal load and speed conditions. However, as revealed in this study, it can be said that it is both a high-performance and robust method by statistically examining the amplitudes at characteristic frequencies (M3) under different speed and load conditions. As the Table \ref{compare} exhibits, it outperforms for each performance metric and each classifier compared to other methods.
 
 \begin{landscape}
 	\thispagestyle{empty}
@@ -205,7 +205,7 @@ In the study, the Tensorflow library was used to develop deep learning models an
 	\label{method4}
 \end{figure}
 
-Since classical machine learning methods require a complex signal processing to extract the characteristics of the given data, the interest in the structures that will work end-to-end between the collected data and the decision output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. However, as a downside, large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
+Since machine learning methods require a complex signal processing to extract the characteristics of the given data, the interest in the structures that will work end-to-end between the collected data and the decision output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. However, as a downside, large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
 
 \begin{figure}[h]
 	\centering
@@ -290,7 +290,7 @@ RNN is preferred in condition monitoring diagnostic applications because of its 
 
 Detailed representations of 1D-CNN and LSTM structures given in appendix. 
 
-As given in table \ref{deepl}, both deep learning methods provide impressive results in the diagnostics of faults. Comparing the two methods, 1D-CNN outperforms LSTM in all metrics, while LSTM is simpler and straightforward in structure. However, the time required to train both models is the same.
+As given in Table \ref{deepl}, both deep learning methods provide impressive results in the diagnostics of faults. Comparing the two methods, 1D-CNN outperforms LSTM in all metrics, while LSTM is simpler and straightforward in structure. However, the time required to train both models is the same.
 
 \begin{table*}[h]
 	{\setlength{\tabcolsep}{12pt}
@@ -330,8 +330,8 @@ As given in table \ref{deepl}, both deep learning methods provide impressive res
 
 \section{Discussion}
 
-Machine learning methods can give better results than deep learning methods in relatively small datasets such as datasets obtained in experimental studies. As shown in table \ref{compare}, classical machine learning methods give successful results. It has been demonstrated that machine learning algorithms show high performance, especially when the features made with statistical calculations at characteristic failure frequencies specified as the third method are used. However, it is obvious that it requires complex calculations and developer-based competence to achieve high performance.
+Machine learning methods can give better results than deep learning methods in relatively small datasets such as datasets obtained in experimental studies. As shown in Table \ref{compare}, machine learning methods give successful results. It has been demonstrated that machine learning algorithms show high performance, especially when the features made with statistical calculations at characteristic failure frequencies specified as the third method are used. However, it is obvious that it requires complex calculations and developer-based competence to achieve high performance.
 
-As presented in the table \ref{deepl}, although deep learning methods are trained with much less data samples than classical machine learning methods, they gave very close results with machine learning methods trained with features extracted by the third method. In addition, it is another important issue that it provides such high performance without the need for any data preprocessing.
+As presented in the Table \ref{deepl}, although deep learning methods are trained with much less data samples than machine learning methods, they gave very close results with machine learning methods trained with features extracted by the third method. In addition, it is another important issue that it provides such high performance without the need for any data preprocessing.
 
 It can be said that the performance of deep learning methods will increase even more with the amount of data increasing with a high acceleration in industrial applications. Pre-trained deep learning models can also be useful in embedded systems with constrained resources. Especially, a deep learning-based condition monitoring and fault recognition application that will be integrated into motor drivers has great potential.

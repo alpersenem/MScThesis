@@ -189,7 +189,7 @@ From a mechanical perspective, induction machines basically consist of three com
 				\hline \\[-2.45ex] \hline \\[-2.1ex]
 				Component & IEEE & EPRI & Thorsen-Dalva & Bonnett-Yung \\
 				\hline \\[-1.8ex]
-				Bering & 44 & 41 & 51 & 69 \\
+				Bearing & 44 & 41 & 51 & 69 \\
 				Stator & 26 & 37  & 16 & 21\\
 				Rotor & 8 & 10 & 5 & 7 \\
 				Other & 22 & 12  & 28 & 3\\
@@ -595,11 +595,11 @@ By segmenting and window overlapping the data, the Welch method can increase the
 \section{Data-driven fault diagnosis techniques}
 Model and signal-based techniques have been applied successfully for many years in condition monitoring and fault diagnosis studies in induction motors. Although these approaches have their own advantages, they require a certain level of field expertise. With the establishment of the Industry 4.0 phenomenon, the increasing data size in industrial applications in recent years and the developments in the technologies of the hardware that will store and process this data form the infrastructure for data-oriented approaches. The fact that there has been vast academic interest in machine learning techniques, which are also defined as artificial intelligence, especially in the last ten years, causes an increase in industrial applications.
 
-Increasing data-driven studies in the induction motors will be examined under classical machine learning and deep learning methods in this study. 
+Increasing data-driven studies in the induction motors will be examined under machine learning and deep learning methods in this study. 
 
-\subsection{Classical machine learning methods}
+\subsection{Machine learning methods}
 
-The state information of the motor contained in the current signal usually requires the processing of the signal. Fault diagnosis can be made with classical machine learning methods by processing the signal with statistical approaches in the time and frequency domains and approaches to extracting characteristics at certain frequencies in the frequency domain. 
+The state information of the motor contained in the current signal usually requires the processing of the signal. Fault diagnosis can be made with machine learning methods by processing the signal with statistical approaches in the time and frequency domains and approaches to extracting characteristics at certain frequencies in the frequency domain. 
 
 Machine learning methods can be divided into supervised, unsupervised and semi-supervised according to training approaches. In supervised learning, the model is trained by giving the class information about the data to be processed as input, and the predicted class is given as a certain probability value as the model output. Within the scope of the thesis, supervised machine learning models were trained with a label indicating the motor status with the current signal.
 
@@ -633,9 +633,9 @@ The most common ensemble method, boosting provides sequential learning of the pr
 
 \subsection{Deep learning methods}	
 
-Deep learning, which is a sub-branch of machine learning, as its name implies, is artificial neural networks that deepen using many hidden layers. In classical machine learning, the artificial intelligence model requires feature engineering as a kind of preprocessing. Feature engineering requires specialized knowledge of statistical computing and signal processing, as well as knowledge of the general characteristics of the system. Deep learning methods, which provide a direct link between data collection and decision output by eliminating the manual feature extraction process, have attracted great attention in recent years.
+Deep learning, which is a sub-branch of machine learning, as its name implies, is artificial neural networks that deepen using many hidden layers. In machine learning, the artificial intelligence model requires feature engineering as a kind of preprocessing. Feature engineering requires specialized knowledge of statistical computing and signal processing, as well as knowledge of the general characteristics of the system. Deep learning methods, which provide a direct link between data collection and decision output by eliminating the manual feature extraction process, have attracted great attention in recent years.
 
-As the importance of data spreading with Industry 4.0, manufacturers are starting to offer add-ons and services that will make it easier to access data for their products. For example, Wat Motor now offers special designs for vibration and temperature sensors that will be mounted into the motor, allowing monitoring of the status of its induction motors \cite{wat2021}. In the coming years, with the increase in the available data, deep learning methods will attract even more attention. While the performance of deep learning techniques increases in parallel to available data amount compared to classical machine learning methods, the trained model can be transferred to other applications with its transferability feature \cite{zhang2020deep}.
+As the importance of data spreading with Industry 4.0, manufacturers are starting to offer add-ons and services that will make it easier to access data for their products. For example, Wat Motor now offers special designs for vibration and temperature sensors that will be mounted into the motor, allowing monitoring of the status of its induction motors \cite{wat2021}. In the coming years, with the increase in the available data, deep learning methods will attract even more attention. While the performance of deep learning techniques increases in parallel to available data amount compared to machine learning methods, the trained model can be transferred to other applications with its transferability feature \cite{zhang2020deep}.
 
 The increase in accessible data day by day, the interest of researchers from industry and academia that lead the development of new methods and approaches, and hardware developments such as Graphics Processing Unit (GPU), Tensor Processing Unit (TPU) and Field Programmable Gate Array (FPGA) that can process excessive calculations are the driving force of deep learning \cite{zhao2019deep,zhang2020deep}.
 
