@@ -324,7 +324,7 @@
   \fi
   \if@YuksekLisans
     \def\TezSeviyesi{M.Sc. THESIS}
-    \def\TezSeviyesiTR{YüKSEK L{\.I}SANS TEZ{\.I}}
+    \def\TezSeviyesiTR{Y{Ü}KSEK L{\.I}SANS TEZ{\.I}}
   \fi
   \if@Lisans
     \def\TezSeviyesi{GRADUATION THESIS}
