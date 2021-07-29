@@ -73,7 +73,7 @@
 
 %========================================= CAPTION SETTINGS =========================================
 \captionsetup [table]{position=top, aboveskip=0.3truecm, belowskip=6pt}
-\captionsetup [figure]{position=bottom, labelsep=colon, aboveskip=0.0truecm, belowskip=0.0truecm}
+\captionsetup [figure]{position=bottom, labelsep=colon, aboveskip=6pt, belowskip=-0.39truecm}
 \DeclareCaptionLabelSeparator{colon}{ \bfseries: } 				% Proper colomn separation in the figure labels - SBÖ
 
 %========================================== PAGE SETTINGS ===========================================

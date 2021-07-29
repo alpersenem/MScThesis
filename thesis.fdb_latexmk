@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex thesis"] 1627541457 "thesis.aux" "thesis.bbl" "thesis" 1627541697
+["bibtex thesis"] 1627563456 "thesis.aux" "thesis.bbl" "thesis" 1627563501
   "./thesis_itubib.bst" 1620682468 28230 3ff598b4408f4373e586ec91400d5739 ""
-  "thesis.aux" 1627541694 62073 2c2ddccfd7587c91ece84f54d7b78382 "pdflatex"
+  "thesis.aux" 1627563500 62073 d23e442239df29e85c10faafc1ce9767 "pdflatex"
   "thesis_bib.bib" 1623179555 32086 aeff3c815ed74a2dbf044277473f498a ""
   (generated)
   "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1627541651 "c:/Users/26046633.AR-ARCELIK/Documents/GitHub/Thesis/thesis.tex" "thesis.pdf" "thesis" 1627541697
+["pdflatex"] 1627563457 "c:/Users/26046633.AR-ARCELIK/Documents/GitHub/Thesis/thesis.tex" "thesis.pdf" "thesis" 1627563501
   "C:/Users/26046633.AR-ARCELIK/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1620653980 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/26046633.AR-ARCELIK/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1620653204 9514227 cc9133dcd06fe43c3012460b01f3fb24 ""
   "C:/Users/26046633.AR-ARCELIK/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1622461624 121455 99f4114d73580f3d2e06d54678a432af ""
@@ -269,7 +269,7 @@
   "appendices_cover.tex" 1626009331 1105 f72d721f2ee336dc985decdeb075a09c ""
   "c:/Users/26046633.AR-ARCELIK/Documents/GitHub/Thesis/thesis.tex" 1626001654 10267 9ebe8b4e6fbc7314ecca4fbbad4f68c8 ""
   "chapter_01.tex" 1626009306 5993 8d6b495e7aef712de4f83c20bf1b31d0 ""
-  "chapter_02.tex" 1627541167 65547 953f94b34f4056feeb3d8f2f3d2f1e1e ""
+  "chapter_02.tex" 1627560658 65536 c96fc6b2c685ed41fcd9e0db80bc6f20 ""
   "chapter_03.tex" 1627541407 11031 0dcd4faf25594aca80ca2bed114660c7 ""
   "chapter_04.tex" 1626009252 24019 30f6498842d605ddbdd2349b2f76bd70 ""
   "chapter_05.tex" 1626030742 5579 c22eedfaae027ad48300e9d037aa0a6d ""
@@ -316,17 +316,17 @@
   "summary.tex" 1626009354 3266 66bbd394313c86752ebf7e31ab619a1f ""
   "summary_TR.tex" 1626009384 9440 76668804098d1af20b719123555f30e0 ""
   "symbols.tex" 1627381827 2510 e304618c58c7e131bc2b2cabb525ade3 ""
-  "thesis.aux" 1627541694 62073 2c2ddccfd7587c91ece84f54d7b78382 "pdflatex"
-  "thesis.bbl" 1627541457 25701 3586bbd37d17e1d792aaed7849d9dd07 "bibtex thesis"
-  "thesis.lof" 1627541694 5831 fbb57a54309a9f4a19b84db22b63c574 "pdflatex"
-  "thesis.lot" 1627541694 2262 0f62d2e9d93edceec6f3c2d155b50195 "pdflatex"
+  "thesis.aux" 1627563500 62073 d23e442239df29e85c10faafc1ce9767 "pdflatex"
+  "thesis.bbl" 1627563456 25701 3586bbd37d17e1d792aaed7849d9dd07 "bibtex thesis"
+  "thesis.lof" 1627563500 5831 fbb57a54309a9f4a19b84db22b63c574 "pdflatex"
+  "thesis.lot" 1627563500 2262 0f62d2e9d93edceec6f3c2d155b50195 "pdflatex"
   "thesis.tex" 1626001654 10267 9ebe8b4e6fbc7314ecca4fbbad4f68c8 ""
-  "thesis.toc" 1627541694 7228 4609bed9834e445f6e080592f614979a "pdflatex"
-  "thesis_itu.cls" 1627365809 68525 a83ef3740a659deed6da0251b18477d4 ""
+  "thesis.toc" 1627563500 7228 b9d6399228e3c3569f82d4bca8dc6808 "pdflatex"
+  "thesis_itu.cls" 1627563408 68521 9384c50d3012bb25bc2e7d857d5bbc23 ""
   (generated)
-  "thesis.pdf"
-  "thesis.lot"
-  "thesis.toc"
-  "thesis.log"
   "thesis.aux"
+  "thesis.lot"
+  "thesis.log"
+  "thesis.toc"
+  "thesis.pdf"
   "thesis.lof"
