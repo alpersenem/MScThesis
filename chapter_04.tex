@@ -103,7 +103,7 @@ As can be seen from the t-SNE plot, a short-circuit fault between the stator win
 \pagebreak
 \subsection{Statistical analysis on characteristic frequencies}
 
-As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction computed in MATLAB, followed by classification in Knime.
+As a third method, by applying Welch's PSD estimate to the current signal, analysis in the frequency domain became possible. Specific fault frequencies in the frequency domain were calculated, then the corresponding amplitudes were calculated. By applying statistical measures such as mean and standard deviation to the amplitudes, six features were created for each condition and classification algorithms were applied to these features. In this method, signal processing and feature extraction are computed in MATLAB, followed by classification in Knime.
 
 \begin{figure}[h]
 	\centering
@@ -125,20 +125,15 @@ As can be seen from the t-SNE plot, all faults can be better distinguished from 
 	\label{snem}
 \end{figure}
 
-
-
-
-
-
 \subsection{Discussion}
 
-Due to their operating principles, machine learning methods are dependent on data engineering. Features revealed as a result of data engineering can better capture the fault characteristic. As can be seen from the Table \ref{compare}, statistical approaches generally yield good results. Another advantage of statistical features is that they can be used in prognostic studies by observing their changes over time. 
+Due to their operating principles, machine learning methods are dependent on data engineering. Features revealed as a result of data engineering can better capture the fault characteristic. As can be seen from Table \ref{compare}, statistical approaches generally yield good results. Another advantage of statistical features is that they can be used in prognostic studies by observing their changes over time. 
 
 Although the statistical study (M1) in the time domain gives good results compared to its simplicity and computational load, it is more vulnerable to external influences. It is useful to approach it carefully, as it is prone to give false results under distorting influences.
 
 PSD estimation with Welch's method is more resistant to disruptive effects due to its properties. While the higher computational load is a disadvantage, it has the potential to show effects that cannot be seen in the time domain. For this reason, it is also used especially in industrial standards. Considering the performance metrics, although the second method (M2) gives close results with the study in the time domain, it can be preferred because it is resistant to external effects.
 
-The characteristic effects of faults on motor current have been known to academic and industrial researchers for a long time. The disadvantage of this method is that it gives good results only under nominal load and speed conditions. However, as revealed in this study, it can be said that it is both a high-performance and robust method by statistically examining the amplitudes at characteristic frequencies (M3) under different speed and load conditions. As the Table \ref{compare} exhibits, it outperforms for each performance metric and each classifier compared to other methods.
+The characteristic effects of faults on motor current have been known to academic and industrial researchers for a long time. The disadvantage of this method is that it gives good results only under nominal load and speed conditions. However, as revealed in this study, it can be said that it is both a high-performance and robust method by statistically examining the amplitudes at characteristic frequencies (M3) under different speed and load conditions. As Table \ref{compare} exhibits, it outperforms for each performance metric and each classifier compared to other methods.
 
 \begin{landscape}
 	\thispagestyle{empty}
@@ -148,7 +143,7 @@ The characteristic effects of faults on motor current have been known to academi
 		{\setlength{\tabcolsep}{14pt}
 			%\hspace*{5mm}
 			%\vspace*{-6mm}
-			\caption{Performance metrics for methods and classifiers with 5-fold cross validation.}
+			\caption{Performance metrics for methods and classifiers with 5-fold cross-validation.}
 			\begin{center}
 				\vspace{-6mm}
 				\begin{tabular}{l|lll|lll}
@@ -205,7 +200,7 @@ In the study, the Tensorflow library was used to develop deep learning models an
 	\label{method4}
 \end{figure}
 
-Since machine learning methods require a complex signal processing to extract the characteristics of the given data, the interest in the structures that will work end-to-end between the collected data and the decision output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. However, as a downside, large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
+Since machine learning methods require complex signal processing to extract the characteristics of the given data, the interest in the structures that will work end-to-end between the collected data and the decision output has increased in the industry. Deep learning methods can respond to this interest by not requiring any preprocessing. However, as a downside, large amounts of data are needed to train deep learning methods. In virtue of long-term data collection is not possible in the laboratory environment, the data set was divided into 0.2 seconds segments using the sliding window method with no-overlapping as in \cite{shenfield2020novel}. Original data length in time was 10 seconds, to ensure capturing fault characteristics equation \ref{data} re-calculated and at least 40 times fault impacts captured. Each augmented segments were all assigned the same label as the original input sequence.
 
 \begin{figure}[h]
 	\centering
@@ -215,7 +210,7 @@ Since machine learning methods require a complex signal processing to extract th
 	\label{dataslide}
 \end{figure}
 
-The augmented dataset used in the training of two different deep learning methods: Convolutional Neural Networks and LSTM Networks. Although CNN originated and mostly applied on 2-dimensional problems mainly in computer vision studies, 1-D CNN successfully applied on time series signals such as vibration, sound and current fault diagnosis of induction motors \cite{eren2017bearing,eren2019generic,qiao2020deep,skowron2020convolutional}.
+The augmented dataset was used in the training of two different deep learning methods: Convolutional Neural Networks and LSTM Networks. Although CNN originated and mostly applied on 2-dimensional problems mainly in computer vision studies, 1-D CNN successfully applied on time series signals such as vibration, sound and current fault diagnosis of induction motors \cite{eren2017bearing,eren2019generic,qiao2020deep,skowron2020convolutional}.
 
 An improved 1D-CNN structure for bearing fault diagnosis presented in \cite{chen2021improved}, in this thesis study, structure improved further to the extended diagnosis of the stator winding short-circuit and broken rotor bar faults also.
 
@@ -288,7 +283,7 @@ RNN is preferred in condition monitoring diagnostic applications because of its 
 		\label{lstm}
 \end{table*}
 
-Detailed representations of 1D-CNN and LSTM structures given in appendix. 
+Detailed representations of 1D-CNN and LSTM structures are given in the appendix. 
 
 As given in Table \ref{deepl}, both deep learning methods provide impressive results in the diagnostics of faults. Comparing the two methods, 1D-CNN outperforms LSTM in all metrics, while LSTM is simpler and straightforward in structure. However, the time required to train both models is the same.
 
@@ -332,6 +327,6 @@ As given in Table \ref{deepl}, both deep learning methods provide impressive res
 
 Machine learning methods can give better results than deep learning methods in relatively small datasets such as datasets obtained in experimental studies. As shown in Table \ref{compare}, machine learning methods give successful results. It has been demonstrated that machine learning algorithms show high performance, especially when the features made with statistical calculations at characteristic failure frequencies specified as the third method are used. However, it is obvious that it requires complex calculations and developer-based competence to achieve high performance.
 
-As presented in the Table \ref{deepl}, although deep learning methods are trained with much less data samples than machine learning methods, they gave very close results with machine learning methods trained with features extracted by the third method. In addition, it is another important issue that it provides such high performance without the need for any data preprocessing.
+As presented in Table \ref{deepl}, although deep learning methods are trained with much less data samples than machine learning methods, they gave very close results with machine learning methods trained with features extracted by the third method. In addition, it is another important issue that it provides such high performance without the need for any data preprocessing.
 
 It can be said that the performance of deep learning methods will increase even more with the amount of data increasing with a high acceleration in industrial applications. Pre-trained deep learning models can also be useful in embedded systems with constrained resources. Especially, a deep learning-based condition monitoring and fault recognition application that will be integrated into motor drivers has great potential.

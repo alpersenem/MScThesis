@@ -74,7 +74,7 @@ Experimental studies were carried out at a rated load of 72 Nm and a frequency o
 
 \begin{table*}[h]
 	{\setlength{\tabcolsep}{12pt}
-		\caption{Brief information about the experimental conditions.}
+		\caption{Brief information about experimental conditions.}
 		\begin{center}
 			\vspace{-6mm}
 			\begin{tabular}{ccc}
@@ -93,20 +93,20 @@ Experimental studies were carried out at a rated load of 72 Nm and a frequency o
 		\label{Table3.3}}
 \end{table*}
 
-Another issue to be considered while collecting data is the amount of data required to see the effects of failure. In the experiments, the mechanical speed of the rotor varies between 857 and 1472 rpm in proportion to the reference control command applied. According to equation the given in \ref{data} \cite{shenfield2020novel}, approximately 200 data points are taken per revolution of the rotor shaft with 5 kHz sampling frequency and sampling time of 10 seconds, a window width of 50,000 data points, fault impacts expected to be easily captured.
+Another issue to be considered while collecting data is the amount of data required to see the effects of failure. In the experiments, the mechanical speed of the rotor varies between 857 and 1472 rpm in proportion to the reference control command applied. According to the equation given in \ref{data} \cite{shenfield2020novel}, approximately 200 data points are taken per revolution of the rotor shaft with 5 kHz sampling frequency and sampling time of 10 seconds, a window width of 50,000 data points, fault impacts expected to be easily captured.
 
 \begin{equation}
 	\textit{Number of Data Points} = \displaystyle \frac{60 \cdot \textit{Sampling Frequency (Hz)}}{\textit{Rotor's Mechanical Speed}}
 	\label{data}
 \end{equation}
 
-In data analysis, studies were carried out in time and frequency domains. In the time domain, the stator supply currents are studied in raw (no pre-prosessing), while in the frequency domain, Welch's power spectral density estimation is applied to the current data. Current signals obtained in 1 second for healthy and faulty conditions under different speed and load scenarios, as well as 10 times zoomed, are shared in Figure \ref{bearing100} to Figure \ref{rotor75}. Looking at the plots, it is not possible to interpret whether the motor is faulty in the time domain or even if it is faulty, which fault has occurred.
+In data analysis, studies were carried out in time and frequency domains. In the time domain, the stator supply currents are studied in raw (no pre-processing), while in the frequency domain, Welch's power spectral density estimation is applied to the current data. Current signals obtained in 1 second for healthy and faulty conditions under different speed and load scenarios, as well as 10 times zoomed, are shared in Figure \ref{bearing100} to Figure \ref{rotor75}. Looking at the plots, it is not possible to interpret whether the motor is faulty in the time domain or even if it is faulty, which fault has occurred.
 \pagebreak
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/bearing_100.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{An example of stator current signals of healthy and bearing-fault motor at rated load.}	
+	\caption{An example of stator current signals of the healthy and bearing-fault motor at rated load.}	
 	\label{bearing100}
 \end{figure}
 \pagebreak
@@ -114,7 +114,7 @@ In data analysis, studies were carried out in time and frequency domains. In the
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/bearing_75.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{An example of stator current signals of healthy and bearing-fault motor at $75\%$ of the rated load.}	
+	\caption{An example of stator current signals of the healthy and bearing-fault motor at $75\%$ of the rated load.}	
 	\label{bearing75}
 \end{figure}
 \pagebreak
@@ -178,7 +178,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdbearing_100.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and bearing-fault motor at rated load.}	
+	\caption{Welch's PSD estimations of the healthy and bearing-fault motor at rated load.}	
 	\label{psdbearing100}
 \end{figure}
 \pagebreak
@@ -186,7 +186,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdbearing_75.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and bearing-fault motor at $75\%$ of the rated load.}	
+	\caption{Welch's PSD estimations of the healthy and bearing-fault motor at $75\%$ of the rated load.}	
 	\label{psdbearing75}
 \end{figure}
 \pagebreak
@@ -194,7 +194,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdstator_100.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and stator inter-turn-fault motor at 75$\%$ of the rated load.}	
+	\caption{Welch's PSD estimations of the healthy and stator inter-turn-fault motor at 75$\%$ of the rated load.}	
 	\label{psdstator100}
 \end{figure}
 \pagebreak
@@ -202,7 +202,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdstator_75.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and stator inter-turn-fault motor at 75$\%$ of the rated load.}	
+	\caption{Welch's PSD estimations of the healthy and stator inter-turn-fault motor at 75$\%$ of the rated load.}	
 	\label{psdstator75}
 \end{figure}
 \pagebreak
@@ -210,7 +210,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdrotor_100.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and broken rotor bar-fault motor at 75$\%$ of the rated load.}	
+	\caption{Welch's PSD estimations of the healthy and broken rotor bar-fault motor at 75$\%$ of the rated load.}	
 	\label{psdrotor100}
 \end{figure}
 \pagebreak
@@ -218,7 +218,7 @@ In addition, Figures \ref{psdbearing100} to \ref{psdrotor75} demonstrate Welch's
 	\centering
 	\includegraphics[width=0.75\paperwidth,keepaspectratio=true]{./fig/psdrotor_75.png}
 	% sekil3.eps: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=14 14 1155 740
-	\caption{Welch's PSD estimations of healthy and broken rotor bar-fault motor at 75$\%$ of the rated load.}
+	\caption{Welch's PSD estimations of the healthy and broken rotor bar-fault motor at 75$\%$ of the rated load.}
 	\label{psdrotor75}
 \end{figure}
 

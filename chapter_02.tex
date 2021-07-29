@@ -7,7 +7,7 @@
 
 Electric motors are divided into two classes depending on their power supply type: direct current (DC) or alternating current (AC). The latter can be broken into two classes as synchronous or induction according to their operating speed. Induction motors, which operates slightly lower than synchronous speed, are also sub-divided as wounded and squirrel-cage motors. In this study, squirrel-cage induction motors have been investigated by means of induction motors, since the squirrel-cage type is predominantly used in industrial applications. 
 
-Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal \cite{gunnar2016}. The difference between the actual rotor speed and synchronous speed is called as slip \cite{doe2008improving}.
+Induction motors run at a speed slightly slower than the synchronous speed at the point where motor torque and load torque are equal \cite{gunnar2016}. The difference between the actual rotor speed and synchronous speed is called slip \cite{doe2008improving}.
 
 \begin{equation}
 	\textit{Synchronous Speed} = \displaystyle \frac{120 \cdot \textit{Frequency (Hz)}}{\textit{number of poles}}
@@ -27,7 +27,7 @@ Induction motors run at a speed slightly lower than synchronous speed at the poi
 %	\label{ts}
 %\end{figure}
 
-In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power \cite{oliver1992electric,karmakar2016induction}.
+In Principle, induction motors transfer electrical energy into mechanical energy by interlinking two electrical components: stator as stationary part and rotor as rotational part. Electrical energy is transmitted from stator to rotor via electromagnetic induction, then a mechanical component bearing guides rotor to provide mechanical power \cite{oliver1992electric,karmakar2016induction}.
 
 \begin{figure}[h]
 	\centering
@@ -36,9 +36,10 @@ In Principle, induction motors transfer electrical energy into mechanical energy
 	\caption{Squirrel cage induction motor structure, courtesy of WAT Motor Co.}	
 	\label{motor}
 \end{figure}
+\pagebreak
 \subsection{VFD-fed induction motors}
 
-A variable frequency drive, also named as inverter, adjustable-frequency drive (AFD) or variable-speed drive (VSD), fed motor system controls the rotation speed of the induction motor by regulating the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
+A variable frequency drive, also named as the inverter, adjustable-frequency drive (AFD) or variable-speed drive (VSD), fed motor system controls the rotation speed of the induction motor by regulating the supply frequency and voltage of the motor. The main difference between line-start and VFD-fed induction motors is that while in line-start mode supply voltage is the only controllable parameter, on the other hand, VFD-fed has the ability to control torque and speed easily \cite{faiz2017fault}.
 
 % \begin{figure}[h]
 % 	\centering
@@ -56,7 +57,7 @@ From a historical point of view, DC motors have been utilised in speed control a
 	\item Direct Torque Control (DTC)
 \end{itemize}
 
-The common idea behind these methods is based on controlling the torque and flux references applied to the motor separately, as in DC motor control \cite{faiz2017fault}. In the scope of this thesis, only the V/f control strategy emphasized due to the widespread adoption of the control method in pump, compressor and fan applications. 
+The common idea behind these methods is based on controlling the torque and flux references applied to the motor separately, as in DC motor control \cite{faiz2017fault}. In the scope of this thesis, only the V/f control strategy is emphasized due to the widespread adoption of the control method in pump, compressor and fan applications. 
 
 V/f control can be employed in both open-loop and closed-loop modes. Open-loop V/f control, which is by far the most popular control due to its simplicity, as the name implies, creates a constant air-gap flux by detaining the ratio between the voltage and frequency applied to the induction motor constant, and as a result, it provides the opportunity to work at operating frequencies from zero to nominal frequency \cite{bose2002modern}. 
 
@@ -64,9 +65,9 @@ VFDs come with benefits such that energy savings, reliability and product qualit
 
 \subsection{Need for condition monitoring}
 
-Condition monitoring defined as measuring activities concerning characteristics and parameters of physical equipment at predetermined intervals either manually or automatically \cite{en201713306}. Leveraging rapid technological advancements in data storage, data process and network structure, condition monitoring became one of the driving force behind the industry 4.0 paradigm. The key goal behind this paradigm is to acquisition, transmission and analysis of data in order to predict future behaviour of machinery, or plant on a larger scale, to boost efficiency and reliability \cite{lughofer2019prologue,RUIZSARMIENTO}. 
+Condition monitoring is defined as measuring activities concerning characteristics and parameters of physical equipment at predetermined intervals either manually or automatically \cite{en201713306}. Leveraging rapid technological advancements in data storage, data process and network structure, condition monitoring became one of the driving force behind the industry 4.0 paradigm. The key goal behind this paradigm is to acquisition, transmission and analysis of data in order to predict the future behaviour of machinery, or plant on a larger scale, to boost efficiency and reliability \cite{lughofer2019prologue,RUIZSARMIENTO}. 
 
-Researchers from both academia and industry have devoted significant attention to condition monitoring of induction motors over decades. Even though induction motors renowned for robustness, environmental, electrical and mechanical effects may lead induction motors to failure. As a result, industrial processes subjected to potential losses in a manner of time and capital, so the desire to minimize or even prevent these losses emerges the need for condition monitoring. 
+Researchers from both academia and industry have devoted significant attention to condition monitoring of induction motors over decades. Even though induction motors are renowned for robustness, environmental, electrical and mechanical effects may lead induction motors to failure. As a result, industrial processes are subjected to potential losses in a manner of time and capital, so the desire to minimize or even prevent these losses emerges the need for condition monitoring. 
 \pagebreak
 \subsection{Maintenance strategies}
 
@@ -84,7 +85,7 @@ Corrective maintenance is a form of maintenance conducted after the induction mo
 
 Preventive maintenance, on the other hand, aims to detect faults at an early step and correct them before they create risk to operation \cite{en201713306}. Preventive maintenance employed to increase efficiency and reliability by taking into account the probability of failure or the ageing of the equipment, at certain intervals or according to pre-planned scheduling. Although this approach is beneficial in cases where the wear-out characteristics are evident, it has disadvantages, especially in terms of not being able to use equipment lifespan efficiently and increasing the maintenance cost compared to the corrective maintenance approach \cite{AHMAD}.
 
-Predictive maintenance is a condition-based approach to maintenance that is used to evaluate the parameters and characteristics of the equipment or to make predictions based on repeated analysis \cite{en201713306}. Compared to preventive maintenance, predictive maintenance maximizes equipment service-life whilst minimizing unnecessary maintenance. In 99\% of machine failures, it is possible to observe indications that malfunctions will occur, in other words, the necessary measures can be taken before 99\% of the faults occur by continuously monitoring the machine \cite{AHMAD}.
+Predictive maintenance is a condition-based approach to maintenance that is used to evaluate the parameters and characteristics of the equipment or to make predictions based on repeated analysis \cite{en201713306}. Compared to preventive maintenance, predictive maintenance maximizes equipment service life whilst minimizing unnecessary maintenance. In 99\% of machine failures, it is possible to observe indications that malfunctions will occur, in other words, the necessary measures can be taken before 99\% of the faults occur by continuously monitoring the machine \cite{AHMAD}.
 
 Within the predictive maintenance approach, decision-making can be divided into two: diagnosis, which is the analysis of the current situation, and prognosis, which is the assessment of conditions measured over time \cite{tinga2019physical}. A P-F curve can be used to better understand diagnostic and prognostic monitoring systems.
 
@@ -223,7 +224,7 @@ Considering the actual distribution of the faults, in total 80\% of the faulty m
 		\label{Table2.2}}
 \end{table*}
 
-As presented in Table \ref{Table2.1}, most of the faults associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan \cite{trigeassou2013electrical}. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
+As presented in Table \ref{Table2.1}, most of the faults are associated with bearings followed by stator related faults. It also should be noted that these surveys do not include the effects of power electronics. A motor controlled by VFD is subjected to short and high voltage pulses called PWM (Pulse Width Modulation), which are sent at a very high frequency, which can have a detrimental effect on the wire insulation and cause a burn on the stator \cite{gunnar2016}. Although this problem can be solved with high-quality insulation, PWM signals also create non-continuous electrical discharges on the bearings, causing wear which reduces bearing lifespan \cite{trigeassou2013electrical}. Therefore, it would not be wrong to conclude that bearing and stator failures will also have a high rate in VFD-fed induction motors.
 
 \subsection{Bearing related faults}
 
@@ -294,7 +295,7 @@ $f_{st} \quad$ is the principle slot harmonic frequencies.
 
 \subsection{Rotor related faults}
 
-There are several reasons why rotor bar faults can occur in an induction motor. In caged motors, breaking one cage bar does not significantly change the operating behaviour of the machine. However, due to the fracture that occurs, the current distribution, air gap flux, force balance and temperature distribution in the rotor deteriorate, and heating and strains increase \cite{imeryuz2009asenkron}. If the rotor continues to run in this state, damage can also spread to the sidebars, causing multiple bars of the rotor to break. In this respect, it is very important to diagnose the condition when a rotor bar broken.
+There are several reasons why rotor bar faults can occur in an induction motor. In caged motors, breaking one cage bar does not significantly change the operating behaviour of the machine. However, due to the fracture that occurs, the current distribution, air gap flux, force balance and temperature distribution in the rotor deteriorate, and heating and strains increase \cite{imeryuz2009asenkron}. If the rotor continues to run in this state, damage can also spread to the sidebars, causing multiple bars of the rotor to break. In this respect, it is very important to diagnose the condition when a rotor bar is broken.
 
 The main reasons of rotor broken bar of an induction motor can be listed as follows \cite{imeryuz2009asenkron,filippetti2013condition,bonnett1999root,Siddique};
 
@@ -397,7 +398,7 @@ Condition monitoring is applied to the motor continuously or periodically, as a 
 
 One of the parameters that can be followed in order for electric motors to work safely and without failure for a long time is the motor temperature. By installing sensors such as Resistance Temperature Detectors, thermistors, thermocouples and thermostats, electrical or mechanical faults can be detected \cite{mistry2016rotating}. These sensors are usually placed in the stator windings, bearings and frame \cite{ieee2017}. In addition, temperature monitoring can be performed by parameter estimation over the stator supply current without using any temperature sensor \cite{kumar2019comprehensive}.
 
-As mentioned before, thermal stresses resulting from effects such as overloading and bearing lubrication problems may damage various components of the motor. While bearing temperatures maintain useful information about possible friction problems, the coolant bulk outlet temperature is frequently monitored, especially when the machine is forced above its nominal values, and winding temperature monitoring is also useful in the event of overheating due to overload \cite{thorsen1998methods}. Continuously monitoring of temperature will give an indication of potential failures to avoid catastrophic incidents.
+As mentioned before, thermal stresses resulting from effects such as overloading and bearing lubrication problems may damage various components of the motor. While bearing temperatures maintain useful information about possible friction problems, the coolant bulk outlet temperature is frequently monitored, especially when the machine is forced above its nominal values, and winding temperature monitoring is also useful in the event of overheating due to overload \cite{thorsen1998methods}. Continuously monitoring temperature will give an indication of potential failures to avoid catastrophic incidents.
 
 \subsection{Vibration monitoring}
 
@@ -409,10 +410,10 @@ Vibration analysis is used in many studies on mechanical failures also occurring
 
 \subsection{Motor current monitoring}
 
-Condition monitoring via supply current signals provide useful information on not only for motor itself but also the mechanical system that motor drive \cite{thomson2001current}. An important aspect of the maintenance strategy is the inclusion of a mechanical system that motor drive. Especially with VFD-fed systems, where current is already sensed to control motor operation, both electrical and mechanical faults can be diagnosed without additional sensor need \cite{thomson2001current,gritli2017condition,corne2017misalignment,en201320958}. 
+Condition monitoring via supply current signals provide useful information on not only for the motor itself but also the mechanical system that motor drive \cite{thomson2001current}. An important aspect of the maintenance strategy is the inclusion of a mechanical system that motor drives. Especially with VFD-fed systems, where current is already sensed to control motor operation, both electrical and mechanical faults can be diagnosed without additional sensor need \cite{thomson2001current,gritli2017condition,corne2017misalignment,en201320958}. 
 
 In industrial applications where ambient conditions are not suitable for vibration signal measurement, current monitoring may be preferred due to its robustness to ambient conditions, especially when disturbances are high.
-Therefore, current-based condition monitoring, which proven in industrial applications, has benefits such as economical, versatile and reliable over other monitoring techniques.
+Therefore, current-based condition monitoring, which is proven in industrial applications, has benefits such as economical, versatile and reliable over other monitoring techniques.
 
 Although many studies have been done to diagnose fault using current signals, studies on VFD-fed motors are limited. It should be noted that the PWM signals used in VFDs can suppress the characteristics of a failure in the motor current signal, making diagnosis difficult \cite{shaeboub2018monitoring}. In this study, electrical and mechanical fault detection is emphasized in different load and frequency scenarios over the single-phase stator supply current of the VFD-fed three-phased induction motor.
 
@@ -476,7 +477,7 @@ The main idea behind statistical analysis is to understand the location, which i
 
 \subsubsection{Mean}
 
-Commonly called as average, is the sum of the samples in the dataset divided by the total number of samples \cite{shukla2015analysis}. The mean is one of the best indicators if the underlying distribution is normal, but lacks the robustness of validity \cite{croarkin2012handbook}. That is, if the underlying distribution is not normal, mean-based confidence intervals tend to be imprecise.
+Commonly called average, is the sum of the samples in the dataset divided by the total number of samples \cite{shukla2015analysis}. The mean is one of the best indicators if the underlying distribution is normal, but lacks the robustness of validity \cite{croarkin2012handbook}. That is, if the underlying distribution is not normal, mean-based confidence intervals tend to be imprecise.
 \begin{equation}
 \bar{Y}=\sum_{i=1}^{N} Y_{i} / N
 \label{mean}
@@ -514,19 +515,19 @@ Standard deviation is the square-root of the variance which is aritmetic average
 
 Kurtosis a measure that is to be used to understand if the data peaked or flat relative to a normal distribution \cite{shukla2015analysis}. High kurtosis indicates that the dataset tends to have a prominent peak close to the mean, while the dataset with low kurtosis tends to have a flat peak close to the mean rather than a sharp peak \cite{croarkin2012handbook}.
 \begin{equation}
-\textit{kurtosis}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) STD^{4}}
+\textit{Kurtosis}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) STD^{4}}
 \label{kurtosis}
 \end{equation}
 \subsubsection{Skewness} 
 
 Skewness represents a lack of symmetry in a data set. The dataset is symmetrical if it looks the same to the left and right of the centre point \cite{shukla2015analysis}. The left skew represents a negative value while showing that it is taller on the left than on the right \cite{croarkin2012handbook}. The right skew indicates the opposite situation. The skewness of a symmetric dataset converges to zero, and it is zero for a normal distribution \cite{croarkin2012handbook}.
 \begin{equation}
-\textit{skewness}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) STD^{3}}
+\textit{Skewness}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) STD^{3}}
 \label{skewness}
 \end{equation}
 \subsection{Frequency based signal analysis}
 
-The frequency domain is needed to reveal properties of a signal that are hiddden in the time domain. This need actually has different motivations. One of them, considering the operating conditions, industrial machines are quite susceptible to noise and disturbances \cite{cernuda2019relevance,allen2004signal}. To suppress or eliminate these effects, frequency domain transformations are less expensive in terms of computational requirements than time-domain methods \cite{ahmed2019condition,cernuda2019relevance}. Another motivation is that the fault characteristics can be seen better in the frequency spectrum, as it is widely applied in the literature \cite{ahmed2019condition}.
+The frequency domain is needed to reveal properties of a signal that are hidden in the time domain. This need actually has different motivations. One of them, considering the operating conditions, industrial machines are quite susceptible to noise and disturbances \cite{cernuda2019relevance,allen2004signal}. To suppress or eliminate these effects, frequency domain transformations are less expensive in terms of computational requirements than time-domain methods \cite{ahmed2019condition,cernuda2019relevance}. Another motivation is that the fault characteristics can be seen better in the frequency spectrum, as it is widely applied in the literature \cite{ahmed2019condition}.
 
 Frequency domain analysis has different techniques including the Fourier transform of time-domain waveforms, but Fast Fourier Transform and Power Spectral Density methods will be examined in the thesis.
 
@@ -579,7 +580,7 @@ In Welch's method, the time domain signal is split into segments of a certain le
 	\label{welchdiagram}
 \end{figure}
 
-By segmenting and window overlapping the data, the Welch method can increase the resolution and also reduce both the variance and bias of the spectral estimation \cite{stoica2005spectral,al2010advanced,zerdani2020inter}. The mechanism of adding window overlaps on the signal, which is similar to noise removal with the recursion algorithms, results a better Signal-to-Noise Ratio (SNR) in high noise data \cite{jwo2021windowing,jin2020intelligent,irvine2002introduction}. Welch's PSD estimation with Hamming window for fault diagnosis in induction motors outperforms FFT and periodogram methods in terms of robustness and accuracy due to reduced bias and variance \cite{ayhan2003case}.
+By segmenting and window overlapping the data, the Welch method can increase the resolution and also reduce both the variance and bias of the spectral estimation \cite{stoica2005spectral,al2010advanced,zerdani2020inter}. The mechanism of adding window overlaps on the signal, which is similar to noise removal with the recursion algorithms, results in a better Signal-to-Noise Ratio (SNR) in high noise data \cite{jwo2021windowing,jin2020intelligent,irvine2002introduction}. Welch's PSD estimation with Hamming window for fault diagnosis in induction motors outperforms FFT and periodogram methods in terms of robustness and accuracy due to reduced bias and variance \cite{ayhan2003case}.
 
 \begin{figure}[!h]
 	\centering
@@ -594,7 +595,7 @@ By segmenting and window overlapping the data, the Welch method can increase the
 \section{Data-driven fault diagnosis techniques}
 Model and signal-based techniques have been applied successfully for many years in condition monitoring and fault diagnosis studies in induction motors. Although these approaches have their own advantages, they require a certain level of field expertise. With the establishment of the Industry 4.0 phenomenon, the increasing data size in industrial applications in recent years and the developments in the technologies of the hardware that will store and process this data form the infrastructure for data-oriented approaches. The fact that there has been vast academic interest in machine learning techniques, which are also defined as artificial intelligence, especially in the last ten years, causes an increase in industrial applications.
 
-Increasing data-driven studies in the induction motors will be examined under machine learning and deep learning methods in this study. 
+Increasing data-driven studies in induction motors will be examined under machine learning and deep learning methods in this study. 
 
 \subsection{Machine learning methods}
 
@@ -620,12 +621,12 @@ Besides performing linear classification, SVMs can efficiently perform nonlinear
 
 \subsubsection{Multi layer perceptron}
 
-MLP is basically a learning structure consisting of input, output and hidden layers. The input layer is the layer where the input signals arrive and the output layer is the layer where the output signals depart. The layers other than input and output layers are called hidden layers. All layers in MLP are made up of neurons. These parts are called neurons because the structure of the brain's neurons to receive input and transmit an output by processing this input is imitated. In MLP, the output of each layer becomes the input of the next layer. The inputs to each neuron are multiplied by a weight and summed, and a weight (bias) is added to the value found. The value reached is passed through an activation function while being transmitted to the next layer. These processes are repeated from the input layer to the output layer. This process is the forward propagation part of MLP \cite{haykin2010neural}. Initially, the feed-forward stage takes place with randomly determined weights and an estimated output value is calculated for each signal. Each estimated output value calculated in this way contains errors. The weights are updated according to the errors to try to reduce the error. This process is performed starting from the output layer to the input layer. This part of the MLP is called backpropagation \cite{haykin2010neural}. During this update process, how much the weights will be updated is determined by the learning rate. The number of times these operations will be repeated for all data is expressed as the epoch. For how many data forward propagation and backpropagation will be applied together is represented by the batch size.
+MLP is basically a learning structure consisting of input, output and hidden layers. The input layer is the layer where the input signals arrive and the output layer is the layer where the output signals depart. The layers other than input and output layers are called hidden layers. All layers in MLP are made up of neurons. These parts are called neurons because the structure of the brain's neurons to receive input and transmit an output by processing this input is imitated. In MLP, the output of each layer becomes the input of the next layer. The inputs to each neuron are multiplied by a weight and summed, and a weight (bias) is added to the value found. The value reached is passed through an activation function while being transmitted to the next layer. These processes are repeated from the input layer to the output layer. This process is the forward propagation part of MLP \cite{haykin2010neural}. Initially, the feed-forward stage takes place with randomly determined weights and an estimated output value is calculated for each signal. Each estimated output value calculated in this way contains errors. The weights are updated according to the errors to try to reduce the error. This process is performed starting from the output layer to the input layer. This part of the MLP is called backpropagation \cite{haykin2010neural}. During this update process, how much the weights will be updated is determined by the learning rate. The number of times these operations will be repeated for all data is expressed as the epoch. For how much data forward propagation and backpropagation will be applied together is represented by the batch size.
 
 \subsubsection{Ensemble learning}
 Each model is developed based on certain assumptions and errors that occur as a result of these assumptions. It is aimed to minimize the total error by combining the predictions with a kind of voting method between training multiple models and their outputs \cite{alpaydin2020introduction,sewell2011ensemble}. The practice of employing multiple classification models and combining their predictions in this way is called ensemble learning.
 \subsubsubsection{Random forest}
-Bagging, which is a voting method, can be defined as creating different variations by changing a dataset slightly and combining the outputs of each model after trained on a different variation \cite{alpaydin2020introduction,sewell2011ensemble}. As a refinement of bagged trees, Random Forest mainly aims to improve bagging by decorrelating the trees \cite{breiman2001random}. The procedure of voting for the most popular class after a large number of trees has been created is called random forests \cite{breiman2001random}.
+Bagging, which is a voting method, can be defined as creating different variations by changing a dataset slightly and combining the outputs of each model after being trained on a different variation \cite{alpaydin2020introduction,sewell2011ensemble}. As a refinement of bagged trees, Random Forest mainly aims to improve bagging by decorrelating the trees \cite{breiman2001random}. The procedure of voting for the most popular class after a large number of trees has been created is called random forests \cite{breiman2001random}.
 
 \subsubsubsection{XGBoost}
 The most common ensemble method, boosting provides sequential learning of the predictors and can be considered as a model averaging \cite{sewell2011ensemble}. As an iterative process, it continues to add classifier learner until a limit is reached by means of the number of models or accuracy \cite{alpaydin2020introduction}. XGBoost, a scalable machine learning algorithm for large-scale tree boosting, is a classifier variant with high performance in many different applications \cite{chen2021improved}.
@@ -706,7 +707,7 @@ $p_{k}=\displaystyle\sum_{i}^{K} C_{k i}\quad$ the number of instances that clas
 $t_{k}=\displaystyle\sum_{i}^{K} C_{i k}\quad$ the number of instances that class $k$ actually presents (row total)
 
 \subsection{Area under the curve}
-Receiver operating characteristic (ROC) curve, which is another method widely used in binary classification performance measurement, shows the performance of classification methods in two dimensions \cite{fawcett2004roc}. To reduce this metric to one dimension, the area under the ROC curve (AUC) is calculated.
+The receiver operating characteristic (ROC) curve, which is another method widely used in binary classification performance measurement, shows the performance of classification methods in two dimensions \cite{fawcett2004roc}.To reduce this metric to one dimension, the area under the ROC curve (AUC) is calculated.
 
 In multiclass classification problems, AUC values now transform into multiple binary classification values. The specified formula is used to reduce to a single numerical value \cite{fawcett2004roc}:
 \begin{equation}
