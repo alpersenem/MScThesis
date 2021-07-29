@@ -1629,8 +1629,11 @@ INPUT chapter_02.tex
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\26046633.AR-ARCELIK\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT .\fig\watmotor.PNG
 INPUT .\fig\watmotor.PNG
 INPUT fig\watmotor.PNG
@@ -1638,6 +1641,7 @@ INPUT .\fig\watmotor.PNG
 INPUT .\fig\watmotor.PNG
 INPUT .\fig\watmotor.PNG
 INPUT .\fig\watmotor.PNG
+INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmri8t.vf
 INPUT .\fig\maintenance.PNG
 INPUT .\fig\maintenance.PNG
 INPUT fig\maintenance.PNG
@@ -1920,13 +1924,11 @@ INPUT .\thesis.bbl
 INPUT thesis.bbl
 INPUT .\thesis.bbl
 INPUT thesis.bbl
-INPUT D:\Work\PST\New folder\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Work\PST\New folder\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8t.tfm
-INPUT D:\Work\PST\New folder\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\Work\PST\New folder\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT D:\Work\PST\New folder\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT .\appendices_cover.tex

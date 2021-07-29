@@ -10,12 +10,12 @@ Electric motors are divided into two classes depending on their power supply typ
 Induction motors run at a speed slightly lower than synchronous speed at the point where motor torque and load torque are equal \cite{gunnar2016}. The difference between the actual rotor speed and synchronous speed is called as slip \cite{doe2008improving}.
 
 \begin{equation}
-	\text{Synchronous Speed} = \displaystyle \frac{120 \cdot \text{Frequency (Hz)}}{\text{number of poles}}
+	\textit{Synchronous Speed} = \displaystyle \frac{120 \cdot \textit{Frequency (Hz)}}{\textit{number of poles}}
 	\label{speed}
 \end{equation}
 
 \begin{equation}
-	\text{Slip} = \displaystyle \frac{\text{Synchronous Speed - Rotor's Mechanical Speed}}{\text{Synchronous Speed}}
+	\textit{Slip} = \displaystyle \frac{\textit{Synchronous Speed - Rotor's Mechanical Speed}}{\textit{Synchronous Speed}}
 	\label{slip}
 \end{equation}
 
@@ -496,18 +496,18 @@ The median, which is the point in a dataset that is greater than half the number
 \end{eqnarray}
 where,\\
 $\tilde{Y} \quad$ is the median;
-\subsubsection{Root Mean Square}
+\subsubsection{Root mean square}
 
 RMS is also known as quadratic mean and represents tha magnitude of a varying signal \cite{sait2011review,shukla2015analysis}. As one of the most applied feature for rotating machinery, especially in AC electric motors, it is used for roughly estimating motor load and detecting general noise level.
 \begin{equation}
 \text{RMS}=\sqrt{\frac{1}{{~N}}\left[\sum_{{i}=1}^{{N}}\left({Y}_{{i}}\right)^{2}\right]}	
 \label{RMS}
 \end{equation}
-\subsubsection{Standard Deviation}
+\subsubsection{Standard deviation}
 
 Standard deviation is the square-root of the variance which is aritmetic average of the squared distance from the mean \cite{shukla2015analysis}. Similar to mean, standard deviation is also one of the best estimator, but also suffers the same lack of precision in case of distribution is not normal \cite{croarkin2012handbook}.
 \begin{equation}
-STD=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
+\textit{STD}=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
 \label{std}
 \end{equation}
 
@@ -515,14 +515,14 @@ STD=\sqrt{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{2} /(N-1)}
 
 Kurtosis a measure that is to be used to understand if the data peaked or flat relative to a normal distribution \cite{shukla2015analysis}. High kurtosis indicates that the dataset tends to have a prominent peak close to the mean, while the dataset with low kurtosis tends to have a flat peak close to the mean rather than a sharp peak \cite{croarkin2012handbook}.
 \begin{equation}
-\text { kurtosis }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) STD^{4}}
+\textit{kurtosis}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{4}}{(N-1) STD^{4}}
 \label{kurtosis}
 \end{equation}
 \subsubsection{Skewness} 
 
 Skewness represents a lack of symmetry in a data set. The dataset is symmetrical if it looks the same to the left and right of the centre point \cite{shukla2015analysis}. The left skew represents a negative value while showing that it is taller on the left than on the right \cite{croarkin2012handbook}. The right skew indicates the opposite situation. The skewness of a symmetric dataset converges to zero, and it is zero for a normal distribution \cite{croarkin2012handbook}.
 \begin{equation}
-\text { skewness }=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) STD^{3}}
+\textit{skewness}=\frac{\sum_{i=1}^{N}\left(Y_{i}-\bar{Y}\right)^{3}}{(N-1) STD^{3}}
 \label{skewness}
 \end{equation}
 \subsection{Frequency based signal analysis}
@@ -553,7 +553,7 @@ After an analogue signal is sampled and the shape of the signal is obtained, thi
 
 In practice, to calculate the frequency spectrum (frequency-amplitude expression of the Fourier Transform) of a signal, the Discrete Fourier Transform of the signal is calculated. The mathematical expression of DFT is as follows \cite{allen2004signal}:
 \begin{equation}
-X(k)= \displaystyle\sum_{n=0}^{N-1}x(n)\cdot exp\left({\frac{-j2\pi nk}{N}}\right)
+\textit{X(k)}= \displaystyle\sum_{n=0}^{N-1}x(n)\cdot exp\left({\frac{-j2\pi nk}{N}}\right)
 \label{dft}
 \end{equation}
 where, $0 \leq k \leq N-1$ and N is the number of samples in discrete signal.
@@ -607,25 +607,25 @@ Machine learning methods can be divided into supervised, unsupervised and semi-s
 
 Naive Bayes is a classification method based on the assumption that each feature is independent according to the class parameter \cite{friedman1997bayesian}. Outputs a probabilistic prediction of the target class for an unknown observation with its characteristics and class information input \cite{lowd2005naive}. Although it is simple in structure, it can be considered as a benchmark model in classification studies because it gives very fast and effective results even when the independence assumption is violated \cite{martin2018experimental}. 
 
-\subsubsection{k-Nearest Neighbors}
+\subsubsection{k-Nearest neighbors}
 
 One of the simplest machine learning methods, kNN can give very good results despite its simple structure and easy application. Even if the data set is large, the nearest neighbors can be found quickly and classification can be made \cite{shalev2014understanding}.
 
 It works on the assumption that observations with similar attributes are more likely to produce similar results \cite{richman2011multivariate}. As a non-parametric method kNN performs classification based on the number or distance of the Nearest Neighbor in the data set.
 
-\subsubsection{Support Vector Machines}
+\subsubsection{Support vector machines}
 
 SVM as a supervised machine learning method is widely applied in regression problems and generally in classification problems. The main concept of SVM is locating a hyperplane that separates and classifies the datasets. The margin defines the support vectors of the datasets as it is the closest point to the hyperplane. Classification is accomplished by finding the hyperplane between the classes.
 
 Besides performing linear classification, SVMs can efficiently perform nonlinear classification using various kernel functions. Kernel selection is quite important as it directly affects classification performance \cite{liu2018artificial}. There are many kernel and SVM architecture options for various problems in the literature. On the other hand, the performance of SVM algorithms is limited as the computational load increases with the increase in the number of samples \cite{haykin2010neural}. 
 
-\subsubsection{Multi Layer Perceptron}
+\subsubsection{Multi layer perceptron}
 
 MLP is basically a learning structure consisting of input, output and hidden layers. The input layer is the layer where the input signals arrive and the output layer is the layer where the output signals depart. The layers other than input and output layers are called hidden layers. All layers in MLP are made up of neurons. These parts are called neurons because the structure of the brain's neurons to receive input and transmit an output by processing this input is imitated. In MLP, the output of each layer becomes the input of the next layer. The inputs to each neuron are multiplied by a weight and summed, and a weight (bias) is added to the value found. The value reached is passed through an activation function while being transmitted to the next layer. These processes are repeated from the input layer to the output layer. This process is the forward propagation part of MLP \cite{haykin2010neural}. Initially, the feed-forward stage takes place with randomly determined weights and an estimated output value is calculated for each signal. Each estimated output value calculated in this way contains errors. The weights are updated according to the errors to try to reduce the error. This process is performed starting from the output layer to the input layer. This part of the MLP is called backpropagation \cite{haykin2010neural}. During this update process, how much the weights will be updated is determined by the learning rate. The number of times these operations will be repeated for all data is expressed as the epoch. For how many data forward propagation and backpropagation will be applied together is represented by the batch size.
 
-\subsubsection{Ensemble Learning}
+\subsubsection{Ensemble learning}
 Each model is developed based on certain assumptions and errors that occur as a result of these assumptions. It is aimed to minimize the total error by combining the predictions with a kind of voting method between training multiple models and their outputs \cite{alpaydin2020introduction,sewell2011ensemble}. The practice of employing multiple classification models and combining their predictions in this way is called ensemble learning.
-\subsubsubsection{Random Forest}
+\subsubsubsection{Random forest}
 Bagging, which is a voting method, can be defined as creating different variations by changing a dataset slightly and combining the outputs of each model after trained on a different variation \cite{alpaydin2020introduction,sewell2011ensemble}. As a refinement of bagged trees, Random Forest mainly aims to improve bagging by decorrelating the trees \cite{breiman2001random}. The procedure of voting for the most popular class after a large number of trees has been created is called random forests \cite{breiman2001random}.
 
 \subsubsubsection{XGBoost}
@@ -639,13 +639,13 @@ As the importance of data spreading with Industry 4.0, manufacturers are startin
 
 The increase in accessible data day by day, the interest of researchers from industry and academia that lead the development of new methods and approaches, and hardware developments such as Graphics Processing Unit (GPU), Tensor Processing Unit (TPU) and Field Programmable Gate Array (FPGA) that can process excessive calculations are the driving force of deep learning \cite{zhao2019deep,zhang2020deep}.
 
-\subsubsection{1D-Convolutional Neural Networks}
+\subsubsection{1D-Convolutional neural networks}
 
 CNN is a special case of feed-forward neural networks, with each hidden layer being a convolutional and pooling layer \cite{skowron2020convolutional}. Thanks to the convolutional layer, it provides a serious advantage in computational load \cite{skowron2020convolutional}. CNNs differ from Neural Networks in that they extract features of higher-order features from the input with convolutional processes \cite{chen2021improved}. The pooling layer is a layer that works in the direction of this idea by downsampling.
 
 It is generally used in image processing and relies on the idea that an image does not need to be seen in its entirety to be perceived \cite{khan2018review}. Although it was originally a 2D structure, CNN structures of different dimensions were built afterwards and especially 1D structures employed in the analysis of time series signals such as current and vibration signals \cite{eren2019generic}.
 
-\subsubsection{Long-Short Term Memory Networks}
+\subsubsection{Long-Short term memory networks}
 
 Recurrent Neural Network (RNN) is a special type of neural network for sequential data. RNN also uses information from previous time steps, so it remembers the entire sequence \cite{sabir2019lstm}. In the backpropagation process for RNN, some problems may occur because the gradients are multiplied. These problems can be observed as the gradient becomes too small or too large \cite{sabir2019lstm}. To avoid these situations, LSTM, which has a memory cell and a special case of RNN, is used. Memory cell consists of forget, input and output gates. The forget gate determines how much previous step information should be remembered. The input gate expresses how much of the newly acquired information needs to be remembered. The output gate indicates how much memory will be used for the output of the relevant time step \cite{shenfield2020novel}.
 
@@ -667,36 +667,36 @@ True Positive (TP), the state where both the actual and predicted values are hea
 False Positive (FP), the classification of the actually faulty condition as faulty, \\
 False Negative (FN), the classification of the actually healthy motor as faulty,\\
 True Negative (TN), the state where both the actual and predicted values are faulty.
-\subsection{Precision \& Recall}
+\subsection{Precision and recall}
 
 Precision refers to the ratio of samples that the classification method predicts as healthy to actually healthy samples, and shows how reliable the healthy motor prediction can be. Recall, on the other hand, expresses how many of the healthy motor samples were labelled correctly as a result of the classification and shows the model's ability to find the healthy motor. 
 \begin{eqnarray}
-\text{Precision} &=& \displaystyle\frac{TP}{TP+FP}\\
-\text{Recall} &=& \displaystyle\frac{TP}{TP+FN} 
+\textit{Precision} &=& \displaystyle\frac{TP}{TP+FP}\\
+\textit{Recall} &=& \displaystyle\frac{TP}{TP+FN} 
 \label{precision}
 \end{eqnarray}
 \subsection{Accuracy}
 
 Accuracy, one of the most common model performance metrics, is an indicator of how well it can distinguish between healthy and faulty motors in the entire data set \cite{grandini2020metrics}. In general, the number of healthy state data is naturally higher in diagnostic applications that result in an unbalanced data set \cite{han2021deep}. In such a case, evaluating only with the accuracy metric may lead to catastrophic situations. 
 \begin{equation}
-\text{Accuracy} = \displaystyle\frac{TP + TN}{TP + FP + FN + TN} 
+\textit{Accuracy} = \displaystyle\frac{TP + TN}{TP + FP + FN + TN} 
 \label{accuracy}	
 \end{equation}
 \subsection{F-measure}
 As a metric based on Recall and Precision, F-Measure allows better inference than accuracy on classification performance, especially on unbalanced datasets \cite{he2009learning}. In multi-class classification case F-measure needs to be modified as Macro F-measure by averaging each and every class' F-measure.
 \begin{eqnarray}
-\text{F-measure} &=& 2\cdot\displaystyle\frac{Recall\cdot Precision}{Recall + Precision}\\
-\text{Macro F-measure} &=& \displaystyle\frac{1}{C}\cdot \displaystyle\sum_{c_{i} \in C}\text{F-measure}({c_i})
+\textit{F-measure} &=& 2\cdot\displaystyle\frac{Recall\cdot Precision}{Recall + Precision}\\
+\textit{Macro F-measure} &=& \displaystyle\frac{1}{C}\cdot \displaystyle\sum_{c_{i} \in C}\text{F-measure}({c_i})
 \label{fmeas}	
 \end{eqnarray}
 where:\\
 $c_{i} \quad$ is the reference class \\
 $C \quad$ is the total number of classes\\
 Especially in condition monitoring applications, fault alarms even though there is no fault increase the maintenance cost and at the same time, it can disrupt the operation. On the other hand, missing a fault condition can also damage equipment and disrupt the operation. The performance of the classification method is important in terms of optimizing both cases. F-measure can respond to this optimization as it contains components for these two states \cite{janssens2016convolutional,seliya2009study}.
-\subsection{Cohen's Kappa}
+\subsection{Cohen's kappa}
 Another metric that works well with unbalanced data, Cohen's Kappa correlates the estimated and actual values, taking into account the imbalance in the class distribution \cite{maaritwidmannalfredoroccato2021}. By removing the random dependency between the predicted and actual classification, enables to compare different classifiers \cite{grandini2020metrics}. 
 \begin{equation}
-\text{Cohen's Kappa} = \displaystyle\frac{d \cdot n-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}{n^{2}-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}
+\textit{Cohen's Kappa} = \displaystyle\frac{d \cdot n-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}{n^{2}-\displaystyle\sum_{k}^{C} p_{k} \cdot t_{k}}
 \label{kappa}	
 \end{equation}
 where:\\
@@ -706,12 +706,12 @@ $n=\displaystyle\sum_{i}^{K} \displaystyle\sum_{j}^{K} C_{i j}\quad$ the total n
 $p_{k}=\displaystyle\sum_{i}^{K} C_{k i}\quad$ the number of instances that class $k$ was predicted (column total)\\
 $t_{k}=\displaystyle\sum_{i}^{K} C_{i k}\quad$ the number of instances that class $k$ actually presents (row total)
 
-\subsection{Area Under the Curve}
+\subsection{Area under the curve}
 Receiver operating characteristic (ROC) curve, which is another method widely used in binary classification performance measurement, shows the performance of classification methods in two dimensions \cite{fawcett2004roc}. To reduce this metric to one dimension, the area under the ROC curve (AUC) is calculated.
 
 In multiclass classification problems, AUC values now transform into multiple binary classification values. The specified formula is used to reduce to a single numerical value \cite{fawcett2004roc}:
 \begin{equation}
-AUC_{total} = \displaystyle\sum_{c_{i} \in C} AUC(c_{i}) \cdot p(c_{i})
+\textit{AUC}_{total} = \displaystyle\sum_{c_{i} \in C} AUC(c_{i}) \cdot p(c_{i})
 \label{auc}
 \end{equation}
 where:\\
